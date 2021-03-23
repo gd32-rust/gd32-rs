@@ -1,15 +1,29 @@
 _svd: ../svd/gd32f1x0.svd
 
-# Fix typo in TIMER0 field name
+# Fix typos in field names
 TIMER0:
   SMCFG:
     _modify:
       SCM1:
         name: "SMC1"
+FMC:
+  STAT:
+    _modify:
+      END:
+        name: "ENDF"
+  CTL:
+    _modify:
+      OBWE:
+        name: "OBWEN"
+  OBSTAT:
+    _modify:
+      OBER:
+        name: "OBERR"
 
 _include:
  - ../peripherals/crc/crc_gd.yaml
  - ../peripherals/exti/exti_gd.yaml
+ - ../peripherals/flash/flash_gd.yaml
  - ../peripherals/gpio/gpio_gd.yaml
  - ../peripherals/iwdg/fwdgt_gd.yaml
  - ../peripherals/pwr/pmu_gd.yaml

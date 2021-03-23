@@ -1,0 +1,89 @@
+# Flash memory controller for GD32F devices
+
+FMC:
+  WS:
+    WSCNT:
+      WS0: [0, "0 wait states added"]
+      WS1: [1, "1 wait state added"]
+      WS2: [2, "2 wait states added"]
+  KEY:
+    KEY: [0, 0xFFFFFFFF]
+  OBKEY:
+    OBKEY: [0, 0xFFFFFFFF]
+  STAT:
+    ENDF:
+      _read:
+        NoEvent: [0, "No end of operation occurred"]
+        Event: [1, "An end of operation event occurred"]
+      _write:
+        Clear: [1, "Clears flag"]
+    WPERR:
+      _read:
+        NoError: [0, "There was no error"]
+        Error: [1, "There was an error erasing/programming protected pages"]
+      _write:
+        Clear: [1, "Clears flag"]
+    PGERR:
+      _read:
+        NoError: [0, "There was no error"]
+        Error: [1, "There was an error programming flash"]
+      _write:
+        Clear: [1, "Clears flag"]
+    BUSY:
+      _read:
+        Inactive: [0, "No operation is in progress"]
+        Active: [1, "An operation is in progress"]
+  CTL:
+    OBRLD:
+      Reload: [1, "Force option bytes reload and reset"]
+    ENDIE:
+      Disabled: [0, "End of operation interrupt disabled"]
+      Enabled: [1, "End of operation interrupt enabled"]
+    ERRIE:
+      Disabled: [0, "Error interrupt generation disabled"]
+      Enabled: [1, "Error interrupt generation enabled"]
+    OBWEN:
+      _read:
+        Disabled: [0, "Option byte write disabled"]
+        Enabled: [1, "Option byte write enabled"]
+      _write:
+        Disable: [0, "Disable option byte write"]
+    LK:
+      _read:
+        Unlocked: [0, "CTL register is unlocked"]
+        Locked: [1, "CTL register is locked"]
+      _write:
+        Lock: [1, "Lock CTL register"]
+    START:
+      _write:
+        Start: [1, "Trigger an erase operation"]
+    OBER:
+      OptionByteErase: [1, "Erase option byte activated"]
+    OBPG:
+      OptionByteProgramming: [1, "Program option byte activated"]
+    MER:
+      MassErase: [1, "Erase activated for all user sectors"]
+    PER:
+      PageErase: [1, "Erase activated for selected page"]
+    PG:
+      Program: [1, "Flash programming activated"]
+  ADDR:
+    ADDR: [0, 0xFFFFFFFF]
+  OBSTAT:
+    OB_DATA: [0, 0xFFFF]
+    OB_USER: [0, 0xFF]
+    PLEVEL:
+      None: [0, "No protection level"]
+      Low: [1, "Low protection level"]
+      High: [3, "High protection level"]
+    OBERR:
+      NoError: [0, "No error with option bytes"]
+      Error: [1, "Option bytes and complement bytes do not match"]
+  WP:
+    OB_WP: [0, 0xFFFF]
+  WSEN:
+    WSEN:
+      NoWaitState: [0, "No wait state added"]
+      WaitState: [1, "Wait state added"]
+  PID:
+    PID: [0, 0xFFFFFFFF]
