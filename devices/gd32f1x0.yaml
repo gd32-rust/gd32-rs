@@ -27,6 +27,7 @@ DMA:
 
 _include:
  - ../peripherals/crc/crc_gd.yaml
+ - ../peripherals/dbg/dbg_gd.yaml
  - ../peripherals/dma/dma_gd.yaml
  - ../peripherals/exti/exti_gd.yaml
  - ../peripherals/flash/flash_gd.yaml
