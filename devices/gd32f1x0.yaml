@@ -19,9 +19,15 @@ FMC:
     _modify:
       OBER:
         name: "OBERR"
+DMA:
+  "CH*CTL0":
+    _modify:
+      TM:
+        name: "DIR"
 
 _include:
  - ../peripherals/crc/crc_gd.yaml
+ - ../peripherals/dma/dma_gd.yaml
  - ../peripherals/exti/exti_gd.yaml
  - ../peripherals/flash/flash_gd.yaml
  - ../peripherals/gpio/gpio_gd.yaml

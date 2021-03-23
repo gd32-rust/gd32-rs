@@ -1,0 +1,59 @@
+DMA:
+  INTF:
+    "TAEIF*":
+      NoError: [0, "No transfer error"]
+      Error: [1, "A transfer error has occured"]
+    "HTFIF*":
+      NotHalf: [0, "No half transfer event"]
+      Half: [1, "A half transfer event has occured"]
+    "FTFIF*":
+      NotComplete: [0, "No transfer complete event"]
+      Complete: [1, "A transfer complete event has occured"]
+    "GIF*":
+      NoEvent: [0, "No transfer error, half event, complete event"]
+      Event: [1, "A transfer error, half event or complete event has occured"]
+  INTC:
+    "TAEIFC*":
+      Clear: [1, "Clears the ERRIF flag in INTF"]
+    "HTFIFC*":
+      Clear: [1, "Clears the HTFIF flag in INTF"]
+    "FTFIFC*":
+      Clear: [1, "Clears the FDFIF flag in INTF"]
+    "GIC*":
+      Clear: [1, "Clears the GIF flag in INTF"]
+  "CH*CTL0":
+    M2M:
+      Disabled: [0, "Memory to memory mode disabled"]
+      Enabled: [1, "Memory to memory mode enabled"]
+    PRIO:
+      Low: [0, "Low priority"]
+      Medium: [1, "Medium priority"]
+      High: [2, "High priority"]
+      VeryHigh: [3, "Very high priority"]
+    "[MP]WIDTH":
+      Bits8: [0, "8-bit size"]
+      Bits16: [1, "16-bit size"]
+      Bits32: [2, "32-bit size"]
+    "[MP]NAGA":
+      Fixed: [0, "Fixed address mode"]
+      Increment: [1, "Increment address mode"]
+    CMEN:
+      Disabled: [0, "Circular buffer disabled"]
+      Enabled: [1, "Circular buffer enabled"]
+    DIR:
+      FromPeripheral: [0, "Read from peripheral"]
+      FromMemory: [1, "Read from memory"]
+    TAEIE:
+      Disabled: [0, "Transfer error interrupt disabled"]
+      Enabled: [1, "Transfer error interrupt enabled"]
+    HTFIE:
+      Disabled: [0, "Half transfer interrupt disabled"]
+      Enabled: [1, "Half transfer interrupt enabled"]
+    FTFIE:
+      Disabled: [0, "Full transfer interrupt disabled"]
+      Enabled: [1, "Full transfer interrupt enabled"]
+    CHEN:
+      Disabled: [0, "Channel disabled"]
+      Enabled: [1, "Channel enabled"]
+  "CH*CNT":
+    CNT: [0, 0xFFFF]
