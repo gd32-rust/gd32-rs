@@ -24,9 +24,15 @@ DMA:
     _modify:
       TM:
         name: "DIR"
+CMP:
+  CS:
+    _modify:
+      CMP0S:
+        name: "CMP0SW"
 
 _include:
  - ../peripherals/crc/crc_gd.yaml
+ - ../peripherals/comp/cmp_gd.yaml
  - ../peripherals/dbg/dbg_gd.yaml
  - ../peripherals/dma/dma_gd.yaml
  - ../peripherals/exti/exti_gd.yaml

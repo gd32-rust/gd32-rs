@@ -1,0 +1,47 @@
+CMP:
+  CS:
+    "CMP?LK":
+      ReadWrite: [0, "Control bits are read-write"]
+      ReadOnly: [1, "Control bits are read-only"]
+    "CMP?O":
+      Low: [0, "Non-inverting input below inverting input"]
+      High: [1, "Non-inverting input above inverting input"]
+    "CMP?HST":
+      NoHysteresis: [0, "No hysteresis"]
+      LowHysteresis: [1, "Low hysteresis"]
+      MediumHysteresis: [2, "Medium hysteresis"]
+      HighHysteresis: [3, "High hysteresis"]
+    "CMP?PL":
+      NotInverted: [0, "Output is not inverted"]
+      Inverted: [1, "Output is inverted"]
+    "CMP?OSEL":
+      NoSelection: [0, "No selection"]
+      Timer0BreakInput: [1, "Timer 0 break input"]
+      Timer0InputCapture0: [2, "Timer 0 Input capture 0"]
+      Timer0OCPREClearInput: [3, "Timer 0 OCPRE_CLR input"]
+      Timer1InputCapture3: [4, "Timer 1 input capture 3"]
+      Timer1OCPREClearInput: [5, "Timer 1 OCPRE_CLR input"]
+      Timer2InputCapture0: [6, "Timer 2 input capture 0"]
+      Timer2OCPREClearInput: [7, "Timer 2 OCPRE_CLR input"]
+    WNDEN:
+      Disabled: [0, "Window mode disabled"]
+      Enabled: [1, "Window mode enabled"]
+    "CMP?MSEL":
+      OneQuarterVRef: [0, "1/4 of VRefint"]
+      OneHalfVRef: [1, "1/2 of VRefint"]
+      ThreeQuarterVRef: [2, "3/4 of VRefint"]
+      VRef: [3, "VRefint"]
+      PA4: [4, "PA4 (DAC0"]
+      PA5: [5, "PA5"]
+      PA0: [6, "PA0"]
+    "CMP?M":
+      HighSpeed: [0, "High speed / full power"]
+      MediumSpeed: [1, "Medium speed / medium power"]
+      LowSpeed: [2, "Low speed / low power"]
+      VeryLowSpeed: [3, "Very-low speed / ultra-low power"]
+    "CMP?EN":
+      Disabled: [0, "Comparator disabled"]
+      Enabled: [1, "Comparator enabled"]
+    CMP0SW:
+      Open: [0, "Switch open"]
+      Closed: [1, "Switch closed"]
