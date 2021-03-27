@@ -6,7 +6,7 @@
       Disabled: [0, "The shadow register for CAR is disabled"]
       Enabled: [1, "The shadow register for CAR is enabled"]
     UPS:
-      AnyEvent: [0, "Any of counter overflow/underflow, setting UG, or update through slave mode, generates an update interrupt or DMA request"]
+      AnyEvent: [0, "Any of counter overflow/underflow, setting UPG, or update through slave mode, generates an update interrupt or DMA request"]
       CounterOnly: [1, "Only counter overflow/underflow generates an update interrupt or DMA request"]
     UPDIS:
       Enabled: [0, "Update event enabled"]
@@ -30,7 +30,7 @@
   PSC:
     PSC: [0, 0xFFFF]
   CAR:
-    CARL:
+    CAR: [0, 0xFFFF]
 
 # TIMER13 doesn't have single pulse mode or DMA.
 "TIMER?,TIMER1[4-6]":
