@@ -25,10 +25,20 @@
   SWEVG:
     UPG:
       Update: [1, "Re-initializes the timer counter and generates an update of the registers."]
-  CNT:
-    CNT:
   PSC:
     PSC: [0, 0xFFFF]
+
+# TIMER1 has a 32-bit counter
+TIMER1:
+  CNT:
+    CNT: [0, 0xFFFFFFFF]
+  CAR:
+    CAR: [0, 0xFFFFFFFF]
+
+# Other timers have 16-bit counters
+"TIMER[015],TIMER1[3-6]":
+  CNT:
+    CNT: [0, 0xFFFF]
   CAR:
     CAR: [0, 0xFFFF]
 
