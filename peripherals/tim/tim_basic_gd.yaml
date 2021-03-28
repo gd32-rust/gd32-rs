@@ -34,6 +34,8 @@ TIMER1:
     CNT: [0, 0xFFFFFFFF]
   CAR:
     CAR: [0, 0xFFFFFFFF]
+  "CH?CV":
+    "CH?VAL": [0, 0xFFFFFFFF]
 
 # Other timers have 16-bit counters
 "TIMER[015],TIMER1[3-6]":
@@ -41,6 +43,54 @@ TIMER1:
     CNT: [0, 0xFFFF]
   CAR:
     CAR: [0, 0xFFFF]
+
+"TIMER[01],TIMER1[3-6]":
+  "CH?CV":
+    "CH?VAL": [0, 0xFFFF]
+
+# TIMER5 doesn't have compare mode
+"TIMER[0-2],TIMER1[3-6]":
+  CHCTL[01]_Output:
+    "CH?COMCEN":
+      Disabled: [0, "Output compare clear disabled"]
+      ENabled: [1, "Output compare clear enabled"]
+    "CH?COMCTL":
+      Frozen: [0, "The comparison between the output compare register CHyCV and the counter CNT has no effect on the outputs"]
+      ActiveOnMatch: [1, "Set channel to active level on match. OxCPRE signal is forced high when the counter matches the capture/compare register CHyCV"]
+      InactiveOnMatch: [2, "Set channel to inactive level on match. OxCPRE signal is forced low when the counter matches the capture/compare register CHyCV"]
+      Toggle: [3, "OxCPRE toggles when CNT=CHyCV"]
+      ForceInactive: [4, "OxCPRE is forced low"]
+      ForceActive: [5, "OxCPRE is forced high"]
+      PwmMode1: [6, "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active"]
+      PwmMode2: [7, "Inversely to PwmMode1"]
+    "CH?COMSEN":
+      Disabled: [0, "Preload register on CHyCV disabled. New values written to CHyCV are taken into account immediately"]
+      Enabled: [1, "Preload register on CHyCV enabled. Preload value is loaded into active register on each update event"]
+    "CH?COMFEN":
+      Slow: [0, "The minimum delay from an edge is 5 clock cycles"]
+      Fast: [1, "The minimum delay from an edge is 3 clock cycles"]
+    "CH?MS":
+      Output: [0, "Channel is configured as output"]
+      CI1: [1, "Channel is configured as input, ISx is connected to CI0FE0"]
+      CI2: [2, "Channel is configured as input, ISx is connected to CI1FE0"]
+      ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
+  CHCTL2:
+    "CH?NP":
+      NotInverted: [0, "Complementary channel is active high"]
+      Inverted: [1, "Complementary channel is active low"]
+    "CH?P":
+      NotInverted: [0, "Channel is active high"]
+      Inverted: [1, "Channel is active low"]
+    "CH?EN":
+      Disabled: [0, "Channel output is disabled"]
+      Enabled: [1, "Channel output is enabled"]
+
+# TIMER1, TIMER2 and TIMER13 don't have CH?NEN
+"TIMER0,TIMER1[4-6]":
+  CHCTL2:
+    "CH?NEN":
+      Disabled: [0, "Channel complementary output is disabled"]
+      Enabled: [1, "Channel complementary output is enabled"]
 
 # TIMER13 doesn't have single pulse mode or DMA.
 "TIMER?,TIMER1[4-6]":
