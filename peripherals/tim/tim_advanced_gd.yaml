@@ -1,6 +1,4 @@
-# Advanced timer TIMER0
-
-TIMER0:
+"TIMER[0-2]":
   CTL0:
     CKDIV:
       Div1: [0, "t_DTS = t_CK_INT"]
@@ -14,6 +12,10 @@ TIMER0:
     DIR:
       Up: [0, "Counter used as upcounter"]
       Down: [1, "Counter used as downcounter"]
+
+# Advanced timer TIMER0
+
+TIMER0:
   CTL1:
     ISO3:
       Low: [0, "CH3_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
