@@ -29,6 +29,11 @@ CMP:
     _modify:
       CMP0S:
         name: "CMP0SW"
+TIMER15:
+  CCHP:
+    _modify:
+      PORT:
+        name: "PROT"
 
 _include:
  - ../peripherals/crc/crc_gd.yaml
