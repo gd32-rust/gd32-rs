@@ -3,11 +3,11 @@
 **/*.rs.bk
 **/Cargo.lock
 .deps/
-*/src/stm32*/
+*/src/gd32*/
 */src/generic.rs
 html/
 mmaps/
 /venv
 
 # automatically generated crates
-/stm32*/
+/gd32*/
