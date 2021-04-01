@@ -1,7 +1,0 @@
-RCC:
-  AHBENR:
-    _add:
-      DMAEN:
-        description: DMA clock enable
-        bitOffset: 0
-        bitWidth: 1

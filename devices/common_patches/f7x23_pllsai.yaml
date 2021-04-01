@@ -1,5 +1,0 @@
-RCC:
-  CR:
-    _modify:
-      PLLSAIRDY:
-        access: read-only

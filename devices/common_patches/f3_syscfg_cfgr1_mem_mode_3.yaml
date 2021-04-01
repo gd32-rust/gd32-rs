@@ -1,5 +1,0 @@
-SYSCFG:
-  CFGR1:
-    _modify:
-      MEM_MODE:
-        bitWidth: 3

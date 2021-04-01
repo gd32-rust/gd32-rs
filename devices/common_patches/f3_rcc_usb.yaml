@@ -1,5 +1,0 @@
-RCC:
-  CFGR:
-    _modify:
-      USBPRES:
-        name: USBPRE
