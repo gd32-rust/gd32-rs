@@ -4,7 +4,7 @@ Copyright 2017-2019 Adam Greig
 Licensed under the MIT and Apache 2.0 licenses.
 
 Autogenerate the crate Cargo.toml, build.rs, README.md and src/lib.rs files
-based on available YAML files for each STM32 family.
+based on available YAML files for each GD32 family.
 
 Usage: python3 scripts/makecrates.py devices/
 """
@@ -32,11 +32,11 @@ CARGO_TOML_TPL = """\
 edition = "2018"
 name = "{crate}"
 version = "{version}"
-authors = ["Adam Greig <adam@adamgreig.com>", "stm32-rs Contributors"]
+authors = ["Andrew Walbran <qwandor@gmail.com>", "gd32-rs Contributors"]
 description = "Device support crates for {family} devices"
-repository = "https://github.com/stm32-rs/stm32-rs"
+repository = "https://github.com/qwandor/gd32-rs"
 readme = "README.md"
-keywords = ["stm32", "svd2rust", "no_std", "embedded"]
+keywords = ["gd32", "svd2rust", "no_std", "embedded"]
 categories = ["embedded", "no-std"]
 license = "MIT/Apache-2.0"
 
@@ -69,15 +69,15 @@ SRC_LIB_RS_TPL = """\
 //! [svd2rust/#peripheral-api](https://docs.rs/svd2rust/{svd2rust_version}/svd2rust/#peripheral-api)
 //!
 //! For more details see the README here:
-//! [stm32-rs](https://github.com/stm32-rs/stm32-rs)
+//! [gd32-rs](https://github.com/qwandor/gd32-rs)
 //!
 //! This crate supports all {family} devices; for the complete list please
 //! see:
-//! [{crate}](https://github.com/stm32-rs/stm32-rs/tree/master/{crate})
+//! [{crate}](https://github.com/qwandor/gd32-rs/tree/main/{crate})
 //!
 //! Due to doc build limitations, not all devices may be shown on docs.rs;
 //! a representative few have been selected instead. For a complete list of
-//! available registers and fields see: [stm32-rs Device Coverage](https://stm32-rs.github.io/stm32-rs/)
+//! available registers and fields see: [gd32-rs Device Coverage](https://qwandor.github.io/gd32-rs/)
 
 #![allow(non_camel_case_types)]
 #![no_std]
@@ -97,7 +97,7 @@ extensive type-safe support. For more information please see the [main repo].
 Refer to the [documentation] for full details.
 
 [svd2rust]: https://github.com/japaric/svd2rust
-[main repo]: https://github.com/stm32-rs/stm32-rs
+[main repo]: https://github.com/qwandor/gd32-rs
 [documentation]: https://docs.rs/{crate}/latest/{crate}/
 
 ## Usage

@@ -12,7 +12,7 @@ jobs:
       - name: Checkout main
         uses: actions/checkout@v2
         with:
-          path: stm32-rs
+          path: gd32-rs
       - name: Install Python dependencies
         run: |
           pip3 install --user setuptools wheel
@@ -61,16 +61,16 @@ jobs:
       - name: Build and publish
         run: |
           mkdir nightly
-          cd stm32-rs
+          cd gd32-rs
           COMMIT=$(git rev-parse HEAD)
           make -j2 form
-          mv stm32{f,g,h,l,mp,wl,wb}* ../nightly
+          mv gd32{f,g,h,l,mp,wl,wb}* ../nightly
           cp .github/workflows/README-nightlies.md ../nightly/README.md
           cd ../nightly
           git init
           git add .
-          git config user.name "stm32-rs builder"
+          git config user.name "gd32-rs builder"
           git config user.email "action@github.com"
-          git commit -m "stm32-rs main $COMMIT"
-          git remote add origin git@github.com:stm32-rs/stm32-rs-nightlies
+          git commit -m "gd32-rs main $COMMIT"
+          git remote add origin git@github.com:qwandor/gd32-rs-nightlies
           git push --force origin main

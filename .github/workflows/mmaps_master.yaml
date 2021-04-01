@@ -10,16 +10,16 @@ jobs:
     name: Build mmaps
     runs-on: ubuntu-18.04
     steps:
-      - name: Checkout stm32-rs
+      - name: Checkout gd32-rs
         uses: actions/checkout@v2
         with:
-          path: stm32-rs
+          path: gd32-rs
       - name: Checkout mmaps
         uses: actions/checkout@v2
         with:
-          repository: stm32-rs/stm32-rs-mmaps
+          repository: qwandor/gd32-rs-mmaps
           ssh-key: ${{ secrets.MMAPS_KEY }}
-          path: stm32-rs-mmaps
+          path: gd32-rs-mmaps
       - name: Install Python dependencies
         run: |
           pip3 install --user setuptools wheel
@@ -28,13 +28,13 @@ jobs:
         run: echo "~/.local/bin" >> $GITHUB_PATH
       - name: Build and publish
         run: |
-          cd stm32-rs
+          cd gd32-rs
           COMMIT=$(git rev-parse HEAD)
           make -j2 mmaps
-          mv mmaps/* ../stm32-rs-mmaps/
-          cd ../stm32-rs-mmaps
-          git config user.name "stm32-rs builder"
+          mv mmaps/* ../gd32-rs-mmaps/
+          cd ../gd32-rs-mmaps
+          git config user.name "gd32-rs builder"
           git config user.email "action@github.com"
           git add .
-          git commit --allow-empty -m "stm32-rs main $COMMIT"
+          git commit --allow-empty -m "gd32-rs main $COMMIT"
           git push origin main

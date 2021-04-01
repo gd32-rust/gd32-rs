@@ -1,25 +1,9 @@
-# STM32 Peripheral Access Crates
+# GD32 Peripheral Access Crates
 
-[![CI](https://github.com/stm32-rs/stm32-rs/workflows/CI/badge.svg?branch=master)](https://github.com/stm32-rs/stm32-rs)
-[![crates.io](https://img.shields.io/crates/v/stm32f0.svg?label=stm32f0)](https://crates.io/crates/stm32f0)
-[![crates.io](https://img.shields.io/crates/v/stm32f1.svg?label=stm32f1)](https://crates.io/crates/stm32f1)
-[![crates.io](https://img.shields.io/crates/v/stm32f2.svg?label=stm32f2)](https://crates.io/crates/stm32f2)
-[![crates.io](https://img.shields.io/crates/v/stm32f3.svg?label=stm32f3)](https://crates.io/crates/stm32f3)
-[![crates.io](https://img.shields.io/crates/v/stm32f4.svg?label=stm32f4)](https://crates.io/crates/stm32f4)
-[![crates.io](https://img.shields.io/crates/v/stm32f7.svg?label=stm32f7)](https://crates.io/crates/stm32f7)
-[![crates.io](https://img.shields.io/crates/v/stm32g0.svg?label=stm32g0)](https://crates.io/crates/stm32g0)
-[![crates.io](https://img.shields.io/crates/v/stm32g4.svg?label=stm32g4)](https://crates.io/crates/stm32g4)
-[![crates.io](https://img.shields.io/crates/v/stm32h7.svg?label=stm32h7)](https://crates.io/crates/stm32h7)
-[![crates.io](https://img.shields.io/crates/v/stm32l0.svg?label=stm32l0)](https://crates.io/crates/stm32l0)
-[![crates.io](https://img.shields.io/crates/v/stm32l1.svg?label=stm32l1)](https://crates.io/crates/stm32l1)
-[![crates.io](https://img.shields.io/crates/v/stm32l4.svg?label=stm32l4)](https://crates.io/crates/stm32l4)
-[![crates.io](https://img.shields.io/crates/v/stm32l5.svg?label=stm32l5)](https://crates.io/crates/stm32l5)
-[![crates.io](https://img.shields.io/crates/v/stm32mp1.svg?label=stm32mp1)](https://crates.io/crates/stm32mp1)
-[![crates.io](https://img.shields.io/crates/v/stm32wl.svg?label=stm32wl)](https://crates.io/crates/stm32wl)
-[![crates.io](https://img.shields.io/crates/v/stm32wb.svg?label=stm32wb)](https://crates.io/crates/stm32wb)
-[![Matrix](https://img.shields.io/matrix/stm32-rs:matrix.org)](https://matrix.to/#/#stm32-rs:matrix.org)
+[![CI](https://github.com/qwandor/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/qwandor/gd32-rs)
+[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 
-This repository provides Rust device support crates for all STM32
+This repository provides Rust device support crates for Cortex-M based GD32
 microcontrollers, providing a safe API to that device's peripherals using
 [svd2rust] and a community-built collection of patches to the basic SVD files.
 There is one crate per device family, and each supported device is a
@@ -29,9 +13,9 @@ peripheral access crates or "PACs".
 [svd2rust]: https://github.com/rust-embedded/svd2rust
 
 To view the generated code that makes up each crate, visit the
-[stm32-rs-nightlies](https://github.com/stm32-rs/stm32-rs-nightlies)
-repository, which is automatically rebuilt on every commit to stm32-rs main.
-The stm32-rs repository contains the patches to the underlying SVD files and
+[gd32-rs-nightlies](https://github.com/qwandor/gd32-rs-nightlies)
+repository, which is automatically rebuilt on every commit to gd32-rs main.
+The gd32-rs repository contains the patches to the underlying SVD files and
 the tooling to generate the crates.
 
 While these crates are widely used, not every register of every device will
@@ -39,7 +23,7 @@ have been tested on hardware, and so errors or omissions may remain. We can't
 make any guarantee of correctness. Please report any bugs you find!
 
 You can see current coverage status for each chip
-[here](https://stm32-rs.github.io/stm32-rs/). Coverage means that individual fields are
+[here](https://qwandor.github.io/gd32-rs/). Coverage means that individual fields are
 documented with possible values, but even devices with low coverage should
 have every register and field available in the API. That page also allows you
 to drill down into each field on each register on each peripheral.
@@ -48,9 +32,9 @@ to drill down into each field on each register on each peripheral.
 
 In your own project's `Cargo.toml`:
 ```toml
-[dependencies.stm32f4]
-version = "0.13.0"
-features = ["stm32f405", "rt"]
+[dependencies.gd32f1]
+version = "0.1.0"
+features = ["gd32f1x0", "rt"]
 ```
 
 The `rt` feature is optional but helpful. See
@@ -60,28 +44,27 @@ details.
 Then, in your code:
 
 ```rust
-use stm32f4::stm32f405;
+use gd32f1::gd32f1x0;
 
-let mut peripherals = stm32f405::Peripherals::take().unwrap();
+let mut peripherals = gd32f1x0::Peripherals::take().unwrap();
 ```
 
 Refer to `svd2rust` [documentation](https://docs.rs/svd2rust) for further usage.
 
-Replace `stm32f4` and `stm32f405` with your own device; see the individual
-crate READMEs for the complete list of supported devices. All current STM32
-devices should be supported to some level.
+Replace `gd32f1` and `gd32f1x0` with your own device; see the individual
+crate READMEs for the complete list of supported devices.
 
 ## Using Latest "Nightly" Builds
 
 Whenever the main branch of this repository is updated, all device crates are
 built and deployed to the
-[stm32-rs-nightlies](https://github.com/stm32-rs/stm32-rs-nightlies)
+[gd32-rs-nightlies](https://github.com/qwandor/gd32-rs-nightlies)
 repository. You can use this in your `Cargo.toml`:
 
 ```toml
-[dependencies.stm32f4]
-git = "https://github.com/stm32-rs/stm32-rs-nightlies"
-features = ["stm32f405", "rt"]
+[dependencies.gd32f1]
+git = "https://github.com/qwandor/gd32-rs-nightlies"
+features = ["gd32f1x0", "rt"]
 ```
 
 The nightlies should always build and be as stable as the latest release, but
@@ -103,17 +86,12 @@ contain the latest patches and updates.
 
 This project serves two purposes:
 
-* Create a source of high-quality STM32 SVD files, with manufacturer errors
+* Create a source of high-quality GD32 SVD files, with manufacturer errors
   and inconsistencies fixed. These files could be used with svd2rust or other
   tools, or in other projects. They should hopefully be useful in their own
   right.
-* Create and publish svd2rust-generated crates covering all STM32s, using
+* Create and publish svd2rust-generated crates covering all Cortex-M based GD32s, using
   the SVD files.
-
-When this project began, many individual crates existed for specific STM32
-devices, typically maintained separately with hand-edited updates to the SVD
-files. This project hopes to reduce that duplication of effort and centralise
-the community's STM32 device support in one place.
 
 ## Helping
 
@@ -126,40 +104,20 @@ This project is still young and there's a lot to do!
 
 ## Supported Device Families
 
-[![crates.io](https://img.shields.io/crates/v/stm32f0.svg?label=stm32f0)](https://crates.io/crates/stm32f0)
-[![crates.io](https://img.shields.io/crates/v/stm32f1.svg?label=stm32f1)](https://crates.io/crates/stm32f1)
-[![crates.io](https://img.shields.io/crates/v/stm32f2.svg?label=stm32f2)](https://crates.io/crates/stm32f2)
-[![crates.io](https://img.shields.io/crates/v/stm32f3.svg?label=stm32f3)](https://crates.io/crates/stm32f3)
-[![crates.io](https://img.shields.io/crates/v/stm32f4.svg?label=stm32f4)](https://crates.io/crates/stm32f4)
-[![crates.io](https://img.shields.io/crates/v/stm32f7.svg?label=stm32f7)](https://crates.io/crates/stm32f7)
-[![crates.io](https://img.shields.io/crates/v/stm32g0.svg?label=stm32g0)](https://crates.io/crates/stm32g0)
-[![crates.io](https://img.shields.io/crates/v/stm32g4.svg?label=stm32g4)](https://crates.io/crates/stm32g4)
-[![crates.io](https://img.shields.io/crates/v/stm32h7.svg?label=stm32h7)](https://crates.io/crates/stm32h7)
-[![crates.io](https://img.shields.io/crates/v/stm32l0.svg?label=stm32l0)](https://crates.io/crates/stm32l0)
-[![crates.io](https://img.shields.io/crates/v/stm32l1.svg?label=stm32l1)](https://crates.io/crates/stm32l1)
-[![crates.io](https://img.shields.io/crates/v/stm32l4.svg?label=stm32l4)](https://crates.io/crates/stm32l4)
-[![crates.io](https://img.shields.io/crates/v/stm32l5.svg?label=stm32l5)](https://crates.io/crates/stm32l5)
-[![crates.io](https://img.shields.io/crates/v/stm32mp1.svg?label=stm32mp1)](https://crates.io/crates/stm32mp1)
-[![crates.io](https://img.shields.io/crates/v/stm32wl.svg?label=stm32wl)](https://crates.io/crates/stm32wl)
-[![crates.io](https://img.shields.io/crates/v/stm32wb.svg?label=stm32wb)](https://crates.io/crates/stm32wb)
+[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 
 Please see the individual crate READMEs for the full list of devices each crate
-supports. All SVDs released by ST for STM32 devices are covered, so probably
-your device is supported to some extent!
-
-**Devices that are nearly identical, like the STM32F405/F415, are supported by
-ST under a single SVD file STM32F405, so if you can't find your exact device
-check if its sibling is supported instead. The crate READMEs make this clear.**
+supports.
 
 Many peripherals are not yet patched to provide the type-safe friendly-name
 interface (enumerated values); please consider helping out with this!
 
-Check out the full list of supported devices [here](https://stm32-rs.github.io/stm32-rs/).
+Check out the full list of supported devices [here](https://gd32-rs.github.io/gd32-rs/).
 
 ## Adding New Devices
 
-* Update SVD zips in `svd/vendor` to include new SVD.
-* Run `svd/extract.sh` to extract the zips into `svd` (ignored in git).
+* Update SVD files in `svd/vendor` to include new SVD.
+* Run `svd/extract.sh` to copy the files into `svd` (ignored in git).
 * Add new YAML file in `devices/` with the new SVD path and include any
   required SVD patches for this device, such as renaming or merging fields.
 * You can run `scripts/matchperipherals.py` script to find out what existing
@@ -174,7 +132,7 @@ Check out the full list of supported devices [here](https://stm32-rs.github.io/s
 * You'll need to run `svd/extract.sh` at least once to pull the SVDs out.
 * Edit the device or peripheral YAML (see below for format).
 * Run `make` to rebuild all the crates using `svd patch` and `svd2rust`.
-* Test your new stuff compiles: `cd stm32f4; cargo build --features stm32f405`
+* Test your new stuff compiles: `cd gd32f1; cargo build --features gd32f1x0`
 
 If you've added a new peripheral, consider using the `matchperipherals.py`
 script to see which devices it would cleanly apply to.
@@ -214,7 +172,7 @@ $ git push origin vX.X.X
 # wait for CI build to succeed
 $ git tag -a 'vX.X.X' -m 'vX.X.X'
 $ git push origin vX.X.X
-$ for f in stm32f0 stm32f1 stm32f2 stm32f3 stm32f4 stm32f7 stm32h7 stm32l0 stm32l1 stm32l4 stm32l5 stm32g0 stm32g4 stm32mp1 stm32wl stm32wb; cd $f; pwd; cargo publish --allow-dirty; cd ..; end
+$ for f in gd32f1; cd $f; pwd; cargo publish --allow-dirty; cd ..; end
 ```
 
 ## License

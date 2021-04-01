@@ -1,4 +1,4 @@
-# This file contains a table of all supported STM32 microcontrollers.
+# This file contains a table of all supported GD32 microcontrollers.
 #
 # It lists them by family (which corresponds to a crate),
 # then by the "device" in that family (corresponds to an SVD file,
