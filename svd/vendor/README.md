@@ -1,6 +1,5 @@
-# STM32 SVD files from ST
+# GD32 SVD files from GigaDevice
 
-Original files fetched from [st.com]. Redistributed according to the terms of 
-ST Software license agreement, included as [ST_SLA.pdf](ST_SLA.pdf).
+Original files fetched from [gd32mcu.com], extracted from ADD-ON `.pack` files.
 
-[st.com]:http://www.st.com/content/st_com/en/support/resources/resource-selector.html?querycriteria=productId=SC1169$$resourceCategory=cad_models_and_symbols$$resourceType=svd
+[gd32mcu.com]:http://www.gd32mcu.com/en/download/

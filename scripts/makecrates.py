@@ -21,43 +21,10 @@ SVD2RUST_VERSION = "0.17.0"
 
 CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f1x0"],
-    "stm32f0": ["rt", "stm32f0x0", "stm32f0x1", "stm32f0x2", "stm32f0x8"],
-    "stm32f1": ["rt", "stm32f100", "stm32f101", "stm32f102", "stm32f103",
-                "stm32f107"],
-    "stm32f2": ["rt", "stm32f215", "stm32f217"],
-    "stm32f3": ["rt", "stm32f302", "stm32f303", "stm32f373"],
-    "stm32f4": ["rt", "stm32f401", "stm32f407", "stm32f413", "stm32f469"],
-    "stm32f7": ["rt", "stm32f7x3", "stm32f7x9"],
-    "stm32h7": ["rt", "stm32h743", "stm32h743v", "stm32h747cm7"],
-    "stm32l0": ["rt", "stm32l0x0", "stm32l0x1", "stm32l0x2", "stm32l0x3"],
-    "stm32l1": ["rt", "stm32l100", "stm32l151", "stm32l162"],
-    "stm32l4": ["rt", "stm32l4x1", "stm32l4x5"],
-    "stm32l5": ["rt", "stm32l562"],
-    "stm32g0": ["rt", "stm32g030", "stm32g070", "stm32g031", "stm32g041", "stm32g071", "stm32g081"],
-    "stm32g4": ["rt", "stm32g431", "stm32g441", "stm32g474", "stm32g484"],
-    "stm32mp1": ["rt", "stm32mp157"],
-    "stm32wl": ["rt", "stm32wle5", "stm32wl5x_cm4"],
-    "stm32wb": ["rt", "stm32wb55"]
 }
 
 CRATE_DOC_TARGETS = {
     "gd32f1": "thumbv7m-none-eabi",
-    "stm32f0": "thumbv6m-none-eabi",
-    "stm32f1": "thumbv7m-none-eabi",
-    "stm32f2": "thumbv7m-none-eabi",
-    "stm32f3": "thumbv7em-none-eabihf",
-    "stm32f4": "thumbv7em-none-eabihf",
-    "stm32f7": "thumbv7em-none-eabihf",
-    "stm32h7": "thumbv7em-none-eabihf",
-    "stm32l0": "thumbv6m-none-eabi",
-    "stm32l1": "thumbv7m-none-eabi",
-    "stm32l4": "thumbv7em-none-eabihf",
-    "stm32l5": "thumbv8m.main-none-eabi",
-    "stm32g0": "thumbv6m-none-eabi",
-    "stm32g4": "thumbv7em-none-eabihf",
-    "stm32mp1": "thumbv7em-none-eabihf",
-    "stm32wl": "thumbv7em-none-eabi",
-    "stm32wb": "thumbv7em-none-eabihf"
 }
 
 CARGO_TOML_TPL = """\

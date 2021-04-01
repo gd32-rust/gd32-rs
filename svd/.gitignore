@@ -1,4 +1,4 @@
-*.svd
+/*.svd
 *.svd.patched
 *.svd.formatted
 .extracted
