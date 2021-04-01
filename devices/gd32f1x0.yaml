@@ -44,9 +44,9 @@ _include:
  - ../peripherals/exti/exti_gd.yaml
  - ../peripherals/flash/flash_gd.yaml
  - ../peripherals/gpio/gpio_gd.yaml
- - ../peripherals/iwdg/fwdgt_gd.yaml
+ - ../peripherals/fwdgt/fwdgt_gd.yaml
  - ../peripherals/pwr/pmu_gd.yaml
- - ../peripherals/rcc/rcu_gd.yaml
+ - ../peripherals/rcu/rcu_gd.yaml
  - ../peripherals/tim/tim_advanced_gd.yaml
  - ../peripherals/tim/tim_basic_gd.yaml
  - ../peripherals/usart/usart_gd.yaml
