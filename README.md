@@ -30,7 +30,7 @@ peripheral access crates or "PACs".
 
 To view the generated code that makes up each crate, visit the
 [stm32-rs-nightlies](https://github.com/stm32-rs/stm32-rs-nightlies)
-repository, which is automatically rebuilt on every commit to stm32-rs master.
+repository, which is automatically rebuilt on every commit to stm32-rs main.
 The stm32-rs repository contains the patches to the underlying SVD files and
 the tooling to generate the crates.
 
@@ -73,7 +73,7 @@ devices should be supported to some level.
 
 ## Using Latest "Nightly" Builds
 
-Whenever the master branch of this repository is updated, all device crates are
+Whenever the main branch of this repository is updated, all device crates are
 built and deployed to the
 [stm32-rs-nightlies](https://github.com/stm32-rs/stm32-rs-nightlies)
 repository. You can use this in your `Cargo.toml`:

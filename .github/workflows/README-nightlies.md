@@ -1,7 +1,7 @@
 # STM32 Peripheral Access Crates - Nightly Builds
 
 This repository contains automated builds of the [stm32-rs] crates, rebuilt
-whenever a PR is merged to the master branch. Consult the [stm32-rs] README
+whenever a PR is merged to the main branch. Consult the [stm32-rs] README
 for full details.
 
 [stm32-rs]: https://github.com/stm32-rs/stm32-rs

@@ -2,14 +2,14 @@ name: build nightlies
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
     name: Build
     runs-on: ubuntu-18.04
     steps:
-      - name: Checkout master
+      - name: Checkout main
         uses: actions/checkout@v2
         with:
           path: stm32-rs
@@ -71,6 +71,6 @@ jobs:
           git add .
           git config user.name "stm32-rs builder"
           git config user.email "action@github.com"
-          git commit -m "stm32-rs master $COMMIT"
+          git commit -m "stm32-rs main $COMMIT"
           git remote add origin git@github.com:stm32-rs/stm32-rs-nightlies
-          git push --force origin master
+          git push --force origin main

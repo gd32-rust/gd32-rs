@@ -2,14 +2,14 @@ name: build gh-pages
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build_html:
     name: Build HTML
     runs-on: ubuntu-18.04
     steps:
-      - name: Checkout master
+      - name: Checkout main
         uses: actions/checkout@v2
         with:
           persist-credentials: false

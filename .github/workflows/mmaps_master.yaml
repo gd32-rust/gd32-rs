@@ -3,7 +3,7 @@ name: build mmaps
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
@@ -36,5 +36,5 @@ jobs:
           git config user.name "stm32-rs builder"
           git config user.email "action@github.com"
           git add .
-          git commit --allow-empty -m "stm32-rs master $COMMIT"
-          git push origin master
+          git commit --allow-empty -m "stm32-rs main $COMMIT"
+          git push origin main

@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-18.04
     continue-on-error: true
     steps:
-      - name: Checkout master
+      - name: Checkout main
         uses: actions/checkout@v2
         with:
-          path: master
+          path: main
       - name: Checkout pull request
         uses: actions/checkout@v2
         with:
@@ -39,7 +39,7 @@ jobs:
           echo "BRANCH=$BRANCH" >> $GITHUB_ENV
 
           # Use the PR's YAML files to rebuild mmaps
-          cd ../master
+          cd ../main
           rm -rf devices peripherals
           mv ../pr/devices ../pr/peripherals .
           make -j2 mmaps
