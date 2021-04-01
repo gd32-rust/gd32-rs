@@ -1,0 +1,8 @@
+# This is the list of gd32f1x0-hal's significant contributors.
+#
+# This does not necessarily list everyone who has contributed code, especially since many employees
+# of one corporation may be contributing. To see the full list of contributors, see the revision
+# history in source control. In particular, much of the code is based on the stm32-rs repository,
+# so the various contributors to that are also authors of this crate.
+Adam Greig
+Google LLC
