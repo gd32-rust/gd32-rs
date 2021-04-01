@@ -1,3 +1,7 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
 # This file contains a table of all supported GD32 microcontrollers.
 #
 # It lists them by family (which corresponds to a crate),
