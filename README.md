@@ -70,7 +70,6 @@ features = ["gd32f1x0", "rt"]
 The nightlies should always build and be as stable as the latest release, but
 contain the latest patches and updates.
 
-
 ## Generating Device Crates / Building Locally
 
 * Install `svd2rust`: `cargo install svd2rust`
@@ -148,7 +147,6 @@ fields with names ending in 'E' or 'D' it additionally generates sample
 Please see the [svdtools](https://github.com/stm32-rs/svdtools) documentation
 for full details of the patch file format.
 
-
 ### Style Guide
 
 * Enumerated values should be named in the past tense ("enabled", "masked",
@@ -175,6 +173,10 @@ $ git push origin vX.X.X
 $ for f in gd32f1; cd $f; pwd; cargo publish --allow-dirty; cd ..; end
 ```
 
+## Disclaimer
+
+This is not an officially supported Google product.
+
 ## License
 
 Licensed under either of
@@ -189,3 +191,5 @@ at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
+
+See the [contributing guide](CONTRIBUTING.md) for more details.
