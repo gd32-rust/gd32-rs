@@ -85,8 +85,8 @@ RCU:
       Div1: [0, "CK_AHB"]
       Div2: [4, "CK_AHB divided by 2"]
       Div4: [5, "CK_AHB divided by 4"]
-      Div6: [6, "CK_AHB divided by 8"]
-      Div8: [7, "CK_AHB divided by 16"]
+      Div8: [6, "CK_AHB divided by 8"]
+      Div16: [7, "CK_AHB divided by 16"]
     AHBPSC:
       Div1: [0, "CK_SYS"]
       Div2: [8, "CK_SYS divided by 2"]
