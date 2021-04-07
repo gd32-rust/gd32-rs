@@ -45,12 +45,12 @@ RCU:
       Plus15: [1, "Add 15 to the value of PLLMF"]
     CKOUTSEL:
       None: [0, "No clock selected"]
-      HSI14M: [1, "Internal 14 MHz RC oscillator clock selected"]
+      IRC14M: [1, "Internal 14 MHz RC oscillator clock selected"]
       LSI40K: [2, "Internal 40 kHz RC oscillator clock selected"]
       LXTAL: [3, "External low speed oscillator clock selected"]
       SYSCLK: [4, "System clock selected"]
-      HSI8M: [5, "Internal RC 8 MHz (HSI) oscillator clock selected"]
-      HSE: [6, "External 4-32 MHz (HSE) oscillator clock selected"]
+      IRC8M: [5, "Internal RC 8 MHz (HSI) oscillator clock selected"]
+      HXTAL: [6, "External 4-32 MHz (HSE) oscillator clock selected"]
       PLL: [7, "PLL clock selected (divided by 1 or 2, depending on PLLDV)"]
     USBDPSC:
       DIV1_5: [0, "PLL clock is divided by 1.5"]
