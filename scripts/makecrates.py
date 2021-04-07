@@ -73,7 +73,7 @@ SRC_LIB_RS_TPL = """\
 //!
 //! This crate supports all {family} devices; for the complete list please
 //! see:
-//! [{crate}](https://github.com/qwandor/gd32-rs/tree/main/{crate})
+//! [{crate}](https://github.com/qwandor/gd32-rs-nightlies/tree/main/{crate})
 //!
 //! Due to doc build limitations, not all devices may be shown on docs.rs;
 //! a representative few have been selected instead. For a complete list of
