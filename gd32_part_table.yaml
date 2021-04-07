@@ -16,7 +16,7 @@
 
 
 gd32f1:
-  gd32f1x0:
+  gd32f130:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/value-line/
     rm: GD32F1x0
     rm_title: GD32F1x0
@@ -24,5 +24,11 @@ gd32f1:
     members:
       - GD32F130
       - GD32F150
+  gd32f170:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/value-line/
+    rm: GD32F1x0
+    rm_title: GD32F1x0
+    rm_url: https://www.gigadevice.com/manual/gd32f190xxxx-user-manual/
+    members:
       - GD32F170
       - GD32F190

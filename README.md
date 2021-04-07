@@ -34,7 +34,7 @@ In your own project's `Cargo.toml`:
 ```toml
 [dependencies.gd32f1]
 version = "0.1.0"
-features = ["gd32f1x0", "rt"]
+features = ["gd32f130", "rt"]
 ```
 
 The `rt` feature is optional but helpful. See
@@ -44,14 +44,14 @@ details.
 Then, in your code:
 
 ```rust
-use gd32f1::gd32f1x0;
+use gd32f1::gd32f130;
 
-let mut peripherals = gd32f1x0::Peripherals::take().unwrap();
+let mut peripherals = gd32f130::Peripherals::take().unwrap();
 ```
 
 Refer to `svd2rust` [documentation](https://docs.rs/svd2rust) for further usage.
 
-Replace `gd32f1` and `gd32f1x0` with your own device; see the individual
+Replace `gd32f1` and `gd32f130` with your own device; see the individual
 crate READMEs for the complete list of supported devices.
 
 ## Using Latest "Nightly" Builds
@@ -64,7 +64,7 @@ repository. You can use this in your `Cargo.toml`:
 ```toml
 [dependencies.gd32f1]
 git = "https://github.com/qwandor/gd32-rs-nightlies"
-features = ["gd32f1x0", "rt"]
+features = ["gd32f130", "rt"]
 ```
 
 The nightlies should always build and be as stable as the latest release, but
@@ -131,7 +131,7 @@ Check out the full list of supported devices [here](https://gd32-rs.github.io/gd
 * You'll need to run `svd/extract.sh` at least once to pull the SVDs out.
 * Edit the device or peripheral YAML (see below for format).
 * Run `make` to rebuild all the crates using `svd patch` and `svd2rust`.
-* Test your new stuff compiles: `cd gd32f1; cargo build --features gd32f1x0`
+* Test your new stuff compiles: `cd gd32f1; cargo build --features gd32f130`
 
 If you've added a new peripheral, consider using the `matchperipherals.py`
 script to see which devices it would cleanly apply to.

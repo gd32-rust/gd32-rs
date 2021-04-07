@@ -13,7 +13,7 @@ Edit your `Cargo.toml`:
 ```toml
 [dependencies.gd32f1]
 git = "https://github.com/qwandor/gd32-rs-nightlies"
-features = ["gd32f1x0", "rt"]
+features = ["gd32f130", "rt"]
 ```
 
 The nightlies should always build and be as stable as the latest release, but

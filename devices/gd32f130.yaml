@@ -2,44 +2,10 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-_svd: ../svd/gd32f1x0.svd
-
-# Fix typos in field names
-TIMER0:
-  SMCFG:
-    _modify:
-      SCM1:
-        name: "SMC1"
-FMC:
-  STAT:
-    _modify:
-      END:
-        name: "ENDF"
-  CTL:
-    _modify:
-      OBWE:
-        name: "OBWEN"
-  OBSTAT:
-    _modify:
-      OBER:
-        name: "OBERR"
-DMA:
-  "CH*CTL0":
-    _modify:
-      TM:
-        name: "DIR"
-CMP:
-  CS:
-    _modify:
-      CMP0S:
-        name: "CMP0SW"
-TIMER15:
-  CCHP:
-    _modify:
-      PORT:
-        name: "PROT"
+_svd: ../svd/gd32f130.svd
 
 _include:
+ - common_patches/gd32f1x0.yaml
  - ../peripherals/adc/adc_gd.yaml
  - ../peripherals/crc/crc_gd.yaml
  - ../peripherals/comp/cmp_gd.yaml
@@ -51,6 +17,7 @@ _include:
  - ../peripherals/fwdgt/fwdgt_gd.yaml
  - ../peripherals/pwr/pmu_gd.yaml
  - ../peripherals/rcu/rcu_gd.yaml
+ - ../peripherals/rcu/rcu_low.yaml
  - ../peripherals/tim/tim_advanced_gd.yaml
  - ../peripherals/tim/tim_basic_gd.yaml
  - ../peripherals/usart/usart_gd.yaml

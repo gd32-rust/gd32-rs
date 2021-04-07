@@ -20,7 +20,7 @@ VERSION = "0.1.0"
 SVD2RUST_VERSION = "0.17.0"
 
 CRATE_DOC_FEATURES = {
-    "gd32f1": ["rt", "gd32f1x0"],
+    "gd32f1": ["rt", "gd32f130", "gd32f170"],
 }
 
 CRATE_DOC_TARGETS = {

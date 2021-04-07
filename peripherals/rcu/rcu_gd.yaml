@@ -245,9 +245,6 @@ RCU:
       Div15: [14, "HXTAL input to PLL divided by 15"]
       Div16: [15, "HXTAL input to PLL divided by 16"]
   CFG2:
-    ADCSEL:
-      IRC14M: [0, "IRC14M selected as ADC clock source"]
-      APB2: [1, "APB2 divided by prescaler selected as ADC clock source"]
     CECSEL:
       IRC8M_Div244: [0, "IRC8M clock divided by 244 selected as CEC clock source"]
       LXTAL: [1, "LXTAL clock selected as CEC clock source"]

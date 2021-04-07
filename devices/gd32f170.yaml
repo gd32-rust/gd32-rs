@@ -1,0 +1,30 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32f170.svd
+
+RCU:
+  CFG3:
+    _modify:
+      CKOUT1SRC:
+        name: "CKOUT1SEL"
+
+_include:
+ - common_patches/gd32f1x0.yaml
+ - ../peripherals/adc/adc_gd.yaml
+ - ../peripherals/crc/crc_gd.yaml
+ - ../peripherals/comp/cmp_gd.yaml
+ - ../peripherals/dbg/dbg_gd.yaml
+ - ../peripherals/dma/dma_gd.yaml
+ - ../peripherals/exti/exti_gd.yaml
+ - ../peripherals/flash/flash_gd.yaml
+ - ../peripherals/gpio/gpio_gd.yaml
+ - ../peripherals/fwdgt/fwdgt_gd.yaml
+ - ../peripherals/pwr/pmu_gd.yaml
+ - ../peripherals/rcu/rcu_gd.yaml
+ - ../peripherals/rcu/rcu_high.yaml
+ - ../peripherals/tim/tim_advanced_gd.yaml
+ - ../peripherals/tim/tim_basic_gd.yaml
+ - ../peripherals/usart/usart_gd.yaml
+ - ../peripherals/wwdg/wwdg_gd.yaml

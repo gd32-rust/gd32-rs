@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+RCU:
+  CFG2:
+    ADCSEL:
+      IRC14M: [0, "IRC14M selected as ADC clock source"]
+      APB2: [1, "APB2 divided by prescaler selected as ADC clock source"]

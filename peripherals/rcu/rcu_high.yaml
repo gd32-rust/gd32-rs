@@ -1,0 +1,30 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+RCU:
+  CFG2:
+    IRC28MDIV:
+      Div2: [0, "IRC28M is divided by 2 for ADC clock"]
+      Div1: [1, "IRC28M is not divided for ADC clock"]
+    ADCSEL:
+      IRC28M: [0, "IRC28M selected as ADC clock source, possibly divided by 2"]
+      APB2: [1, "APB2 divided by prescaler selected as ADC clock source"]
+  CFG3:
+    CKOUT1DIV: [0, 62]
+    CKOUT1SEL:
+      None: [0, "No clock selected"]
+      IRC28M: [1, "Internal 28 MHz RC oscillator clock selected"]
+      LSI40K: [2, "Internal 40 kHz RC oscillator clock selected"]
+      LXTAL: [3, "External low speed oscillator clock selected"]
+      SYSCLK: [4, "System clock selected"]
+      IRC8M: [5, "Internal RC 8 MHz (HSI) oscillator clock selected"]
+      HXTAL: [6, "External 4-32 MHz (HSE) oscillator clock selected"]
+      PLL: [7, "PLL clock selected (divided by 1 or 2, depending on PLLDV)"]
+  ADDEN:
+    I2C2EN:
+      Disabled: [0, "The selected clock is disabled"]
+      Enabled: [1, "The selected clock is enabled"]
+  ADDRST:
+    I2C2RST:
+      Reset: [1, "Reset the selected module"]
