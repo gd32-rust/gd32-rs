@@ -16,7 +16,7 @@ import argparse
 import re
 import yaml
 
-VERSION = "0.13.0"
+VERSION = "0.1.0"
 SVD2RUST_VERSION = "0.17.0"
 
 CRATE_DOC_FEATURES = {
@@ -153,7 +153,7 @@ fn main() {{
 def read_device_table():
     path = os.path.join(
         os.path.abspath(os.path.split(__file__)[0]), os.pardir,
-        "stm32_part_table.yaml")
+        "gd32_part_table.yaml")
     with open(path, encoding='utf-8') as f:
         table = yaml.safe_load(f)
     return table
@@ -162,7 +162,7 @@ def read_device_table():
 def make_device_rows(table, family):
     rows = []
     for device, dt in table[family].items():
-        links = "[{}]({}), [st.com]({})".format(
+        links = "[{}]({}), [gigadevice.com]({})".format(
             dt['rm'], dt['rm_url'], dt['url'])
         members = ", ".join(m for m in dt['members'])
         rows.append("| {} | {} | {} |".format(device, members, links))
@@ -191,11 +191,7 @@ def main(devices_path, yes, families):
 
     for path in glob.glob(os.path.join(devices_path, "*.yaml")):
         yamlfile = os.path.basename(path)
-        family = re.match(r'(gd|stm)32[a-z]+[0-9]', yamlfile)[0]
-        if family.startswith('stm32wl'):
-            family = 'stm32wl'
-        if family.startswith('stm32wb'):
-            family = 'stm32wb'
+        family = re.match(r'gd32[a-z]+[0-9]', yamlfile)[0]
         device = os.path.splitext(yamlfile)[0].lower()
         if len(families) == 0 or family in families:
             if family not in devices:
