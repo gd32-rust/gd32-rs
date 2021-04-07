@@ -64,7 +64,7 @@ jobs:
           cd gd32-rs
           COMMIT=$(git rev-parse HEAD)
           make -j2 form
-          mv gd32{f,g,h,l,mp,wl,wb}* ../nightly
+          mv gd32f* ../nightly
           cp .github/workflows/README-nightlies.md ../nightly/README.md
           cd ../nightly
           git init
