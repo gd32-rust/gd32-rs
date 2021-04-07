@@ -67,6 +67,7 @@ jobs:
           mv gd32f* ../nightly
           cp .github/workflows/README-nightlies.md ../nightly/README.md
           cd ../nightly
+          git config --global init.defaultBranch main
           git init
           git add .
           git config user.name "gd32-rs builder"
