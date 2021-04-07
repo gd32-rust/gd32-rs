@@ -1,0 +1,28 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+ADC:
+  CTL0:
+    DRES:
+      Bits12: [0, "12 bit resolution"]
+      Bits10: [1, "10 bit resolution"]
+      Bits8: [2, "8 bit resolution"]
+      Bits6: [3, "6 bit resolution"]
+  OVSAMPCTL:
+    TOVS:
+      Consecutive: [0, "All oversampled conversions are done consecutively"]
+      Individual: [1, "Each oversampled conversion needs a trigger"]
+    OVSS: [0, 8]
+    OVSR:
+      Times2: [0, "2x"]
+      Times4: [1, "4x"]
+      Times8: [2, "8x"]
+      Times16: [3, "16x"]
+      Times32: [4, "32x"]
+      Times64: [5, "64x"]
+      Times128: [6, "128x"]
+      Times256: [7, "256x"]
+    OVSEN:
+      Disabled: [0, "Oversampling disabled"]
+      Enabled: [1, "Oversampling enabled"]

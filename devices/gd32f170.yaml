@@ -13,6 +13,7 @@ RCU:
 _include:
  - common_patches/gd32f1x0.yaml
  - ../peripherals/adc/adc_gd.yaml
+ - ../peripherals/adc/adc_high.yaml
  - ../peripherals/crc/crc_gd.yaml
  - ../peripherals/comp/cmp_gd.yaml
  - ../peripherals/dbg/dbg_gd.yaml
