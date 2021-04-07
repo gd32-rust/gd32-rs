@@ -140,6 +140,12 @@ RCU:
     HXTALSTBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
+    IRC8MSTBIE:
+      Disabled: [0, "Interrupt disabled"]
+      Enabled: [1, "Interrupt enabled"]
+    LXTALSTBIE:
+      Disabled: [0, "Interrupt disabled"]
+      Enabled: [1, "Interrupt enabled"]
     IRC40KSTBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
@@ -206,7 +212,7 @@ RCU:
       "Off": [0, "LXTAL oscillator Off"]
       "On": [1, "LXTAL oscillator On"]
   RSTSCK:
-    LPRSTF,WWDFTRSTF,FWDFTRSTF,SWRSTF,PORRSTF,EPRSTF,OBLRSTF,V12RSTF:
+    LPRSTF,WWDGTRSTF,FWDGTRSTF,SWRSTF,PORRSTF,EPRSTF,OBLRSTF,V12RSTF:
       _read:
         NoReset: [0, "No reset has occured"]
         Reset: [1, "A reset has occured"]

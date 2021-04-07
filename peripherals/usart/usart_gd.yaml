@@ -97,6 +97,12 @@
     CKEN:
       Disabled: [0, "CK pin disabled"]
       Enabled: [1, "CK pin enabled"]
+    CPL:
+      NotInverted: [0, "Steady low value on CK pin outside tranmission window"]
+      Inverted: [1, "Steady high value on CK pin outside tranmission window"]
+    CPH:
+      First: [0, "The first clock transition is the first data capture edge"]
+      Second: [1, "The second clock transition is the first data capture edge"]
     CLEN:
       NotOutput: [0, "The clock pulse of the last data bit is not output to the CK pin"]
       Output: [1, "The clock pulse of the last data bit is output to the CK pin"]
