@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+DBG:
+  CTL0:
+    "CAN*_HOLD":
+      Continue: [0, "Continue running CAN as usual"]
+      Stop: [1, "Hold the CAN for debug when the core is halted"]
