@@ -65,8 +65,8 @@ TIMER1:
       Toggle: [3, "OxCPRE toggles when CNT=CHyCV"]
       ForceInactive: [4, "OxCPRE is forced low"]
       ForceActive: [5, "OxCPRE is forced high"]
-      PwmMode1: [6, "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active"]
-      PwmMode2: [7, "Inversely to PwmMode1"]
+      PwmMode0: [6, "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active"]
+      PwmMode1: [7, "Inversely to PwmMode0"]
     "CH?COMSEN":
       Disabled: [0, "Preload register on CHyCV disabled. New values written to CHyCV are taken into account immediately"]
       Enabled: [1, "Preload register on CHyCV enabled. Preload value is loaded into active register on each update event"]
