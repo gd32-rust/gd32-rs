@@ -4,6 +4,7 @@
 
 - GD32F1x0
   - Fixed TIMER PWM mode names.
+  - Added I2C peripheral.
 
 ## [0.1.0]
 
