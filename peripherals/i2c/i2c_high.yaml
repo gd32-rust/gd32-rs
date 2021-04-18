@@ -1,0 +1,32 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Extra I2C registers for GD32F170/GD32F190
+
+"I2C*":
+  SAMCS:
+    RFR:
+    RFF:
+    TFR:
+    TFF:
+    RXF:
+    TXF:
+    RFRIE:
+      Disabled: [0, "Rxframe rise interrupt disabled"]
+      Enabled: [1, "Rxframe rise interrupt enabled"]
+    RFFIE:
+      Disabled: [0, "Rxframe fall interrupt disabled"]
+      Enabled: [1, "Rxframe fall interrupt enabled"]
+    TFRIE:
+      Disabled: [0, "Txframe rise interrupt disabled"]
+      Enabled: [1, "Txframe rise interrupt enabled"]
+    TFFIE:
+      Disabled: [0, "Txframe fall interrupt disabled"]
+      Enabled: [1, "Txframe fall interrupt enabled"]
+    STOEN:
+      Disabled: [0, "SAM_V interface timeout detect disabled"]
+      Enabled: [1, "SAM_V interface timeout detect enabled"]
+    SAMEN:
+      Disabled: [0, "SAM_V interface disabled"]
+      Enabled: [1, "SAM_V interface enabled"]

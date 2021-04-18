@@ -36,3 +36,18 @@ TIMER15:
     _modify:
       PORT:
         name: "PROT"
+"I2C*":
+  CTL0:
+    _modify:
+      DISSTRC:
+        name: "SS"
+  STAT0:
+    _modify:
+      BE:
+        name: "BERR"
+  STAT1:
+    _modify:
+      ECV:
+        name: "PECV"
+      TRS:
+        name: "TR"
