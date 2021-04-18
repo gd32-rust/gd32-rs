@@ -1,0 +1,151 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"SPI*":
+  CTL0:
+    BDEN:
+      Unidirectional: [0, "2-line unidirectional data mode selected"]
+      Bidirectional: [1, "1-line bidirectional data mode selected"]
+    BDOEN:
+      ReceiveOnly: [0, "Receive-only mode"]
+      TransmitOnly: [1, "Transmit-only mode"]
+    CRCEN:
+      Disabled: [0, "CRC calculation disabled"]
+      Enabled: [1, "CRC calculation enabled"]
+    CRCNT:
+      Data: [0, "Next transmit value is data from Tx buffer"]
+      CRC: [1, "Next transmit value is CRC value from TCRC"]
+    FF16:
+      EightBit:
+        [0, "8-bit data frame format is selected for transmission/reception"]
+      SixteenBit:
+        [1, "16-bit data frame format is selected for transmission/reception"]
+    RO:
+      FullDuplex: [0, "Full duplex (Transmit and receive)"]
+      ReceiveOnly: [1, "Output disabled (Receive-only mode)"]
+    SWNSSEN:
+      Hardware: [0, "Software slave management disabled"]
+      Software: [1, "Software slave management enabled"]
+    SWNSS:
+      SlaveSelected: [0, "NSS is pulled low"]
+      SlaveNotSelected: [1, "NSS is pulled high"]
+    LF:
+      MSBFirst: [0, "Data is transmitted/received with the MSB first"]
+      LSBFirst: [1, "Data is transmitted/received with the LSB first"]
+    SPIEN:
+      Disabled: [0, "Peripheral disabled"]
+      Enabled: [1, "Peripheral enabled"]
+    PSC:
+      Div2: [0, "PCLK / 2"]
+      Div4: [1, "PCLK / 4"]
+      Div8: [2, "PCLK / 8"]
+      Div16: [3, "PCLK / 16"]
+      Div32: [4, "PCLK / 32"]
+      Div64: [5, "PCLK / 64"]
+      Div128: [6, "PCLK / 128"]
+      Div256: [7, "PCLK / 256"]
+    MSTMOD:
+      Slave: [0, "Slave configuration"]
+      Master: [1, "Master configuration"]
+    CKPL:
+      IdleLow: [0, "CLK pulled low when idle"]
+      IdleHigh: [1, "CLK pulled high when idle"]
+    CKPH:
+      FirstEdge:
+        [0, "The first clock transition is the first data capture edge"]
+      SecondEdge:
+        [1, "The second clock transition is the first data capture edge"]
+  CTL1:
+    TBEIE:
+      Disabled: [0, "TBE interrupt disabled"]
+      Enabled: [1, "TBE interrupt enabled"]
+    RBNEIE:
+      Disabled: [0, "RBNE interrupt disabled"]
+      Enabled: [1, "RBNE interrupt enabled"]
+    ERRIE:
+      Disabled: [0, "Error interrupt disabled"]
+      Enabled: [1, "Error interrupt enabled"]
+    NSSDRV:
+      Disabled: [0, "NSS output is disabled in master mode"]
+      Enabled: [1, "NSS output is enabled in master mode"]
+    DMATEN:
+      Disabled: [0, "Tx buffer DMA disabled"]
+      Enabled: [1, "Tx buffer DMA enabled"]
+    DMAREN:
+      Disabled: [0, "Rx buffer DMA disabled"]
+      Enabled: [1, "Rx buffer DMA enabled"]
+  STAT:
+    TRANS:
+      Idle: [0, "SPI or I2S is idle"]
+      Busy: [1, "SPI or I2S is currently transmitting or receiving"]
+    RXORERR:
+      NoOverrun: [0, "No overrun occurred"]
+      Overrun: [1, "Overrun occurred"]
+    CONFERR:
+      NoFault: [0, "No configuration fault occurred"]
+      Fault: [1, "Configuration fault occurred"]
+    CRCERR:
+      _read:
+        Match: [0, "CRC value received matches the SPIx_RXCRCR value"]
+        NoMatch: [1, "CRC value received does not match the SPIx_RXCRCR value"]
+      _write:
+        Clear: [0, "Clear CRC error"]
+    TXURERR:
+      NoUnderrun: [0, "No underrun occurred"]
+      Underrun: [1, "Underrun occurred"]
+    I2SCH:
+      Left: [0, "Channel left has to be transmitted or has been received"]
+      Right: [1, "Channel right has to be transmitted or has been received"]
+    TBE:
+      NotEmpty: [0, "Tx buffer not empty"]
+      Empty: [1, "Tx buffer empty"]
+    RBNE:
+      Empty: [0, "Rx buffer empty"]
+      NotEmpty: [1, "Rx buffer not empty"]
+  DATA:
+    DATA: [0, 0xFFFF]
+  CRCPOLY:
+    CRCPOLY: [0, 0xFFFF]
+  RCRC:
+    RCRC: [0, 0xFFFF]
+  TCRC:
+    TCRC: [0, 0xFFFF]
+  I2SCTL:
+    I2SSEL:
+      SPIMode: [0, "SPI mode is selected"]
+      I2SMode: [1, "I2S mode is selected"]
+    I2SEN:
+      Disabled: [0, "I2S peripheral is disabled"]
+      Enabled: [1, "I2S peripheral is enabled"]
+    I2SOPMOD:
+      SlaveTx: [0, "Slave - transmit"]
+      SlaveRx: [1, "Slave - receive"]
+      MasterTx: [2, "Master - transmit"]
+      MasterRx: [3, "Master - receive"]
+    PCMSMOD:
+      Short: [0, "Short frame synchronisation"]
+      Long: [1, "Long frame synchronisation"]
+    I2SSTD:
+      Philips: [0, "I2S Philips standard"]
+      MSB: [1, "MSB justified standard"]
+      LSB: [2, "LSB justified standard"]
+      PCM: [3, "PCM standard"]
+    CKPL:
+      IdleLow: [0, "I2S clock inactive state is low level"]
+      IdleHigh: [1, "I2S clock inactive state is high level"]
+    DTLEN:
+      SixteenBit: [0, "16-bit data length"]
+      TwentyFourBit: [1, "24-bit data length"]
+      ThirtyTwoBit: [2, "32-bit data length"]
+    CHLEN:
+      SixteenBit: [0, "16-bit wide"]
+      ThirtyTwoBit: [1, "32-bit wide"]
+  I2SPSC:
+    MCKOEN:
+      Disabled: [0, "Master clock output is disabled"]
+      Enabled: [1, "Master clock output is enabled"]
+    OF:
+      Even: [0, "Real divider value is DIV * 2"]
+      Odd: [1, "Real divider value is (DIV * 2) + 1"]
+    DIV: [1, 0xFF]

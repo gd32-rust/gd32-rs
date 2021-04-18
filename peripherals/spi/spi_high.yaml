@@ -1,0 +1,17 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Extra SPI registers for GD32F170/GD32F190
+
+"SPI*":
+  QCTL:
+    IO23_DRV:
+      Disabled: [0, "IO2 and IO3 are not driven in single wire mode"]
+      High: [1, "IO2 and IO3 are driven high in single wire mode"]
+    QRD:
+      Write: [0, "Quad wire write mode"]
+      Read: [1, "Quad wire read mode"]
+    QMOD:
+      Single: [0, "Single wire mode"]
+      Quad: [1, "Quad-SPI mode"]
