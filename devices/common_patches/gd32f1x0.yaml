@@ -51,3 +51,24 @@ TIMER15:
         name: "PECV"
       TRS:
         name: "TR"
+"SPI*":
+  STAT:
+    _modify:
+      CONFE:
+        name: "CONFERR"
+  _modify:
+    CPCPOLY:
+      name: "CRCPOLY"
+      displayName: "CRCPOLY"
+  CRCPOLY:
+    _modify:
+      CPR:
+        name: "CRCPOLY"
+  RCRC:
+    _modify:
+      RCR:
+        name: "RCRC"
+  TCRC:
+    _modify:
+      TCR:
+        name: "TCRC"
