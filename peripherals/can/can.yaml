@@ -1,0 +1,258 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"CAN*":
+  CTL:
+    DFZ:
+      Continue: [0, "Continue running CAN during debug"]
+      Stop: [1, "Stop CAN reception and transmission during debug hold"]
+    SWRST:
+      _read:
+        NotResetting: [0, "Finished resetting"]
+        Resetting: [1, "Reset in progress"]
+      _write:
+        Reset: [1, "Reset CAN"]
+    TTC:
+      Disabled: [0, "Disable time-triggered communication"]
+      Enabled: [1, "Enable time-triggered communication"]
+    ABOR:
+      Manual: [0, "Bus off state is set by software"]
+      Automatic: [1, "Bus off state is set automatically by hardware"]
+    AWU:
+      Manual: [0, "Sleep state is set by software"]
+      Automatic: [1, "Sleep state is set automatically by hardware"]
+    ARD:
+      Enabled: [0, "Enable automatic retransmission"]
+      Disabled: [1, "Disable automatic retransmission"]
+    RFOD:
+      Overwrite: [0, "Overwrite full receive FIFO with incoming frame"]
+      Discard: [1, "Discard incoming frame when receive FIFO is full"]
+    TFO:
+      Identifier: [0, "Order by identifier of the frame"]
+      FIFO: [1, "First in first out order"]
+    SLPWMOD:
+      Active: [0, "Disable sleep mode, bus activity detected"]
+      Sleep: [1, "Enable sleep mode"]
+    IWMOD:
+      Disabled: [0, "Disable initial working mode"]
+      Enabled: [1, "Enable initial working mode"]
+  STAT:
+    RXL:
+    LASTRX:
+    RS:
+      NotWorking: [0, "CAN is not working in receiving state"]
+      Working: [1, "CAN is working in receiving state"]
+    TS:
+      NotWorking: [0, "CAN is not working in transmitting state"]
+      Working: [1, "CAN is working in transmitting state"]
+    SLPIF:
+      _read:
+        Awake: [0, "CAN is not entering sleep working mode"]
+        Sleeping: [1, "CAN is entering sleep working mode"]
+      _write:
+        Clear: [1, "Clears flag"]
+    WUIF:
+      _read:
+        NoWakeup: [0, "No wakeup event"]
+        Wakeup: [1, "Wakeup event"]
+      _write:
+        Clear: [1, "Clears flag"]
+    ERRIF:
+      _read:
+        NoError: [0, "There was no error"]
+        Error: [1, "An error was detected"]
+      _write:
+        Clear: [1, "Clears flag"]
+    SLPWS:
+      Normal: [0, "CAN is not in sleep working mode"]
+      Sleeping: [1, "CAN is in sleep working mode"]
+    IWS:
+      Normal: [0, "CAN is not in initial working mode"]
+      Initial: [1, "CAN is in initial working mode"]
+  TSTAT:
+    "TMLS?":
+      NotLast: [0, "The mailbox doesn't have the last sending order"]
+      Last:
+        [
+          1,
+          "The mailbox has the last sending order with at least two frames pending",
+        ]
+    "TME?":
+      NotEmpty: [0, "Transmit mailbox not empty"]
+      Empty: [1, "Transmit mailbox is empty"]
+    NUM: [0, 2]
+    "MST?":
+      _read:
+        NotStop: [0, "Mailbox is not stopped, or is empty"]
+        Stop: [1, "Stop mailbox transmitting"]
+      _write:
+        Stop: [1, "Stop mailbox transmitting"]
+    "MTE?":
+      _read:
+        NoError: [0, "There was no error"]
+        Error: [1, "An error was detected"]
+      _write:
+        Clear: [1, "Clears error flag"]
+    "MAL?":
+      _read:
+        NoArbitrationLost: [0, "Arbitration was not lost"]
+        ArbitrationLost: [1, "Arbitration lost"]
+      _write:
+        Clear: [1, "Clears flag"]
+    "MTFNERR?":
+      _read:
+        FinishedWithError: [0, "Mailbox transmission finished with an error"]
+        FinishedNoError: [1, "Mailbox transmission finished with no error"]
+      _write:
+        Clear: [1, "Clears flag"]
+    "MTF?":
+      _read:
+        InProgress: [0, "Mailbox transmission still in progress"]
+        Finished: [1, "Mailbox transmission finished"]
+      _write:
+        Clear: [1, "Clears flag"]
+  "RFIFO?":
+    "RFD?":
+      _read:
+        Finished: [0, "Dequeuing done"]
+        InProgress: [1, "Dequeuing in progress"]
+      _write:
+        Start: [1, "Start dequeuing"]
+    "RFO?":
+      _read:
+        NotOverfull: [0, "Receive FIFO is not overfull"]
+        Overfull: [1, "Receive FIFO is overfull"]
+      _write:
+        Clear: [1, "Clears flag"]
+    "RFF?":
+      _read:
+        NotFull: [0, "Receive FIFO is not full"]
+        Full: [1, "Receive FIFO is full"]
+      _write:
+        Clear: [1, "Clears flag"]
+    "RFL?": [0, 3]
+  INTEN:
+    SLPWIE:
+      Disabled: [0, "Sleep working interrupt is disabled"]
+      Enabled: [1, "Sleep working interrupt is enabled"]
+    WIE:
+      Disabled: [0, "Wakeup interrupt is disabled"]
+      Enabled: [1, "Wakeup interrupt is enabled"]
+    ERRIE:
+      Disabled: [0, "Error interrupt is disabled"]
+      Enabled: [1, "Error interrupt is enabled"]
+    ERRNIE:
+      Disabled: [0, "Error number interrupt is disabled"]
+      Enabled: [1, "Error number interrupt is enabled"]
+    BOIE:
+      Disabled: [0, "Bus-off interrupt is disabled"]
+      Enabled: [1, "Bus-off interrupt is enabled"]
+    PERRIE:
+      Disabled: [0, "Passive error interrupt is disabled"]
+      Enabled: [1, "Passive error interrupt is enabled"]
+    WERRIE:
+      Disabled: [0, "Warning error interrupt is disabled"]
+      Enabled: [1, "Warning error interrupt is enabled"]
+    "RFOIE?":
+      Disabled: [0, "Receive FIFO overfull interrupt is disabled"]
+      Enabled: [1, "Receive FIFO overfull interrupt is enabled"]
+    "RFFIE?":
+      Disabled: [0, "Receive FIFO full interrupt is disabled"]
+      Enabled: [1, "Receive FIFO full interrupt is enabled"]
+    "RFNEIE?":
+      Disabled: [0, "Receive FIFO not empty interrupt is disabled"]
+      Enabled: [1, "Receive FIFO not empty interrupt is enabled"]
+    TMEIE:
+      Disabled: [0, "Transmit mailbox empty interrupt is disabled"]
+      Enabled: [1, "Transmit mailbox empty interrupt is enabled"]
+  ERR:
+    RECNT: [0, 0xFF]
+    TECNT: [0, 0xFF]
+    ERRN:
+      NoError: [0, "No Error"]
+      Stuff: [1, "Stuff Error"]
+      Form: [2, "Form Error"]
+      Ack: [3, "Acknowledgment Error"]
+      BitRecessive: [4, "Bit recessive Error"]
+      BitDominant: [5, "Bit dominant Error"]
+      Crc: [6, "CRC Error"]
+      Custom: [7, "Set by software"]
+    BOERR:
+      NoError: [0, "No bus-off error"]
+      Error: [1, "Bus-off error"]
+    PERR:
+      NoError: [0, "No passive error"]
+      Error: [1, "Passive error"]
+    WERR:
+      NoError: [0, "No warning error"]
+      Error: [1, "Warning error"]
+  BT:
+    SCMOD:
+      Normal: [0, "Normal operation"]
+      Silent: [1, "Silent Mode"]
+    LCMOD:
+      Disabled: [0, "Loop Back Mode disabled"]
+      Enabled: [1, "Loop Back Mode enabled"]
+    SJW: [0, 3]
+    "BS?": [0, 3]
+    BAUDPSC: [0, 0x400]
+  "TMI?,RFIFOMI?":
+    SFID:
+    EFID:
+    FF:
+      Standard: [0, "Standard format frame"]
+      Extended: [1, "Extended format frame"]
+    FT:
+      Data: [0, "Data frame"]
+      Remote: [1, "Remote frame"]
+  "TMI?":
+    TEN:
+      Disabled: [0, "Transmit disabled"]
+      Enabled: [1, "Transmit enabled"]
+  "TMP?":
+    TS: [0, 0xFFFF]
+    TSEN:
+      Disabled: [0, "Timestamp disabled"]
+      Enabled: [1, "Timestamp enabled"]
+    DLENC: [0, 0xF]
+  "TMDATA*":
+    "DB?": [0, 0xFF]
+  "RFIFOMP?":
+    TS: [0, 0xFFFF]
+    FI: [0, 0xFF]
+    DLENC: [0, 0xF]
+  "RFIFOMDATA*":
+    "DB?": [0, 0xFF]
+  FCTL:
+    HBC1F: [0, 28]
+    FLD:
+      Disabled: [0, "Filter lock disabled"]
+      Enabled: [1, "Filter lock enabled"]
+  FMCFG:
+    "FMOD*":
+      Mask: [0, "Mask mode"]
+      List: [1, "List mode"]
+  FSCFG:
+    "FS*":
+      Scale16: [0, "Filter with 16-bit scale"]
+      Scale32: [1, "Filter with 32-bit scale"]
+  FAFIFO:
+    "FAF*":
+      FIFO0: [0, "Filter associated with FIFO0"]
+      FIFO1: [1, "Filter associated with FIFO1"]
+  FW:
+    "FW*":
+      Disabled: [0, "Filter working disabled"]
+      Enabled: [1, "Filter working enabled"]
+  "F*DATA?":
+    "FD*": # Meaning is different in mask mode or list mode
+  PHYCTL:
+    POMOD:
+      LowSlope: [0, "Low slope mode"]
+      MiddleSlope: [1, "Middle slope mode"]
+      HighSlope: [2, "High slope mode"]
+      HighSpeed: [3, "High speed mode"]
+    PHYEN:
+      Disabled: [0, "CAN PHY disabled"]
+      Enabled: [1, "CAN PHY enabled"]

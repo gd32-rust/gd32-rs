@@ -6,6 +6,7 @@
   - Fixed TIMER PWM mode names.
   - Added I2C peripheral.
   - Added SPI peripheral.
+  - Added CAN peripheral.
 
 ## [0.1.0]
 
