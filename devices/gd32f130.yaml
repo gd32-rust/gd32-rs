@@ -5,22 +5,22 @@
 _svd: ../svd/gd32f130.svd
 
 _include:
- - common_patches/gd32f1x0.yaml
- - ../peripherals/adc/adc_gd.yaml
- - ../peripherals/crc/crc_gd.yaml
- - ../peripherals/comp/cmp_gd.yaml
- - ../peripherals/dbg/dbg_gd.yaml
- - ../peripherals/dma/dma_gd.yaml
- - ../peripherals/exti/exti_gd.yaml
- - ../peripherals/flash/flash_gd.yaml
- - ../peripherals/fwdgt/fwdgt_gd.yaml
- - ../peripherals/gpio/gpio_gd.yaml
- - ../peripherals/i2c/i2c.yaml
- - ../peripherals/pwr/pmu_gd.yaml
- - ../peripherals/rcu/rcu_gd.yaml
- - ../peripherals/rcu/rcu_low.yaml
- - ../peripherals/spi/spi.yaml
- - ../peripherals/tim/tim_advanced_gd.yaml
- - ../peripherals/tim/tim_basic_gd.yaml
- - ../peripherals/usart/usart_gd.yaml
- - ../peripherals/wwdg/wwdg_gd.yaml
+  - common_patches/gd32f1x0.yaml
+  - ../peripherals/adc/adc_gd.yaml
+  - ../peripherals/crc/crc_gd.yaml
+  - ../peripherals/comp/cmp_gd.yaml
+  - ../peripherals/dbg/dbg_gd.yaml
+  - ../peripherals/dma/dma_gd.yaml
+  - ../peripherals/exti/exti_gd.yaml
+  - ../peripherals/flash/flash_gd.yaml
+  - ../peripherals/fwdgt/fwdgt_gd.yaml
+  - ../peripherals/gpio/gpio_gd.yaml
+  - ../peripherals/i2c/i2c.yaml
+  - ../peripherals/pwr/pmu_gd.yaml
+  - ../peripherals/rcu/rcu_gd.yaml
+  - ../peripherals/rcu/rcu_low.yaml
+  - ../peripherals/spi/spi.yaml
+  - ../peripherals/tim/tim_advanced_gd.yaml
+  - ../peripherals/tim/tim_basic_gd.yaml
+  - ../peripherals/usart/usart_gd.yaml
+  - ../peripherals/wwdg/wwdg_gd.yaml
