@@ -1,0 +1,36 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+OPA_IVREF:
+  OPA_CTL:
+    "OPA?CALOUT":
+      NotTrimmed: [0, "The offset is not trimmed"]
+      Trimmed: [1, "The offset is trimmed, in calibration mode"]
+    OPA_RANGE:
+      Low: [0, "Low range, < 3.3 V"]
+      High: [1, "High range, > 3.3 V"]
+    "S?OPA?,T?OPA?":
+      Opened: [0, "Switch opened"]
+      Closed: [1, "Switch closed"]
+    "OPA?LPM":
+      Disabled: [0, "Low power mode disabled"]
+      Enabled: [1, "Low power mode enabled"]
+    "OPA?CAL_H":
+      Disabled: [0, "Offset calibration for N diff disabled"]
+      Enabled: [1, "Offset calibration for N diff enabled"]
+    "OPA?CAL_L":
+      Disabled: [0, "Offset calibration for P diff disabled"]
+      Enabled: [1, "Offset calibration for P diff enabled"]
+    "OPA?PD":
+      Enabled: [0, "OPA enabled"]
+      Disabled: [1, "OPA disabled"]
+  OPA_BT:
+    OT_USER:
+      Factory: [0, "Trim with factory-default values"]
+      User: [1, "Trim with user-programmed values"]
+    "OA?_TRIM_HIGH": [0, 0x1F]
+    "OA?_TRIM_LOW": [0, 0x1F]
+  OPA_LPBT:
+    "OA?_TRIM_LP_HIGH": [0, 0x1F]
+    "OA?_TRIM_LP_LOW": [0, 0x1F]

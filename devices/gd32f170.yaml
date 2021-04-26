@@ -31,6 +31,7 @@ _include:
   - ../peripherals/gpio/gpio_gd.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/i2c/i2c_high.yaml
+  - ../peripherals/opa/opa.yaml
   - ../peripherals/pwr/pmu_gd.yaml
   - ../peripherals/rcu/rcu_gd.yaml
   - ../peripherals/rcu/rcu_high.yaml
