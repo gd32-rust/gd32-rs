@@ -16,6 +16,7 @@ _include:
   - ../peripherals/fwdgt/fwdgt_gd.yaml
   - ../peripherals/gpio/gpio_gd.yaml
   - ../peripherals/i2c/i2c.yaml
+  - ../peripherals/ivref/ivref.yaml
   - ../peripherals/opa/opa.yaml
   - ../peripherals/pwr/pmu_gd.yaml
   - ../peripherals/rcu/rcu_gd.yaml
