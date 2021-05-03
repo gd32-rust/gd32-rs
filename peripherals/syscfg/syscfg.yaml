@@ -1,0 +1,124 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+SYSCFG:
+  CFG0:
+    PB9_HCCE:
+      LowCurrent: [0, "High current capability is disabled"]
+      HighCurrent:
+        [1, "High current capability is enabled, and speed control is bypassed"]
+    TIMER16_DMA_RMP:
+      Channel0: [0, "Timer 16 DMA requests are mapped to DMA channel 0"]
+      Channel1: [1, "Timer 16 DMA requests are remapped to DMA channel 1"]
+    TIMER15_DMA_RMP:
+      Channel2: [0, "Timer 15 DMA requests are mapped to DMA channel 2"]
+      Channel3: [1, "Timer 15 DMA requests are remapped to DMA channel 3"]
+    USART0_RX_DMA_RMP:
+      Channel2: [0, "USART0 RX DMA requests are mapped to DMA channel 2"]
+      Channel4: [1, "USART0 RX DMA requests are remapped to DMA channel 4"]
+    USART0_TX_DMA_RMP:
+      Channel1: [0, "USART0 TX DMA requests are mapped to DMA channel 1"]
+      Channel3: [1, "USART0 TX DMA requests are remapped to DMA channel 3"]
+    ADC_DMA_RMP:
+      Channel0: [0, "ADC DMA requests are mapped to DMA channel 0"]
+      Channel1: [1, "ADC DMA requests are remapped to DMA channel 1"]
+    BOOT_MODE:
+      Flash: [0, "Boot from main flash"]
+      SystemMemory: [1, "Boot from system memory"]
+      SRAM: [3, "Boot from embedded SRAM"]
+  CFG1:
+    SLCD_DECA: [0, 7]
+  EXTISS0:
+    EXTI3_SS:
+      PA3: [0, "PA3 pin"]
+      PB3: [1, "PB3 pin"]
+      PC3: [2, "PC3 pin"]
+    EXTI2_SS:
+      PA2: [0, "PA2 pin"]
+      PB2: [1, "PB2 pin"]
+      PC2: [2, "PC2 pin"]
+      PD2: [3, "PD2 pin"]
+    EXTI1_SS:
+      PA1: [0, "PA1 pin"]
+      PB1: [1, "PB1 pin"]
+      PC1: [2, "PC1 pin"]
+      PF1: [5, "PF1 pin"]
+    EXTI0_SS:
+      PA0: [0, "PA0 pin"]
+      PB0: [1, "PB0 pin"]
+      PC0: [2, "PC0 pin"]
+      PF0: [5, "PF0 pin"]
+  EXTISS1:
+    EXTI7_SS:
+      PA7: [0, "PA7 pin"]
+      PB7: [1, "PB7 pin"]
+      PC7: [2, "PC7 pin"]
+      PF7: [5, "PF7 pin"]
+    EXTI6_SS:
+      PA6: [0, "PA6 pin"]
+      PB6: [1, "PB6 pin"]
+      PC6: [2, "PC6 pin"]
+      PF6: [5, "PF6 pin"]
+    EXTI5_SS:
+      PA5: [0, "PA5 pin"]
+      PB5: [1, "PB5 pin"]
+      PC5: [2, "PC5 pin"]
+      PF5: [5, "PF5 pin"]
+    EXTI4_SS:
+      PA4: [0, "PA4 pin"]
+      PB4: [1, "PB4 pin"]
+      PC4: [2, "PC4 pin"]
+      PF4: [5, "PF4 pin"]
+  EXTISS2:
+    EXTI11_SS:
+      PA11: [0, "PA11 pin"]
+      PB11: [1, "PB11 pin"]
+      PC11: [2, "PC11 pin"]
+    EXTI10_SS:
+      PA10: [0, "PA10 pin"]
+      PB10: [1, "PB10 pin"]
+      PC10: [2, "PC10 pin"]
+    EXTI9_SS:
+      PA9: [0, "PA9 pin"]
+      PB9: [1, "PB9 pin"]
+      PC9: [2, "PC9 pin"]
+    EXTI8_SS:
+      PA8: [0, "PA8 pin"]
+      PB8: [1, "PB8 pin"]
+      PC8: [2, "PC8 pin"]
+  EXTISS3:
+    EXTI15_SS:
+      PA15: [0, "PA15 pin"]
+      PB15: [1, "PB15 pin"]
+      PC15: [2, "PC15 pin"]
+    EXTI14_SS:
+      PA14: [0, "PA14 pin"]
+      PB14: [1, "PB14 pin"]
+      PC14: [2, "PC14 pin"]
+    EXTI13_SS:
+      PA13: [0, "PA13 pin"]
+      PB13: [1, "PB13 pin"]
+      PC13: [2, "PC13 pin"]
+    EXTI12_SS:
+      PA12: [0, "PA12 pin"]
+      PB12: [1, "PB12 pin"]
+      PC12: [2, "PC12 pin"]
+  CFG2:
+    SRAM_PCEF:
+      _read:
+        NoError: [0, "No SRAM parity check error detected"]
+        Error: [1, "SRAM parity check error detected"]
+      _write:
+        Clear: [1, "Clear error flag"]
+    LVD_LOCK:
+      Unlocked: [0, "The LVD interrupt is disconnected from the break input"]
+      Locked: [1, "The LVD interrupt is connected to the break input"]
+    SRAM_PARITY_ERROR_LOCK:
+      Unlocked:
+        [0, "The SRAM parity check error is disconnected from the break input"]
+      Locked: [1, "The SRAM parity check error is connected to the break input"]
+    LOCKUP_LOCK:
+      Unlocked:
+        [0, "The Cortex-M3 LOCKUP output is disconnected from the break input"]
+      Locked: [1, "The Cortex-M3 LOCKUP output is connected to the break input"]

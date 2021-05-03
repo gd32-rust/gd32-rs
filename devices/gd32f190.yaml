@@ -29,6 +29,7 @@ _include:
   - ../peripherals/rcu/rcu_high.yaml
   - ../peripherals/spi/spi.yaml
   - ../peripherals/spi/spi_high.yaml
+  - ../peripherals/syscfg/syscfg.yaml
   - ../peripherals/tim/tim_advanced_gd.yaml
   - ../peripherals/tim/tim_basic_gd.yaml
   - ../peripherals/usart/usart_gd.yaml
