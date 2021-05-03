@@ -7,7 +7,6 @@ _include:
   - timer_advanced.yaml
   - timer_basic.yaml
   - timer_break.yaml
-  - timer_compare.yaml
   - timer_complementary.yaml
   - timer_dma.yaml
   - timer_general.yaml
