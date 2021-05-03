@@ -20,6 +20,23 @@
     CCSE:
       NotPreloaded: [0, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are disabled"]
       Preloaded: [1, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are enabled"]
+  DMAINTEN:
+    CMTIE:
+      Disabled: [0, "Commutation interrupt disabled"]
+      Enabled: [1, "Commutation interrupt enabled"]
+  INTF:
+    CMTIF:
+      Clear: [0, "No channel commutation event occured"]
+      Commutation: [1, "Channel commutation event occurred"]
+  SWEVG:
+    CMTG:
+      Update:
+        [
+          1,
+          "Generate a channel commutation event, updating capture/compare control registers based on the value of CCSE",
+        ]
+  CREP:
+    CREP: [0, 0xFF]
 
 "TIMER0,TIMER14":
   CTL1:

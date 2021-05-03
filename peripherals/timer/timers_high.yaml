@@ -2,8 +2,14 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-TIMER13:
+"TIMER1[3-6]":
   CFG:
     CHVSEL:
       Normal: [0, "Normal behaviour"]
       IgnoreSame: [1, "Duplicate writes to CHxVAL are ignored"]
+
+"TIMER1[5-6]":
+  CFG:
+    OUTSEL:
+      Normal: [0, "Normal behaviour"]
+      Disabled: [1, "If POEN and IOS is 0 the output is disabled"]
