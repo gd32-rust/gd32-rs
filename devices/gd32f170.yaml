@@ -30,5 +30,6 @@ _include:
   - ../peripherals/spi/spi_high.yaml
   - ../peripherals/syscfg/syscfg.yaml
   - ../peripherals/timer/timers.yaml
+  - ../peripherals/timer/timers_high.yaml
   - ../peripherals/usart/usart.yaml
   - ../peripherals/wwdg/wwdg.yaml

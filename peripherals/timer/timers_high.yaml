@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+TIMER13:
+  CFG:
+    CHVSEL:
+      Normal: [0, "Normal behaviour"]
+      IgnoreSame: [1, "Duplicate writes to CHxVAL are ignored"]

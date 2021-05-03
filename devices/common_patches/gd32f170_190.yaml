@@ -14,3 +14,8 @@ RCU:
     _modify:
       BUADPSC:
         name: "BAUDPSC"
+TIMER13:
+  CFG:
+    _modify:
+      CCSEL:
+        name: "CHVSEL"
