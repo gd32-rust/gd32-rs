@@ -21,10 +21,3 @@ RCU:
       IRC8M: [5, "Internal RC 8 MHz (HSI) oscillator clock selected"]
       HXTAL: [6, "External 4-32 MHz (HSE) oscillator clock selected"]
       PLL: [7, "PLL clock selected (divided by 1 or 2, depending on PLLDV)"]
-  ADDEN:
-    I2C2EN:
-      Disabled: [0, "The selected clock is disabled"]
-      Enabled: [1, "The selected clock is enabled"]
-  ADDRST:
-    I2C2RST:
-      Reset: [1, "Reset the selected module"]
