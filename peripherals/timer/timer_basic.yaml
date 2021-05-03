@@ -10,8 +10,13 @@
       Disabled: [0, "The shadow register for CAR is disabled"]
       Enabled: [1, "The shadow register for CAR is enabled"]
     UPS:
-      AnyEvent: [0, "Any of counter overflow/underflow, setting UPG, or update through slave mode, generates an update interrupt or DMA request"]
-      CounterOnly: [1, "Only counter overflow/underflow generates an update interrupt or DMA request"]
+      AnyEvent:
+        [
+          0,
+          "Any of counter overflow/underflow, setting UPG, or update through slave mode, generates an update interrupt or DMA request",
+        ]
+      CounterOnly:
+        [1, "Only counter overflow/underflow generates an update interrupt or DMA request"]
     UPDIS:
       Enabled: [0, "Update event enabled"]
       Disabled: [1, "Update event disabled"]
@@ -59,17 +64,41 @@ TIMER1:
       Disabled: [0, "Output compare clear disabled"]
       ENabled: [1, "Output compare clear enabled"]
     "CH?COMCTL":
-      Frozen: [0, "The comparison between the output compare register CHyCV and the counter CNT has no effect on the outputs"]
-      ActiveOnMatch: [1, "Set channel to active level on match. OxCPRE signal is forced high when the counter matches the capture/compare register CHyCV"]
-      InactiveOnMatch: [2, "Set channel to inactive level on match. OxCPRE signal is forced low when the counter matches the capture/compare register CHyCV"]
+      Frozen:
+        [
+          0,
+          "The comparison between the output compare register CHyCV and the counter CNT has no effect on the outputs",
+        ]
+      ActiveOnMatch:
+        [
+          1,
+          "Set channel to active level on match. OxCPRE signal is forced high when the counter matches the capture/compare register CHyCV",
+        ]
+      InactiveOnMatch:
+        [
+          2,
+          "Set channel to inactive level on match. OxCPRE signal is forced low when the counter matches the capture/compare register CHyCV",
+        ]
       Toggle: [3, "OxCPRE toggles when CNT=CHyCV"]
       ForceInactive: [4, "OxCPRE is forced low"]
       ForceActive: [5, "OxCPRE is forced high"]
-      PwmMode0: [6, "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active"]
+      PwmMode0:
+        [
+          6,
+          "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active",
+        ]
       PwmMode1: [7, "Inversely to PwmMode0"]
     "CH?COMSEN":
-      Disabled: [0, "Preload register on CHyCV disabled. New values written to CHyCV are taken into account immediately"]
-      Enabled: [1, "Preload register on CHyCV enabled. Preload value is loaded into active register on each update event"]
+      Disabled:
+        [
+          0,
+          "Preload register on CHyCV disabled. New values written to CHyCV are taken into account immediately",
+        ]
+      Enabled:
+        [
+          1,
+          "Preload register on CHyCV enabled. Preload value is loaded into active register on each update event",
+        ]
     "CH?COMFEN":
       Slow: [0, "The minimum delay from an edge is 5 clock cycles"]
       Fast: [1, "The minimum delay from an edge is 3 clock cycles"]
