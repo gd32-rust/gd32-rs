@@ -1,0 +1,75 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Interconnection and slave mode.
+
+"TIMER[0-2],TIMER14":
+  SMCFG:
+    MSM:
+      NoSync: [0, "No action"]
+      Sync:
+        [
+          1,
+          "The effect of an event on the trigger input (TRGI) is delayed to allow a perfect synchronization between the current timer and its slaves (through TRGO). It is useful if we want to synchronize several timers on a single external event.",
+        ]
+  DMAINTEN:
+    TRGDEN:
+      Disabled: [0, "Trigger DMA request disabled"]
+      Enabled: [1, "Trigger DMA request enabled"]
+    TRGIE:
+      Disabled: [0, "Trigger interrupt disabled"]
+      Enabled: [1, "Trigger interrupt enabled"]
+  INTF:
+    TRGIF:
+      Clear: [0, "No trigger event occured"]
+      Triggered: [1, "Trigger event occurred"]
+  SWEVG:
+    TRGG:
+      Trigger: [1, "Generate a trigger event"]
+
+TIMER0:
+  SMCFG:
+    TRGS:
+      ITI0: [0, "Internal Trigger 0 (ITI0)"]
+      ITI1: [1, "Internal Trigger 1 (ITI1)"]
+      ITI2: [2, "Internal Trigger 2 (ITI2)"]
+      CI0F_ED: [4, "CI0 Edge Detector (CI0F_ED)"]
+      CI0FE0: [5, "Filtered Timer Input 0 (CI0FE0)"]
+      CI1FE1: [6, "Filtered Timer Input 1 (CI1FE1)"]
+      ETIFP: [7, "External Trigger input (ETIFP)"]
+
+TIMER14:
+  SMCFG:
+    TRGS:
+      ITI0: [0, "Internal Trigger 0 (ITI0)"]
+      ITI1: [1, "Internal Trigger 1 (ITI1)"]
+      CI0F_ED: [4, "CI0 Edge Detector (CI0F_ED)"]
+      CI0FE0: [5, "Filtered Timer Input 0 (CI0FE0)"]
+      CI1FE1: [6, "Filtered Timer Input 1 (CI1FE1)"]
+    SMC:
+      Disabled:
+        [
+          0,
+          "Slave mode disabled - if CEN=1 then the prescaler is clocked directly by the internal clock.",
+        ]
+      RestartMode:
+        [
+          4,
+          "Restart Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.",
+        ]
+      PauseMode:
+        [
+          5,
+          "Pause Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.",
+        ]
+      EventMode:
+        [
+          6,
+          "Event Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.",
+        ]
+      ExternalClockMode:
+        [
+          7,
+          "External Clock Mode 0 - Rising edges of the selected trigger (TRGI) clock the counter.",
+        ]

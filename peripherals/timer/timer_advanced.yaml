@@ -67,21 +67,6 @@ TIMER0:
       FDTS_Div32_N5: [13, "fSAMPLING=fDTS/32, N=5"]
       FDTS_Div32_N6: [14, "fSAMPLING=fDTS/32, N=6"]
       FDTS_Div32_N8: [15, "fSAMPLING=fDTS/32, N=8"]
-    MSM:
-      NoSync: [0, "No action"]
-      Sync:
-        [
-          1,
-          "The effect of an event on the trigger input (TRGI) is delayed to allow a perfect synchronization between the current timer and its slaves (through TRGO). It is useful if we want to synchronize several timers on a single external event.",
-        ]
-    TRGS:
-      ITI0: [0, "Internal Trigger 0 (ITI0)"]
-      ITI1: [1, "Internal Trigger 1 (ITI1)"]
-      ITI2: [2, "Internal Trigger 2 (ITI2)"]
-      CI0F_ED: [4, "CI0 Edge Detector (CI0F_ED)"]
-      CI0FE0: [5, "Filtered Timer Input 0 (CI0FE0)"]
-      CI1FE1: [6, "Filtered Timer Input 1 (CI1FE1)"]
-      ETIFP: [7, "External Trigger input (ETIFP)"]
     OCRC:
       Input: [0, "OCPRE_CLR_INT is connected to the OCPRE_CLR input"]
       ETIF: [1, "OCPRE_CLR_INT is connected to ETIF"]
