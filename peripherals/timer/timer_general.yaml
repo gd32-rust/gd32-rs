@@ -11,6 +11,20 @@
       Div1: [0, "t_DTS = t_CK_INT"]
       Div2: [1, "t_DTS = 2 × t_CK_INT"]
       Div4: [2, "t_DTS = 4 × t_CK_INT"]
+  DMAINTEN:
+    "CH?IE":
+      Disabled: [0, "Capture/compare interrupt disabled"]
+      Enabled: [1, "Capture/compare interrupt enabled"]
+  INTF:
+    "CH?OF":
+      Clear: [0, "No over capture occurred"]
+      OverCapture: [1, "A capture event occured while CH0IF was already set"]
+    "CH?IF":
+      Clear: [0, "No capture or compare interrupt occurred"]
+      CaptureCompare: [1, "A capture or compare event occurred"]
+  SWEVG:
+    "CH?G":
+      CaptureCompare: [1, "Generate a capture or compare event"]
   CHCTL[01]_Output:
     "CH?COMCEN":
       Disabled: [0, "Output compare clear disabled"]
@@ -58,6 +72,34 @@
       Output: [0, "Channel is configured as output"]
       CI0: [1, "Channel is configured as input, ISx is connected to CI0FE0"]
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FE0"]
+      ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
+  "CHCTL[01]_Input":
+    "CH?CAPFLT":
+      NoFilter: [0, "Filter disabled. fSAMP=fDTS, N=1"]
+      TimerCk_N2: [1, "fSAMP=fTIMER_CK, N=2"]
+      TimerCk_N4: [2, "fSAMP=fTIMER_CK, N=4"]
+      TimerCk_N8: [3, "fSAMP=fTIMER_CK, N=8"]
+      FDTS_Div2_N6: [4, "fSAMP=fDTS/2, N=6"]
+      FDTS_Div2_N8: [5, "fSAMP=fDTS/2, N=8"]
+      FDTS_Div4_N6: [6, "fSAMP=fDTS/4, N=6"]
+      FDTS_Div4_N8: [7, "fSAMP=fDTS/4, N=8"]
+      FDTS_Div8_N6: [8, "fSAMP=fDTS/8, N=6"]
+      FDTS_Div8_N8: [9, "fSAMP=fDTS/8, N=8"]
+      FDTS_Div16_N5: [10, "fSAMP=fDTS/16, N=5"]
+      FDTS_Div16_N6: [11, "fSAMP=fDTS/16, N=6"]
+      FDTS_Div16_N8: [12, "fSAMP=fDTS/16, N=8"]
+      FDTS_Div32_N5: [13, "fSAMP=fDTS/32, N=5"]
+      FDTS_Div32_N6: [14, "fSAMP=fDTS/32, N=6"]
+      FDTS_Div32_N8: [15, "fSAMP=fDTS/32, N=8"]
+    "CH?CAPPSC":
+      Div1: [0, "Prescaler disabled, capture on every edge"]
+      Div2: [1, "Capture every 2 edges"]
+      Div4: [2, "Capture every 4 edges"]
+      Div8: [3, "Capture every 8 edges"]
+    "CH?MS":
+      Output: [0, "Channel is configured as output"]
+      CI0: [1, "Channel is configured as input, ISx is connected to CI0FEx"]
+      CI1: [2, "Channel is configured as input, ISx is connected to CI1FEx"]
       ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
   CHCTL2:
     "CH?NP":
