@@ -1,0 +1,10 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Timers other than TIMER1 have 16-bit counters.
+"TIMER[05],TIMER1[3-6]":
+  CNT:
+    CNT: [0, 0xFFFF]
+  CAR:
+    CAR: [0, 0xFFFF]
