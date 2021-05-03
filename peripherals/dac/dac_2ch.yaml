@@ -30,11 +30,11 @@ DAC:
     "SWTR?":
       Disabled: [0, "DAC channel X software trigger disabled"]
       Enabled: [1, "DAC channel X software trigger enabled"]
-  "DAC?_R12DH":
+  "DAC[01]_R12DH":
     "DAC?_DH": [0, 0xFFF]
-  "DAC?_L12DH":
+  "DAC[01]_L12DH":
     "DAC?_DH": [0, 0xFFF]
-  "DAC?_R8DH":
+  "DAC[01]_R8DH":
     "DAC?_DH": [0, 0xFF]
   "DACC_R12DH":
     "DAC?_DH": [0, 0xFFF]
@@ -42,7 +42,7 @@ DAC:
     "DAC?_DH": [0, 0xFFF]
   "DACC_R8DH":
     "DAC?_DH": [0, 0xFFF]
-  "DAC?_DO":
+  "DAC[01]_DO":
     "DAC?_DO": [0, 0xFFF]
   STAT:
     "DDUDR?":
