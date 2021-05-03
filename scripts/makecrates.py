@@ -17,7 +17,7 @@ import re
 import yaml
 
 VERSION = "0.2.0"
-SVD2RUST_VERSION = "0.17.0"
+SVD2RUST_VERSION = "0.18.0"
 
 CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f130", "gd32f150", "gd32f170", "gd32f190"],
@@ -41,13 +41,12 @@ categories = ["embedded", "no-std"]
 license = "MIT OR Apache-2.0"
 
 [dependencies]
-bare-metal = "0.2.4"
-vcell = "0.1.0"
-cortex-m = ">=0.5.8,<0.8"
+vcell = "0.1.3"
+cortex-m = "0.7.0"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.6.10"
+version = "0.6.13"
 
 [package.metadata.docs.rs]
 features = {docs_features}
