@@ -6,21 +6,21 @@
 
 "TIMER[0-2],TIMER1[3-6]":
   DMAINTEN:
-    "CH[01]IE":
+    "CH?IE":
       Disabled: [0, "Capture/compare interrupt disabled"]
       Enabled: [1, "Capture/compare interrupt enabled"]
   INTF:
-    "CH[01]OF":
+    "CH?OF":
       Clear: [0, "No over capture occurred"]
       OverCapture: [1, "A capture event occured while CH0IF was already set"]
-    "CH[01]IF":
+    "CH?IF":
       Clear: [0, "No capture or compare interrupt occurred"]
       CaptureCompare: [1, "A capture or compare event occurred"]
   SWEVG:
-    "CH[01]G":
+    "CH?G":
       CaptureCompare: [1, "Generate a capture or compare event"]
-  CHCTL0_Input:
-    "CH[01]CAPFLT":
+  "CHCTL[01]_Input":
+    "CH?CAPFLT":
       Disabled: [0, "Filter disabled. fSAMP=fDTS, N=1"]
       TimerCkLength2: [1, "fSAMP=fTIMER_CK, N=2"]
       TimerCkLength4: [2, "fSAMP=fTIMER_CK, N=4"]
@@ -37,12 +37,12 @@
       Dts32Length6: [13, "fSAMP=fDTS/32, N=5"]
       Dts32Length8: [14, "fSAMP=fDTS/32, N=6"]
       Dts32Length6: [15, "fSAMP=fDTS/32, N=8"]
-    "CH[01]CAPPSC":
+    "CH?CAPPSC":
       Disabled: [0, "Prescaler disabled"]
       Prescale2: [1, "Capture on every 2 edges"]
       Prescale4: [2, "Capture on every 4 edges"]
       Prescale8: [3, "Capture on every 8 edges"]
-    "CH[01]MS":
+    "CH?MS":
       Output: [0, "Channel is configured as output"]
       CI0: [1, "Channel is configured as input, ISx is connected to CI0FEx"]
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FEx"]
