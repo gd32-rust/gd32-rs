@@ -11,6 +11,7 @@ _include:
   - timer_complementary.yaml
   - timer_dma.yaml
   - timer_general.yaml
+  - timer_interconnect.yaml
   - timer_updown.yaml
   - timer1_32bit.yaml
   - timer13.yaml
