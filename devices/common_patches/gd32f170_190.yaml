@@ -19,3 +19,6 @@ RCU:
     _modify:
       CCSEL:
         name: "CHVSEL"
+
+_delete:
+  - USBD

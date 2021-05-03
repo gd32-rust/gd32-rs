@@ -20,9 +20,14 @@ DBG:
   _delete:
     - SAMCS
 
+OPA_IVREF:
+  _delete:
+    - "OPA_*"
+
 "TIMER[0-2],TIMER1[3-6]":
   _delete:
     - CFG
 
 _delete:
   - "CAN?"
+  - SLCD
