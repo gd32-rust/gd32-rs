@@ -4,19 +4,9 @@
 
 _svd: ../svd/gd32f190.svd
 
-RCU:
-  CFG3:
-    _modify:
-      CKOUT1SRC:
-        name: "CKOUT1SEL"
-"CAN*":
-  BT:
-    _modify:
-      BUADPSC:
-        name: "BAUDPSC"
-
 _include:
   - common_patches/gd32f1x0.yaml
+  - common_patches/gd32f170_190.yaml
   - ../peripherals/adc/adc_gd.yaml
   - ../peripherals/adc/adc_high.yaml
   - ../peripherals/can/can.yaml

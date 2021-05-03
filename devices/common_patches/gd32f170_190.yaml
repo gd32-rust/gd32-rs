@@ -1,0 +1,16 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Patches for both GD31F170 and GD32F190.
+
+RCU:
+  CFG3:
+    _modify:
+      CKOUT1SRC:
+        name: "CKOUT1SEL"
+"CAN*":
+  BT:
+    _modify:
+      BUADPSC:
+        name: "BAUDPSC"
