@@ -18,15 +18,6 @@ TIMER0:
     ISO1N:
       Low: [0, "CH1_ON=0 when POEN=0"]
       High: [1, "CH1_ON=1 when POEN=0"]
-    ISO1:
-      Low: [0, "CH1_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH1_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-    ISO0N:
-      Low: [0, "CH0_ON=0 when POEN=0"]
-      High: [1, "CH0_ON=1 when POEN=0"]
-    ISO0:
-      Low: [0, "CH0_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH0_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
     TI0S:
       Normal: [0, "The CH0 pin input is selected as channel 0 trigger input"]
       XOR: [1, "The XOR of CH0, CH1 and CH2 pins are selected as channel 0 trigger input"]
@@ -43,19 +34,6 @@ TIMER0:
       CompareO1C: [5, "O1CPRE signal is used as trigger output"]
       CompareO2C: [6, "O2CPRE signal is used as trigger output"]
       CompareO3C: [7, "O3CPRE signal is used as trigger output"]
-    DMAS:
-      OnCompare: [0, "CCx DMA request sent when CCx event occurs"]
-      OnUpdate: [1, "CCx DMA request sent when update event occurs"]
-    CCUC:
-      Default: [0, "Capture/compare are updated only by setting the CMTG bit"]
-      WithRisingEdge:
-        [
-          1,
-          "Capture/compare are updated by setting the CMTG bit or when an rising edge occurs on TRGI",
-        ]
-    CCSE:
-      NotPreloaded: [0, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are disabled"]
-      Preloaded: [1, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are enabled"]
   SMCFG:
     ETP:
       NotInverted: [0, "ETI is noninverted, active at high level or rising edge"]

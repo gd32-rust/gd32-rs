@@ -4,10 +4,6 @@
 
 "TIMER[0-2]":
   CTL0:
-    CKDIV:
-      Div1: [0, "t_DTS = t_CK_INT"]
-      Div2: [1, "t_DTS = 2 × t_CK_INT"]
-      Div4: [2, "t_DTS = 4 × t_CK_INT"]
     CAM:
       EdgeAligned: [0, "The counter counts up or down depending on the direction bit"]
       CenterAlignedCountingDown:

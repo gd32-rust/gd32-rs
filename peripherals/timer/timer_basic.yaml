@@ -73,17 +73,6 @@
       Mode2: [3, "Protection mode 2"]
     DTCFG: [0, 0xFF]
 
-# TIMER13 doesn't have single pulse mode or DMA.
-"TIMER?,TIMER1[4-6]":
-  CTL0:
-    SPM:
-      Disabled: [0, "Counter is not stopped at update event"]
-      Enabled: [1, "Counter stops counting at the next update event (clearing the CEN bit)"]
-  DMAINTEN:
-    UPDEN:
-      Disabled: [0, "Update DMA request disabled"]
-      Enabled: [1, "Update DMA request enabled"]
-
 # TIMER13, TIMER15 and TIMER16 don't have interconnection.
 "TIMER[1-9],TIMER14":
   CTL1:

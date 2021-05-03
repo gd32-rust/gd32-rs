@@ -1,0 +1,12 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Timer 13 supports input remapping.
+TIMER13:
+  IRMP:
+    CI0_RMP:
+      GPIO: [0, "Channel 0 input is connected to GPIO"]
+      RTCCLK: [1, "Channel 0 input is connected to RTCCLK"]
+      HXTAL_32: [2, "Channel 0 input is connected to HXTAL / 32"]
+      CKOUTSEL: [3, "Channel 0 input is connected to CKOUTSEL"]

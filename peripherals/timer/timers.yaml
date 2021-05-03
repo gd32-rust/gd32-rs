@@ -6,6 +6,11 @@ _include:
   - timer_16bit.yaml
   - timer_advanced.yaml
   - timer_basic.yaml
+  - timer_break.yaml
   - timer_compare.yaml
+  - timer_complementary.yaml
+  - timer_dma.yaml
+  - timer_general.yaml
   - timer_updown.yaml
   - timer1_32bit.yaml
+  - timer13.yaml
