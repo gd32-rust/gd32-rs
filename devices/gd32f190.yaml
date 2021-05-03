@@ -4,6 +4,9 @@
 
 _svd: ../svd/gd32f190.svd
 
+_modify:
+  name: "GD32F190"
+
 _include:
   - common_patches/gd32f1x0.yaml
   - common_patches/gd32f170_190.yaml

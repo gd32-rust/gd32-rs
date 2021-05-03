@@ -4,6 +4,9 @@
 
 _svd: ../svd/gd32f130.svd
 
+_modify:
+  name: "GD32F130"
+
 _include:
   - common_patches/gd32f1x0.yaml
   - ../peripherals/adc/adc.yaml
