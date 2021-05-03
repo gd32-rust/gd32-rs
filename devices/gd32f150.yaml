@@ -24,7 +24,7 @@ _include:
   - ../peripherals/rcu/rcu_low.yaml
   - ../peripherals/spi/spi.yaml
   - ../peripherals/syscfg/syscfg.yaml
-  - ../peripherals/tim/tim_advanced.yaml
-  - ../peripherals/tim/tim_basic.yaml
+  - ../peripherals/timer/timer_advanced.yaml
+  - ../peripherals/timer/timer_basic.yaml
   - ../peripherals/usart/usart.yaml
   - ../peripherals/wwdg/wwdg.yaml
