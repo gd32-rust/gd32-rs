@@ -38,7 +38,7 @@ repository = "https://github.com/qwandor/gd32-rs"
 readme = "README.md"
 keywords = ["gd32", "svd2rust", "no_std", "embedded"]
 categories = ["embedded", "no-std"]
-license = "MIT/Apache-2.0"
+license = "MIT OR Apache-2.0"
 
 [dependencies]
 bare-metal = "0.2.4"
