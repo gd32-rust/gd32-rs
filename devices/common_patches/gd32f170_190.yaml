@@ -5,10 +5,22 @@
 # Patches for both GD31F170 and GD32F190.
 
 RCU:
+  CFG0:
+    _delete:
+      - USBDPSC
+  APB1RST:
+    _delete:
+      - USBDRST
+  APB1EN:
+    _delete:
+      - USBDEN
   CFG3:
     _modify:
       CKOUT1SRC:
         name: "CKOUT1SEL"
+  _delete:
+    - PDVSEL
+
 "CAN*":
   BT:
     _modify:
