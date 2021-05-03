@@ -10,9 +10,21 @@
       Div4: [2, "t_DTS = 4 × t_CK_INT"]
     CAM:
       EdgeAligned: [0, "The counter counts up or down depending on the direction bit"]
-      CenterAlignedCountingDown: [1, "The counter counts up and down alternatively. Output compare interrupt flags are set only when the counter is counting down."]
-      CenterAlignedCountingUp: [2, "The counter counts up and down alternatively. Output compare interrupt flags are set only when the counter is counting up."]
-      CenterAlignedCountingUpDown: [3, "The counter counts up and down alternatively. Output compare interrupt flags are set both when the counter is counting up or down."]
+      CenterAlignedCountingDown:
+        [
+          1,
+          "The counter counts up and down alternatively. Output compare interrupt flags are set only when the counter is counting down.",
+        ]
+      CenterAlignedCountingUp:
+        [
+          2,
+          "The counter counts up and down alternatively. Output compare interrupt flags are set only when the counter is counting up.",
+        ]
+      CenterAlignedCountingUpDown:
+        [
+          3,
+          "The counter counts up and down alternatively. Output compare interrupt flags are set both when the counter is counting up or down.",
+        ]
     DIR:
       Up: [0, "Counter used as upcounter"]
       Down: [1, "Counter used as downcounter"]
@@ -49,7 +61,11 @@ TIMER0:
       Reset: [0, "Use UPG bit from SWEVG register"]
       Enable: [1, "Use CEN bit from CTL0 register"]
       Update: [2, "Use the update event"]
-      CaptureComparePulse: [3, "The trigger output send a positive pulse when a capture or a compare match occurred in channel 0"]
+      CaptureComparePulse:
+        [
+          3,
+          "The trigger output send a positive pulse when a capture or a compare match occurred in channel 0",
+        ]
       CompareO0C: [4, "O0CPRE signal is used as trigger output"]
       CompareO1C: [5, "O1CPRE signal is used as trigger output"]
       CompareO2C: [6, "O2CPRE signal is used as trigger output"]
@@ -59,7 +75,11 @@ TIMER0:
       OnUpdate: [1, "CCx DMA request sent when update event occurs"]
     CCUC:
       Default: [0, "Capture/compare are updated only by setting the CMTG bit"]
-      WithRisingEdge: [1, "Capture/compare are updated by setting the CMTG bit or when an rising edge occurs on TRGI"] 
+      WithRisingEdge:
+        [
+          1,
+          "Capture/compare are updated by setting the CMTG bit or when an rising edge occurs on TRGI",
+        ]
     CCSE:
       NotPreloaded: [0, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are disabled"]
       Preloaded: [1, "The shadow registers for CHxEN, CHxNEN and CHxCOMCTL bits are enabled"]
@@ -69,7 +89,11 @@ TIMER0:
       Inverted: [1, "ETI is inverted, active at low level or falling edge"]
     SMC1:
       Disabled: [0, "External clock mode 1 disabled"]
-      Enabled: [1, "External clock mode 1 enabled. The counter is clocked by any active edge on the ETIF signal."]
+      Enabled:
+        [
+          1,
+          "External clock mode 1 enabled. The counter is clocked by any active edge on the ETIF signal.",
+        ]
     ETPSC:
       Div1: [0, "Prescaler OFF"]
       Div2: [1, "ETRP frequency divided by 2"]
@@ -94,7 +118,11 @@ TIMER0:
       FDTS_Div32_N8: [15, "fSAMPLING=fDTS/32, N=8"]
     MSM:
       NoSync: [0, "No action"]
-      Sync: [1, "The effect of an event on the trigger input (TRGI) is delayed to allow a perfect synchronization between the current timer and its slaves (through TRGO). It is useful if we want to synchronize several timers on a single external event."]
+      Sync:
+        [
+          1,
+          "The effect of an event on the trigger input (TRGI) is delayed to allow a perfect synchronization between the current timer and its slaves (through TRGO). It is useful if we want to synchronize several timers on a single external event.",
+        ]
     TRGS:
       ITI0: [0, "Internal Trigger 0 (ITI0)"]
       ITI1: [1, "Internal Trigger 1 (ITI1)"]
@@ -107,11 +135,43 @@ TIMER0:
       Input: [0, "OCPRE_CLR_INT is connected to the OCPRE_CLR input"]
       ETIF: [1, "OCPRE_CLR_INT is connected to ETIF"]
     SMC:
-      Disabled: [0, "Slave mode disabled - if CEN=1 then the prescaler is clocked directly by the internal clock."]
-      QuadratureDecoderMode0: [1, "Quadrature decoder mode 0 - Counter counts up/down on CI1FE1 edge depending on CI0FE0 level."]
-      QuadratureDecoderMode1: [2, "Quadrature decoder mode 1 - Counter counts up/down on CI0FE0 edge depending on CI1FE1 level."]
-      QuadratureDecoderMode2: [3, "Quadrature decoder mode 2 - Counter counts up/down on both CI0FE0 and CI1FE1 edges depending on the level of the other input."]
-      RestartMode: [4, "Restart Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers."]
-      PauseMode: [5, "Pause Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled."]
-      EventMode: [6, "Event Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled."]
-      ExternalClockMode: [7, "External Clock Mode 0 - Rising edges of the selected trigger (TRGI) clock the counter."]
+      Disabled:
+        [
+          0,
+          "Slave mode disabled - if CEN=1 then the prescaler is clocked directly by the internal clock.",
+        ]
+      QuadratureDecoderMode0:
+        [
+          1,
+          "Quadrature decoder mode 0 - Counter counts up/down on CI1FE1 edge depending on CI0FE0 level.",
+        ]
+      QuadratureDecoderMode1:
+        [
+          2,
+          "Quadrature decoder mode 1 - Counter counts up/down on CI0FE0 edge depending on CI1FE1 level.",
+        ]
+      QuadratureDecoderMode2:
+        [
+          3,
+          "Quadrature decoder mode 2 - Counter counts up/down on both CI0FE0 and CI1FE1 edges depending on the level of the other input.",
+        ]
+      RestartMode:
+        [
+          4,
+          "Restart Mode - Rising edge of the selected trigger input (TRGI) reinitializes the counter and generates an update of the registers.",
+        ]
+      PauseMode:
+        [
+          5,
+          "Pause Mode - The counter clock is enabled when the trigger input (TRGI) is high. The counter stops (but is not reset) as soon as the trigger becomes low. Both start and stop of the counter are controlled.",
+        ]
+      EventMode:
+        [
+          6,
+          "Event Mode - The counter starts at a rising edge of the trigger TRGI (but it is not reset). Only the start of the counter is controlled.",
+        ]
+      ExternalClockMode:
+        [
+          7,
+          "External Clock Mode 0 - Rising edges of the selected trigger (TRGI) clock the counter.",
+        ]
