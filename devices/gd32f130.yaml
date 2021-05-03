@@ -7,8 +7,12 @@ _svd: ../svd/gd32f130.svd
 _modify:
   name: "GD32F130"
 
+_delete:
+  - DAC
+
 _include:
   - common_patches/gd32f1x0.yaml
+  - common_patches/gd32f130_150.yaml
   - ../peripherals/adc/adc.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/cmp/cmp.yaml

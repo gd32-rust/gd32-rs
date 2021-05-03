@@ -1,0 +1,28 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Patches for both GD31F130 and GD32F150.
+
+ADC:
+  CTL0:
+    _delete:
+      - DRES
+  _delete:
+    - OVSAMPCTL
+
+DBG:
+  CTL0:
+    _delete:
+      - "CAN?_HOLD"
+
+"I2C?":
+  _delete:
+    - SAMCS
+
+"TIMER[0-2],TIMER1[3-6]":
+  _delete:
+    - CFG
+
+_delete:
+  - "CAN?"

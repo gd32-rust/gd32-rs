@@ -8,6 +8,11 @@ TIMER0:
     _modify:
       SCM1:
         name: "SMC1"
+"TIMER[1-2]":
+  SWEVG:
+    _delete:
+      - BRKG
+
 FMC:
   STAT:
     _modify:
