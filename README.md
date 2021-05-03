@@ -31,9 +31,10 @@ to drill down into each field on each register on each peripheral.
 ## Using Device Crates In Your Own Project
 
 In your own project's `Cargo.toml`:
+
 ```toml
 [dependencies.gd32f1]
-version = "0.1.0"
+version = "0.2.0"
 features = ["gd32f130", "rt"]
 ```
 
@@ -72,33 +73,33 @@ contain the latest patches and updates.
 
 ## Generating Device Crates / Building Locally
 
-* Install `svd2rust`: `cargo install svd2rust`
-* Install `form`: `cargo install form`
-* Install rustfmt: `rustup component add rustfmt`
-* Install svdtools: `pip install --user svdtools`
-* Unzip bundled SVD zip files: `cd svd; ./extract.sh; cd ..`
-* Generate patched SVD files: `make patch` (you probably want `-j` for all `make` invocations)
-* Generate svd2rust device crates: `make svd2rust`
-* Optional: Format device crates: `make form`
+- Install `svd2rust`: `cargo install svd2rust`
+- Install `form`: `cargo install form`
+- Install rustfmt: `rustup component add rustfmt`
+- Install svdtools: `pip install --user svdtools`
+- Unzip bundled SVD zip files: `cd svd; ./extract.sh; cd ..`
+- Generate patched SVD files: `make patch` (you probably want `-j` for all `make` invocations)
+- Generate svd2rust device crates: `make svd2rust`
+- Optional: Format device crates: `make form`
 
 ## Motivation and Objectives
 
 This project serves two purposes:
 
-* Create a source of high-quality GD32 SVD files, with manufacturer errors
+- Create a source of high-quality GD32 SVD files, with manufacturer errors
   and inconsistencies fixed. These files could be used with svd2rust or other
   tools, or in other projects. They should hopefully be useful in their own
   right.
-* Create and publish svd2rust-generated crates covering all Cortex-M based GD32s, using
+- Create and publish svd2rust-generated crates covering all Cortex-M based GD32s, using
   the SVD files.
 
 ## Helping
 
 This project is still young and there's a lot to do!
 
-* More peripheral patches need to be written, most of all. See what we've got
+- More peripheral patches need to be written, most of all. See what we've got
   in `peripherals/` and grab a reference manual!
-* Also everything needs testing, and you can't so easily automate finding bugs
+- Also everything needs testing, and you can't so easily automate finding bugs
   in the SVD files...
 
 ## Supported Device Families
@@ -115,23 +116,23 @@ Check out the full list of supported devices [here](https://gd32-rs.github.io/gd
 
 ## Adding New Devices
 
-* Update SVD files in `svd/vendor` to include new SVD.
-* Run `svd/extract.sh` to copy the files into `svd` (ignored in git).
-* Add new YAML file in `devices/` with the new SVD path and include any
+- Update SVD files in `svd/vendor` to include new SVD.
+- Run `svd/extract.sh` to copy the files into `svd` (ignored in git).
+- Add new YAML file in `devices/` with the new SVD path and include any
   required SVD patches for this device, such as renaming or merging fields.
-* You can run `scripts/matchperipherals.py` script to find out what existing
+- You can run `scripts/matchperipherals.py` script to find out what existing
   peripherals could be cleanly applied to this new SVD. If they look sensible,
   you can include them in your device YAML.
-* Re-run `scripts/makecrates.py devices/` to update the crates with the new devices.
-* Run `make` to rebuild, which will make a patched SVD and then run `svd2rust`
+- Re-run `scripts/makecrates.py devices/` to update the crates with the new devices.
+- Run `make` to rebuild, which will make a patched SVD and then run `svd2rust`
   on it to generate the final library.
 
 ## Updating Existing Devices/Peripherals
 
-* You'll need to run `svd/extract.sh` at least once to pull the SVDs out.
-* Edit the device or peripheral YAML (see below for format).
-* Run `make` to rebuild all the crates using `svd patch` and `svd2rust`.
-* Test your new stuff compiles: `cd gd32f1; cargo build --features gd32f130`
+- You'll need to run `svd/extract.sh` at least once to pull the SVDs out.
+- Edit the device or peripheral YAML (see below for format).
+- Run `make` to rebuild all the crates using `svd patch` and `svd2rust`.
+- Test your new stuff compiles: `cd gd32f1; cargo build --features gd32f130`
 
 If you've added a new peripheral, consider using the `matchperipherals.py`
 script to see which devices it would cleanly apply to.
@@ -149,9 +150,9 @@ for full details of the patch file format.
 
 ### Style Guide
 
-* Enumerated values should be named in the past tense ("enabled", "masked",
+- Enumerated values should be named in the past tense ("enabled", "masked",
   etc).
-* Descriptions should start with capital letters but do not end with a period
+- Descriptions should start with capital letters but do not end with a period
 
 ## Releasing
 
