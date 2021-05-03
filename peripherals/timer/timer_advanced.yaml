@@ -18,19 +18,6 @@ TIMER0:
     ISO1N:
       Low: [0, "CH1_ON=0 when POEN=0"]
       High: [1, "CH1_ON=1 when POEN=0"]
-    MMC:
-      Reset: [0, "Use UPG bit from SWEVG register"]
-      Enable: [1, "Use CEN bit from CTL0 register"]
-      Update: [2, "Use the update event"]
-      CaptureComparePulse:
-        [
-          3,
-          "The trigger output send a positive pulse when a capture or a compare match occurred in channel 0",
-        ]
-      CompareO0C: [4, "O0CPRE signal is used as trigger output"]
-      CompareO1C: [5, "O1CPRE signal is used as trigger output"]
-      CompareO2C: [6, "O2CPRE signal is used as trigger output"]
-      CompareO3C: [7, "O3CPRE signal is used as trigger output"]
   DMAINTEN:
     CMTDEN:
       Disabled: [0, "Commutation DMA request disabled"]

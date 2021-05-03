@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 # Interconnection and slave mode.
+# Timers 13-16 don't have interconnection.
 
 "TIMER[0-2],TIMER14":
   SMCFG:
@@ -27,6 +28,29 @@
   SWEVG:
     TRGG:
       Trigger: [1, "Generate a trigger event"]
+
+TIMER0:
+  CTL1:
+    MMC:
+      Reset: [0, "Use UPG bit from SWEVG register"]
+      Enable: [1, "Use CEN bit from CTL0 register"]
+      Update: [2, "Use the update event"]
+      CaptureComparePulse:
+        [
+          3,
+          "The trigger output send a positive pulse when a capture or a compare match occurred in channel 0",
+        ]
+      CompareO0C: [4, "O0CPRE signal is used as trigger output"]
+      CompareO1C: [5, "O1CPRE signal is used as trigger output"]
+      CompareO2C: [6, "O2CPRE signal is used as trigger output"]
+      CompareO3C: [7, "O3CPRE signal is used as trigger output"]
+
+"TIMER[1-5],TIMER14":
+  CTL1:
+    MMC:
+      Reset: [0, "Use UPG bit from SWEVG register"]
+      Enable: [1, "Use CEN bit from CTL0 register"]
+      Update: [2, "Use the update event"]
 
 "TIMER[0-2]":
   CTL1:

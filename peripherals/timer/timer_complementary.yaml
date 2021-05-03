@@ -37,6 +37,35 @@
         ]
   CREP:
     CREP: [0, 0xFF]
+  CHCTL2:
+    "CH?NEN":
+      Disabled: [0, "Channel complementary output is disabled"]
+      Enabled: [1, "Channel complementary output is enabled"]
+  CCHP:
+    POEN:
+      Disabled: [0, "Channel outputs are disabled"]
+      Enabled: [1, "Channel outputs are enabled"]
+    OAEN:
+      Manual: [0, "POEN cannot be set by hardware"]
+      Automatic: [1, "POEN can be set by hardware automatically at the next update event"]
+    BRKP:
+      Inverted: [0, "BRKIN is active low"]
+      NotInverted: [1, "BRKIN is active high"]
+    BRKEN:
+      Disabled: [0, "Break inputs disabled"]
+      Enabled: [1, "Break inputs enabled"]
+    ROS:
+      Disabled: [0, "When POEN is set, the channel output signals are disabled"]
+      Enabled: [1, "When POEN is set, the channel output signals are enabled"]
+    IOS:
+      Disabled: [0, "When POEN is reset, the channel output signals are disabled"]
+      Enabled: [1, "When POEN is reset, the channel output signals are enabled"]
+    PROT:
+      Disabled: [0, "Write protection disabled"]
+      Mode0: [1, "Protection mode 0"]
+      Mode1: [2, "Protection mode 1"]
+      Mode2: [3, "Protection mode 2"]
+    DTCFG: [0, 0xFF]
 
 "TIMER0,TIMER14":
   CTL1:

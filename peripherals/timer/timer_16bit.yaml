@@ -8,3 +8,7 @@
     CNT: [0, 0xFFFF]
   CAR:
     CAR: [0, 0xFFFF]
+
+"TIMER0,TIMER1[3-6]":
+  "CH?CV":
+    "CH?VAL": [0, 0xFFFF]
