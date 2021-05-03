@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
+# Complementary output, break and repetition features.
+
 "TIMER0,TIMER1[4-6]":
   CTL1:
     ISO0N:
@@ -24,10 +26,16 @@
     CMTIE:
       Disabled: [0, "Commutation interrupt disabled"]
       Enabled: [1, "Commutation interrupt enabled"]
+    BRKIE:
+      Disabled: [0, "Break interrupt disabled"]
+      Enabled: [1, "Break interrupt enabled"]
   INTF:
     CMTIF:
       Clear: [0, "No channel commutation event occured"]
       Commutation: [1, "Channel commutation event occurred"]
+    BRKIF:
+      Clear: [0, "No active level break detected"]
+      Break: [1, "Active level detected"]
   SWEVG:
     CMTG:
       Update:
@@ -35,6 +43,8 @@
           1,
           "Generate a channel commutation event, updating capture/compare control registers based on the value of CCSE",
         ]
+    BRKG:
+      Break: [1, "Generate a break event"]
   CREP:
     CREP: [0, 0xFF]
   CHCTL2:
