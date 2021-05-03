@@ -22,6 +22,7 @@ _include:
   - ../peripherals/can/can.yaml
   - ../peripherals/crc/crc_gd.yaml
   - ../peripherals/comp/cmp_gd.yaml
+  - ../peripherals/dac/dac_2ch.yaml
   - ../peripherals/dbg/dbg_gd.yaml
   - ../peripherals/dbg/dbg_high.yaml
   - ../peripherals/dma/dma_gd.yaml
