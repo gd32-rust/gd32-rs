@@ -24,6 +24,27 @@ OPA_IVREF:
   _delete:
     - "OPA_*"
 
+RCU:
+  APB1RST:
+    _delete:
+      - OPAIVREFRST
+      - "CAN?RST"
+      - SLCDRST
+  APB1EN:
+    _delete:
+      - OPAIVREFEN
+      - "CAN?EN"
+      - SLCDEN
+  CFG2:
+    _delete:
+      - IRC28MDIV
+  _delete:
+    - CFG3
+
+"SPI*":
+  _delete:
+    - QCTL
+
 "TIMER[0-2],TIMER1[3-6]":
   _delete:
     - CFG
