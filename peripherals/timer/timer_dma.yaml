@@ -23,3 +23,8 @@
     "CH?DEN":
       Disabled: [0, "Capture/compare DMA request disabled"]
       Enabled: [1, "Capture/compare DMA request enabled"]
+  DMACFG:
+    DMATC: [0, 0x1F]
+    DMATA: [0, 0x1F]
+  DMATB:
+    DMATB: [0, 0xFFFF]

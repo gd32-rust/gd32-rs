@@ -14,7 +14,7 @@ RCU:
     _modify:
       BUADPSC:
         name: "BAUDPSC"
-TIMER13:
+"TIMER1[3-6]":
   CFG:
     _modify:
       CCSEL:
