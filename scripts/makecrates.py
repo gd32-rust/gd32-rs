@@ -16,7 +16,7 @@ import argparse
 import re
 import yaml
 
-VERSION = "0.2.0"
+VERSION = "0.2.1"
 SVD2RUST_VERSION = "0.18.0"
 
 CRATE_DOC_FEATURES = {

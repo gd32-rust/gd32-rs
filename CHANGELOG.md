@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## [0.2.1]
 
 - GD32F1x0
   - Reduced set of features for docs.rs, to hopefully fix build.
@@ -24,3 +24,4 @@ First release.
 
 [unreleased]: https://github.com/qwandor/gd32-rs/compare/0.2.0...HEAD
 [0.2.0]: https://github.com/qwandor/gd32-rs/compare/0.1.0...0.2.0
+[0.2.1]: https://github.com/qwandor/gd32-rs/compare/0.2.0...0.2.1
