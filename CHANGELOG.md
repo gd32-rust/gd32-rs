@@ -1,5 +1,10 @@
 # Changelog
 
+## [unreleased]
+
+- GD32F1x0
+  - Reduced set of features for docs.rs, to hopefully fix build.
+
 ## [0.2.0]
 
 - GD32F1x0
