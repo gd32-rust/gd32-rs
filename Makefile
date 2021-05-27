@@ -92,7 +92,7 @@ svdformat: $(FORMATTED_SVDS)
 
 check: $(CHECK_SRCS)
 
-html/index.html: $(PATCHED_SVDS) scripts/makehtml.py
+html/index.html: $(PATCHED_SVDS) scripts/makehtml.py scripts/makehtml.index.template.html scripts/makehtml.template.html
 	@mkdir -p html
 	python3 scripts/makehtml.py html/ svd/gd32*.svd.patched
 
