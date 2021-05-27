@@ -92,11 +92,14 @@ svdformat: $(FORMATTED_SVDS)
 
 check: $(CHECK_SRCS)
 
-html/index.html: $(PATCHED_SVDS)
+html/index.html: $(PATCHED_SVDS) scripts/makehtml.py
 	@mkdir -p html
 	python3 scripts/makehtml.py html/ svd/gd32*.svd.patched
 
-html: html/index.html
+html/comparisons.html: $(PATCHED_SVDS) scripts/htmlcomparesvdall.sh scripts/htmlcomparesvd.py
+	scripts/htmlcomparesvdall.sh
+
+html: html/index.html html/comparisons.html
 
 lint: $(PATCHED_SVDS)
 	xmllint --schema svd/cmsis-svd.xsd --noout $(PATCHED_SVDS)
