@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 import argparse
-import sys
 import os.path
 import xml.etree.ElementTree as ET
 
