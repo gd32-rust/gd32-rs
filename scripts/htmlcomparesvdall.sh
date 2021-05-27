@@ -22,7 +22,7 @@ cat > html/comparisons.html <<EOF
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">gd32-rs Peripheral Comparisons</a></li>
+        <li class="active"><a href="#">Peripheral Comparisons</a></li>
       </ul>
     </div>
   </div>
