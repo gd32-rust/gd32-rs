@@ -102,12 +102,9 @@
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FEx"]
       ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
   CHCTL2:
-    "CH?NP":
-      NotInverted: [0, "Complementary channel is active high"]
-      Inverted: [1, "Complementary channel is active low"]
-    "CH?P":
-      NotInverted: [0, "Channel is active high"]
-      Inverted: [1, "Channel is active low"]
+    "CH?P,CH?NP":
+      NotInverted: [0, "Active high"]
+      Inverted: [1, "Active low"]
     "CH?EN":
       Disabled: [0, "Channel output is disabled"]
       Enabled: [1, "Channel output is enabled"]
