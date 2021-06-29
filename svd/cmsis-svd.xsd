@@ -26,6 +26,7 @@
   stm32-rs changes:
   - enumerationType now has enumeratedValue minOccurs=0, as otherwise
     a derivedFrom enumerationType does not validate
+  - add dottedIdentifierType for derivedFrom.
 
   Version 1.3.6:
   - add ARMV81MML as enumeration value for cpuNameType.
@@ -166,6 +167,13 @@
   <xs:simpleType name="identifierType">
     <xs:restriction base="xs:string">
       <xs:pattern value="[_A-Za-z0-9]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- dottedIdentifierType specifies the subset and sequence of characters used for specifying identifiers, plus periods for paths. -->
+  <!-- this is particularly important as these are used in ANSI C Structures during the device header file generation -->
+  <xs:simpleType name="dottedIdentifierType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[_A-Za-z0-9.]*"/>
     </xs:restriction>
   </xs:simpleType>
   <!-- V1.3: Protection Access Attribute Strings -->
@@ -424,7 +432,7 @@
       <!-- enumeratedValue derivedFrom=<identifierType> -->
       <xs:element name="enumeratedValue" type="enumeratedValueType" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
-    <xs:attribute name="derivedFrom" type="identifierType" use="optional"/>
+    <xs:attribute name="derivedFrom" type="dottedIdentifierType" use="optional"/>
   </xs:complexType>
 
   <xs:complexType name="dimArrayIndexType">
