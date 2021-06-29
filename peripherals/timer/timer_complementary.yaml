@@ -4,14 +4,14 @@
 
 # Complementary output, break and repetition features.
 
-"TIMER0,TIMER1[4-6]":
+TIMER0:
   CTL1:
     ISO0N:
-      Low: [0, "CH0_ON=0 when POEN=0"]
-      High: [1, "CH0_ON=1 when POEN=0"]
+      Low: [0, "CHn_ON=0 when POEN=0"]
+      High: [1, "CHn_ON=1 when POEN=0"]
     ISO0:
-      Low: [0, "CH0_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH0_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
+      Low: [0, "CHn_O=0 (after a dead-time if CHn_ON is implemented) when POEN=0"]
+      High: [1, "CHn_O=1 (after a dead-time if CHn_ON is implemented) when POEN=0"]
     CCUC:
       Default: [0, "Capture/compare are updated only by setting the CMTG bit"]
       WithRisingEdge:
@@ -45,11 +45,6 @@
         ]
     BRKG:
       Break: [1, "Generate a break event"]
-  CREP:
-    CREP: [0, 0xFF]
-  CHCTL2:
-    "CH?NEN":
-      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
   CCHP:
     POEN:
       Disabled: [0, "Channel outputs are disabled"]
@@ -74,10 +69,58 @@
       Mode0: [1, "Protection mode 0"]
       Mode1: [2, "Protection mode 1"]
       Mode2: [3, "Protection mode 2"]
+
+"TIMER1[4-6]":
+  CTL1:
+    ISO0N:
+      _derivedFrom: "TIMER0.CTL1.ISO0N.ISO0N"
+    ISO0:
+      _derivedFrom: "TIMER0.CTL1.ISO0.ISO0"
+    CCUC:
+      _derivedFrom: "TIMER0.CTL1.CCUC.CCUC"
+    CCSE:
+      _derivedFrom: "TIMER0.CTL1.CCSE.CCSE"
+  DMAINTEN:
+    CMTIE:
+      _derivedFrom: "TIMER0.DMAINTEN.CMTIE.CMTIE"
+    BRKIE:
+      _derivedFrom: "TIMER0.DMAINTEN.BRKIE.BRKIE"
+  INTF:
+    CMTIF:
+      _derivedFrom: "TIMER0.INTF.CMTIF.CMTIF"
+    BRKIF:
+      _derivedFrom: "TIMER0.INTF.BRKIF.BRKIF"
+  SWEVG:
+    CMTG:
+      _derivedFrom: "TIMER0.SWEVG.CMTG.CMTG"
+    BRKG:
+      _derivedFrom: "TIMER0.SWEVG.BRKG.BRKG"
+  CCHP:
+    POEN:
+      _derivedFrom: "TIMER0.CCHP.POEN.POEN"
+    OAEN:
+      _derivedFrom: "TIMER0.CCHP.OAEN.OAEN"
+    BRKP:
+      _derivedFrom: "TIMER0.CCHP.BRKP.BRKP"
+    BRKEN:
+      _derivedFrom: "TIMER0.CCHP.BRKEN.BRKEN"
+    ROS:
+      _derivedFrom: "TIMER0.CCHP.ROS.ROS"
+    IOS:
+      _derivedFrom: "TIMER0.CCHP.IOS.IOS"
+    PROT:
+      _derivedFrom: "TIMER0.CCHP.PROT.PROT"
+
+"TIMER0,TIMER1[4-6]":
+  CREP:
+    CREP: [0, 0xFF]
+  CHCTL2:
+    "CH?NEN":
+      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
+  CCHP:
     DTCFG: [0, 0xFF]
 
 "TIMER0,TIMER14":
   CTL1:
     ISO1:
-      Low: [0, "CH1_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH1_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
+      _derivedFrom: "TIMER0.CTL1.ISO0.ISO0"
