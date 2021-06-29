@@ -7,50 +7,38 @@
 
 # Use the same types for all timers, by deriving from one.
 TIMER0:
-  CHCTL2:
-    "CH0P":
-      NotInverted: [0, "Active high"]
-      Inverted: [1, "Active low"]
-    "CH[1-3]P,CH?NP":
-      _derivedFrom: "CH0P"
-    "CH0EN":
-      Disabled: [0, "Channel output is disabled"]
-      Enabled: [1, "Channel output is enabled"]
-    "CH[1-3]EN":
-      _derivedFrom: "CH0EN"
-
-"TIMER[1-2],TIMER1[3-6]":
-  CHCTL2:
-    "CH?P,CH?NP":
-      _derivedFrom: "TIMER0.CHCTL2.CH0P.CH0P"
-    "CH?EN":
-      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
-
-"TIMER[0-2],TIMER1[3-6]":
   CTL0:
     CKDIV:
       Div1: [0, "t_DTS = t_CK_INT"]
       Div2: [1, "t_DTS = 2 × t_CK_INT"]
       Div4: [2, "t_DTS = 4 × t_CK_INT"]
   DMAINTEN:
-    "CH?IE":
+    CH0IE:
       Disabled: [0, "Capture/compare interrupt disabled"]
       Enabled: [1, "Capture/compare interrupt enabled"]
+    "CH[1-3]IE":
+      _derivedFrom: "CH0IE"
   INTF:
-    "CH?OF":
+    "CH0OF":
       Clear: [0, "No over capture occurred"]
-      OverCapture: [1, "A capture event occured while CH0IF was already set"]
-    "CH?IF":
+      OverCapture: [1, "A capture event occured while CHnIF was already set"]
+    "CH[1-3]OF":
+      _derivedFrom: "CH0OF"
+    "CH0IF":
       Clear: [0, "No capture or compare interrupt occurred"]
       CaptureCompare: [1, "A capture or compare event occurred"]
+    "CH[1-3]IF":
+      _derivedFrom: "CH0IF"
   SWEVG:
-    "CH?G":
+    "CH0G":
       CaptureCompare: [1, "Generate a capture or compare event"]
-  CHCTL[01]_Output:
-    "CH?COMCEN":
+    "CH[1-3]G":
+      _derivedFrom: "CH0G"
+  CHCTL0_Output:
+    "CH0COMCEN":
       Disabled: [0, "Output compare clear disabled"]
-      ENabled: [1, "Output compare clear enabled"]
-    "CH?COMCTL":
+      Enabled: [1, "Output compare clear enabled"]
+    "CH0COMCTL":
       Frozen:
         [
           0,
@@ -75,7 +63,7 @@ TIMER0:
           "In upcounting, channel is active as long as CNT<CHyCV else inactive. In downcounting, channel is inactive as long as CNT>CHyCV else active",
         ]
       PwmMode1: [7, "Inversely to PwmMode0"]
-    "CH?COMSEN":
+    "CH0COMSEN":
       Disabled:
         [
           0,
@@ -86,16 +74,27 @@ TIMER0:
           1,
           "Preload register on CHyCV enabled. Preload value is loaded into active register on each update event",
         ]
-    "CH?COMFEN":
+    "CH0COMFEN":
       Slow: [0, "The minimum delay from an edge is 5 clock cycles"]
       Fast: [1, "The minimum delay from an edge is 3 clock cycles"]
-    "CH?MS":
+    "CH0MS":
       Output: [0, "Channel is configured as output"]
       CI0: [1, "Channel is configured as input, ISx is connected to CI0FE0"]
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FE0"]
       ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
-  "CHCTL[01]_Input":
-    "CH?CAPFLT":
+  CHCTL[01]_Output:
+    "CH[1-3]COMCEN":
+      _derivedFrom: "CHCTL0_Output.CH0COMCEN.CH0COMCEN"
+    "CH[1-3]COMCTL":
+      _derivedFrom: "CHCTL0_Output.CH0COMCTL.CH0COMCTL"
+    "CH[1-3]COMSEN":
+      _derivedFrom: "CHCTL0_Output.CH0COMSEN.CH0COMSEN"
+    "CH[1-3]COMFEN":
+      _derivedFrom: "CHCTL0_Output.CH0COMFEN.CH0COMFEN"
+    "CH[1-3]MS":
+      _derivedFrom: "CHCTL0_Output.CH0MS.CH0MS"
+  "CHCTL0_Input":
+    "CH0CAPFLT":
       NoFilter: [0, "Filter disabled. fSAMP=fDTS, N=1"]
       TimerCk_N2: [1, "fSAMP=fTIMER_CK, N=2"]
       TimerCk_N4: [2, "fSAMP=fTIMER_CK, N=4"]
@@ -112,13 +111,70 @@ TIMER0:
       FDTS_Div32_N5: [13, "fSAMP=fDTS/32, N=5"]
       FDTS_Div32_N6: [14, "fSAMP=fDTS/32, N=6"]
       FDTS_Div32_N8: [15, "fSAMP=fDTS/32, N=8"]
-    "CH?CAPPSC":
+    "CH0CAPPSC":
       Div1: [0, "Prescaler disabled, capture on every edge"]
       Div2: [1, "Capture every 2 edges"]
       Div4: [2, "Capture every 4 edges"]
       Div8: [3, "Capture every 8 edges"]
-    "CH?MS":
+    "CH0MS":
       Output: [0, "Channel is configured as output"]
       CI0: [1, "Channel is configured as input, ISx is connected to CI0FEx"]
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FEx"]
       ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
+  "CHCTL[01]_Input":
+    "CH[1-3]CAPFLT":
+      _derivedFrom: "CHCTL0_Input.CH0CAPFLT.CH0CAPFLT"
+    "CH[1-3]CAPPSC":
+      _derivedFrom: "CHCTL0_Input.CH0CAPPSC.CH0CAPPSC"
+    "CH[1-3]MS":
+      _derivedFrom: "CHCTL0_Input.CH0MS.CH0MS"
+  CHCTL2:
+    "CH0P":
+      NotInverted: [0, "Active high"]
+      Inverted: [1, "Active low"]
+    "CH[1-3]P,CH?NP":
+      _derivedFrom: "CH0P"
+    "CH0EN":
+      Disabled: [0, "Channel output is disabled"]
+      Enabled: [1, "Channel output is enabled"]
+    "CH[1-3]EN":
+      _derivedFrom: "CH0EN"
+
+"TIMER[1-2],TIMER1[3-6]":
+  CTL0:
+    CKDIV:
+      _derivedFrom: "TIMER0.CTL0.CKDIV.CKDIV"
+  DMAINTEN:
+    "CH?IE":
+      _derivedFrom: "TIMER0.DMAINTEN.CH0IE.CH0IE"
+  INTF:
+    "CH?OF":
+      _derivedFrom: "TIMER0.INTF.CH0OF.CH0OF"
+    "CH?IF":
+      _derivedFrom: "TIMER0.INTF.CH0IF.CH0IF"
+  SWEVG:
+    "CH?G":
+      _derivedFrom: "TIMER0.SWEVG.CH0G.CH0G"
+  CHCTL[01]_Output:
+    "CH?COMCEN":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMCEN.CH0COMCEN"
+    "CH?COMCTL":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMCTL.CH0COMCTL"
+    "CH?COMSEN":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMSEN.CH0COMSEN"
+    "CH?COMFEN":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMFEN.CH0COMFEN"
+    "CH?MS":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0MS.CH0MS"
+  "CHCTL[01]_Input":
+    "CH?CAPFLT":
+      _derivedFrom: "TIMER0.CHCTL0_Input.CH0CAPFLT.CH0CAPFLT"
+    "CH?CAPPSC":
+      _derivedFrom: "TIMER0.CHCTL0_Input.CH0CAPPSC.CH0CAPPSC"
+    "CH?MS":
+      _derivedFrom: "TIMER0.CHCTL0_Input.CH0MS.CH0MS"
+  CHCTL2:
+    "CH?P,CH?NP":
+      _derivedFrom: "TIMER0.CHCTL2.CH0P.CH0P"
+    "CH?EN":
+      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
