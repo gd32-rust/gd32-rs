@@ -5,6 +5,27 @@
 # TIMER5 is a basic timer, all the others are general or advanced, and so have compare mode (among
 # other things).
 
+# Use the same types for all timers, by deriving from one.
+TIMER0:
+  CHCTL2:
+    "CH0P":
+      NotInverted: [0, "Active high"]
+      Inverted: [1, "Active low"]
+    "CH[1-3]P,CH?NP":
+      _derivedFrom: "CH0P"
+    "CH0EN":
+      Disabled: [0, "Channel output is disabled"]
+      Enabled: [1, "Channel output is enabled"]
+    "CH[1-3]EN":
+      _derivedFrom: "CH0EN"
+
+"TIMER[1-2],TIMER1[3-6]":
+  CHCTL2:
+    "CH?P,CH?NP":
+      _derivedFrom: "TIMER0.CHCTL2.CH0P.CH0P"
+    "CH?EN":
+      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
+
 "TIMER[0-2],TIMER1[3-6]":
   CTL0:
     CKDIV:
@@ -101,10 +122,3 @@
       CI0: [1, "Channel is configured as input, ISx is connected to CI0FEx"]
       CI1: [2, "Channel is configured as input, ISx is connected to CI1FEx"]
       ITS: [3, "Channel is configured as input, ISx is connected to ITS"]
-  CHCTL2:
-    "CH?P,CH?NP":
-      NotInverted: [0, "Active high"]
-      Inverted: [1, "Active low"]
-    "CH?EN":
-      Disabled: [0, "Channel output is disabled"]
-      Enabled: [1, "Channel output is enabled"]

@@ -49,8 +49,7 @@
     CREP: [0, 0xFF]
   CHCTL2:
     "CH?NEN":
-      Disabled: [0, "Channel complementary output is disabled"]
-      Enabled: [1, "Channel complementary output is enabled"]
+      _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
   CCHP:
     POEN:
       Disabled: [0, "Channel outputs are disabled"]
