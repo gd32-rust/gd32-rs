@@ -6,18 +6,10 @@
 
 TIMER0:
   CTL1:
-    ISO3:
-      Low: [0, "CH3_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH3_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-    ISO2N:
-      Low: [0, "CH2_ON=0 when POEN=0"]
-      High: [1, "CH2_ON=1 when POEN=0"]
-    ISO2:
-      Low: [0, "CH2_O=0 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-      High: [1, "CH2_O=1 (after a dead-time if CH0_ON is implemented) when POEN=0"]
-    ISO1N:
-      Low: [0, "CH1_ON=0 when POEN=0"]
-      High: [1, "CH1_ON=1 when POEN=0"]
+    "ISO[2-3]":
+      _derivedFrom: "ISO0"
+    "ISO[1-2]N":
+      _derivedFrom: "ISO0N"
   DMAINTEN:
     CMTDEN:
       Disabled: [0, "Commutation DMA request disabled"]

@@ -57,6 +57,7 @@ $(1)/src/%/mod.rs: svd/%.svd.patched $(1)/Cargo.toml
 	mkdir -p $$(@D)
 	cd $$(@D); svd2rust -m -g -i ../../../$$<
 	rustfmt --config-path="rustfmt.toml" $$@
+	sed -i "s/crate::timer/crate::$$(*F)::timer/" $$@
 	rm $$(@D)/build.rs
 	mv -f $$(@D)/generic.rs $$(@D)/../
 
@@ -75,7 +76,7 @@ $(1)/Cargo.toml: crates
 
 endef
 
-$(foreach crate,$(CRATES),$(eval $(call crate_template, $(crate))))
+$(foreach crate,$(CRATES),$(eval $(call crate_template,$(crate))))
 
 svd/%.svd: svd/.extracted ;
 
