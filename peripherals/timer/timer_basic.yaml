@@ -44,7 +44,7 @@ TIMER0:
     UPDIS:
       _derivedFrom: "TIMER0.CTL0.UPDIS.UPDIS"
     CEN:
-      _derivedFrom: "TIMER0.CTL0.UPDIS.UPDIS"
+      _derivedFrom: "TIMER0.CTL0.CEN.CEN"
   DMAINTEN:
     UPIE:
       _derivedFrom: "TIMER0.DMAINTEN.UPIE.UPIE"

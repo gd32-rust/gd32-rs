@@ -1,5 +1,10 @@
 # Changelog
 
+## [Unreleased]
+
+- GD32F1x0
+  - Fixed `TIMERn.CTL0.CEN` values, the enum values were accidentally reversed in 0.3.0.
+
 ## [0.3.0]
 
 - GD32F1x0
