@@ -21,10 +21,12 @@ SVD2RUST_VERSION = "0.18.0"
 
 CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
+    "gd32e2": ["rt", "gd32e230", "gd32e231"]
 }
 
 CRATE_DOC_TARGETS = {
     "gd32f1": "thumbv7m-none-eabi",
+    "gd32e2": "thumbv8m.base-none-eabi"
 }
 
 CARGO_TOML_TPL = """\
