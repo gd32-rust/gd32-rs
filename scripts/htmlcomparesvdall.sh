@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euxo pipefail
 
-mkdir -p html/gd32f
-python3 scripts/htmlcomparesvd.py html/gd32f svd/gd32f*.svd.patched
+mkdir -p html/gd32
+python3 scripts/htmlcomparesvd.py html/gd32 svd/gd32*.svd.patched
 
 cat > html/comparisons.html <<EOF
 <!DOCTYPE html>
@@ -30,7 +30,7 @@ cat > html/comparisons.html <<EOF
 
 <h1>Device families</h1>
 <ul>
-  <li><a href="gd32f/index.html">GD32F</a></li>
+  <li><a href="gd32/index.html">GD32</a></li>
 </ul>
 </body>
 </html>
