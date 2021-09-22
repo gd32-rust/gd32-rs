@@ -1,0 +1,18 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32e230.svd
+
+_modify:
+  name: "GD32E230"
+
+RCU:
+  VKEY:
+    _modify:
+      KEY:
+        access: write-only
+
+
+_include:
+  - common_patches/gd32e23x.yaml

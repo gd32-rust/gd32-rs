@@ -1,0 +1,5 @@
+RCU:
+  VKEY:
+    _modify:
+      KEY:
+        access: write-only

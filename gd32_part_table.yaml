@@ -43,3 +43,18 @@ gd32f1:
     rm_url: https://www.gigadevice.com/manual/gd32f190xxxx-user-manual/
     members:
       - GD32F190
+gd32e2:
+  gd32e230:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m23/value-line/gd32e230-series/
+    rm: GD32E230
+    rm_title: GD32E230
+    rm_url: https://www.gigadevice.com/manual/gd32e230xxxx-user-manual/
+    members:
+      - GD32E230
+  gd32e231:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m23/value-line/gd32e231-series/
+    rm: GD32E231
+    rm_title: GD32E231
+    rm_url: https://www.gigadevice.com/manual/gd32e231xxxx-user-manual/
+    members:
+      - GD32E231
