@@ -17,3 +17,4 @@ _include:
   - ../peripherals/i2c/i2c_high.yaml
   - ../peripherals/pmu/pmu.yaml
   - ../peripherals/syscfg/syscfg.yaml
+  - ../peripherals/usart/usart.yaml

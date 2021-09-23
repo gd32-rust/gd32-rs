@@ -19,3 +19,4 @@ _include:
   - ../peripherals/pmu/pmu_wupen1.yaml
   - ../peripherals/syscfg/syscfg.yaml
   - ../peripherals/syscfg/syscfg_hcce.yaml
+  - ../peripherals/usart/usart.yaml

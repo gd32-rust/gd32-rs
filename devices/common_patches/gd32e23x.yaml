@@ -31,3 +31,11 @@ FMC:
     _modify:
       CARL:
         name: "CAR"
+
+"USART*":
+  BAUD:
+    _modify:
+      BRR_INT:
+        name: "INTDIV"
+      BRR_FRA:
+        name: "FRADIV"
