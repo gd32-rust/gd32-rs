@@ -11,16 +11,19 @@ _include:
   - common_patches/gd32f1x0.yaml
   - common_patches/gd32f170_190.yaml
   - ../peripherals/adc/adc.yaml
+  - ../peripherals/adc/adc_vbat.yaml
   - ../peripherals/adc/adc_high.yaml
   - ../peripherals/can/can.yaml
-  - ../peripherals/crc/crc.yaml
   - ../peripherals/cmp/cmp.yaml
+  - ../peripherals/cmp/cmp_wnd.yaml
+  - ../peripherals/crc/crc.yaml
   - ../peripherals/dac/dac_2ch.yaml
   - ../peripherals/dbg/dbg.yaml
   - ../peripherals/dbg/dbg_high.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_wsen.yaml
   - ../peripherals/fwdgt/fwdgt.yaml
   - ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
@@ -28,11 +31,14 @@ _include:
   - ../peripherals/ivref/ivref.yaml
   - ../peripherals/opa/opa.yaml
   - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/pmu/pmu_wupen1.yaml
   - ../peripherals/rcu/rcu.yaml
   - ../peripherals/rcu/rcu_high.yaml
   - ../peripherals/spi/spi.yaml
   - ../peripherals/spi/spi_high.yaml
   - ../peripherals/syscfg/syscfg.yaml
+  - ../peripherals/syscfg/syscfg_hcce.yaml
+  - ../peripherals/syscfg/syscfg_slcd.yaml
   - ../peripherals/timer/timers.yaml
   - ../peripherals/timer/timers_high.yaml
   - ../peripherals/usart/usart.yaml

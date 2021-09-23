@@ -1,5 +1,10 @@
 # Changelog
 
+## [unreleased]
+
+- GD32F1x0
+  - Renamed `I2Cn.STAT0.SMBALTS` to `SMBALT`. This matches what the documentation calls it.
+
 ## [0.4.0]
 
 - GD32F1x0

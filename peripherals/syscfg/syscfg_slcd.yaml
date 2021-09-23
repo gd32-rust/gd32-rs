@@ -1,0 +1,7 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+SYSCFG:
+  CFG1:
+    SLCD_DECA: [0, 7]

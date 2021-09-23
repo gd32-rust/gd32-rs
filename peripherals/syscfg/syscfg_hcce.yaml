@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+SYSCFG:
+  CFG0:
+    PB9_HCCE:
+      LowCurrent: [0, "High current capability is disabled"]
+      HighCurrent: [1, "High current capability is enabled, and speed control is bypassed"]

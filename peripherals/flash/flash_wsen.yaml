@@ -1,0 +1,11 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Flash memory controller for GD32F devices
+
+FMC:
+  WSEN:
+    WSEN:
+      NoWaitState: [0, "No wait state added"]
+      WaitState: [1, "Wait state added"]

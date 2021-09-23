@@ -7,3 +7,35 @@ RCU:
     _modify:
       KEY:
         access: write-only
+
+# Rename FMC fields to match GD32F1x0 devices.
+FMC:
+  OBSTAT:
+    _modify:
+      DATA:
+        name: "OB_DATA"
+      USER:
+        name: "OB_USER"
+  WP:
+    _modify:
+      WP:
+        name: "OB_WP"
+
+"SPI?":
+  _modify:
+    CPCPOLY:
+      name: "CRCPOLY"
+
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
+
+"USART*":
+  BAUD:
+    _modify:
+      BRR_INT:
+        name: "INTDIV"
+      BRR_FRA:
+        name: "FRADIV"
