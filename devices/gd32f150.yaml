@@ -26,9 +26,9 @@ _include:
   - common_patches/gd32f130_150.yaml
   - ../peripherals/adc/adc.yaml
   - ../peripherals/adc/adc_vbat.yaml
-  - ../peripherals/crc/crc.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/cmp/cmp_wnd.yaml
+  - ../peripherals/crc/crc.yaml
   - ../peripherals/dac/dac_1ch.yaml
   - ../peripherals/dbg/dbg.yaml
   - ../peripherals/dma/dma.yaml
