@@ -4,10 +4,6 @@
 
 SYSCFG:
   CFG0:
-    PB9_HCCE:
-      LowCurrent: [0, "High current capability is disabled"]
-      HighCurrent:
-        [1, "High current capability is enabled, and speed control is bypassed"]
     TIMER16_DMA_RMP:
       Channel0: [0, "Timer 16 DMA requests are mapped to DMA channel 0"]
       Channel1: [1, "Timer 16 DMA requests are remapped to DMA channel 1"]
@@ -27,8 +23,6 @@ SYSCFG:
       Flash: [0, "Boot from main flash"]
       SystemMemory: [1, "Boot from system memory"]
       SRAM: [3, "Boot from embedded SRAM"]
-  CFG1:
-    SLCD_DECA: [0, 7]
   EXTISS0:
     EXTI3_SS:
       PA3: [0, "PA3 pin"]
@@ -115,10 +109,8 @@ SYSCFG:
       Unlocked: [0, "The LVD interrupt is disconnected from the break input"]
       Locked: [1, "The LVD interrupt is connected to the break input"]
     SRAM_PARITY_ERROR_LOCK:
-      Unlocked:
-        [0, "The SRAM parity check error is disconnected from the break input"]
+      Unlocked: [0, "The SRAM parity check error is disconnected from the break input"]
       Locked: [1, "The SRAM parity check error is connected to the break input"]
     LOCKUP_LOCK:
-      Unlocked:
-        [0, "The Cortex-M3 LOCKUP output is disconnected from the break input"]
+      Unlocked: [0, "The Cortex-M3 LOCKUP output is disconnected from the break input"]
       Locked: [1, "The Cortex-M3 LOCKUP output is connected to the break input"]
