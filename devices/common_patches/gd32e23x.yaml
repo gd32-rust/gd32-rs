@@ -25,3 +25,9 @@ FMC:
   _modify:
     CPCPOLY:
       name: "CRCPOLY"
+
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
