@@ -20,3 +20,8 @@ FMC:
     _modify:
       WP:
         name: "OB_WP"
+
+"SPI?":
+  _modify:
+    CPCPOLY:
+      name: "CRCPOLY"
