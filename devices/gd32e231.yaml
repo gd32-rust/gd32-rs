@@ -11,3 +11,5 @@ _include:
   - ../peripherals/crc/crc.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
+  - ../peripherals/fwdgt/fwdgt.yaml
+  - ../peripherals/gpio/gpio.yaml
