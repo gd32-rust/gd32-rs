@@ -2,6 +2,8 @@
 
 ## [unreleased]
 
+- GD32E23x
+  - Added support for GD32E230 and GD32E231, in new `gd32e2` crate.
 - GD32F1x0
   - Renamed `I2Cn.STAT0.SMBALTS` to `SMBALT`. This matches what the documentation calls it.
 
