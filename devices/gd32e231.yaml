@@ -10,3 +10,4 @@ _include:
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/exti/exti.yaml
+  - ../peripherals/flash/flash.yaml

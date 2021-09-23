@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-# Flash memory controller for GD32F devices
+# Flash memory controller
 
 FMC:
   WS:
@@ -85,9 +85,5 @@ FMC:
       Error: [1, "Option bytes and complement bytes do not match"]
   WP:
     OB_WP: [0, 0xFFFF]
-  WSEN:
-    WSEN:
-      NoWaitState: [0, "No wait state added"]
-      WaitState: [1, "Wait state added"]
   PID:
     PID: [0, 0xFFFFFFFF]
