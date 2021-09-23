@@ -29,6 +29,7 @@ _include:
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/ivref/ivref.yaml
   - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/pmu/pmu_wupen1.yaml
   - ../peripherals/rcu/rcu.yaml
   - ../peripherals/rcu/rcu_low.yaml
   - ../peripherals/spi/spi.yaml

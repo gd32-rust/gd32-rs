@@ -15,3 +15,5 @@ _include:
   - ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/i2c/i2c_high.yaml
+  - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/pmu/pmu_wupen1.yaml

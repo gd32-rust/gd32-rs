@@ -33,6 +33,7 @@ _include:
   - ../peripherals/ivref/ivref.yaml
   - ../peripherals/opa/opa.yaml
   - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/pmu/pmu_wupen1.yaml
   - ../peripherals/rcu/rcu.yaml
   - ../peripherals/rcu/rcu_high.yaml
   - ../peripherals/spi/spi.yaml
