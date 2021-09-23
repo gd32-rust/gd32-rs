@@ -114,7 +114,7 @@ supports.
 Many peripherals are not yet patched to provide the type-safe friendly-name
 interface (enumerated values); please consider helping out with this!
 
-Check out the full list of supported devices [here](https://gd32-rs.github.io/gd32-rs/).
+Check out the full list of supported devices [here](https://qwandor.github.io/gd32-rs/).
 
 ## Adding New Devices
 
