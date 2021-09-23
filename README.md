@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/qwandor/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/qwandor/gd32-rs)
 [![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
+[![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
 
 This repository provides Rust device support crates for Cortex-M based GD32
 microcontrollers, providing a safe API to that device's peripherals using
@@ -105,6 +106,7 @@ This project is still young and there's a lot to do!
 ## Supported Device Families
 
 [![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
+[![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
 
 Please see the individual crate READMEs for the full list of devices each crate
 supports.
