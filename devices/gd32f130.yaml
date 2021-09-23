@@ -18,6 +18,7 @@ _include:
   - ../peripherals/adc/adc_vbat.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/cmp/cmp.yaml
+  - ../peripherals/cmp/cmp_wnd.yaml
   - ../peripherals/dbg/dbg.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml

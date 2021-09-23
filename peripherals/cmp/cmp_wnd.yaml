@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+CMP:
+  CS:
+    WNDEN:
+      Disabled: [0, "Window mode disabled"]
+      Enabled: [1, "Window mode enabled"]
