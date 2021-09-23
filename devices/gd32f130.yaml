@@ -15,6 +15,7 @@ _include:
   - common_patches/gd32f1x0.yaml
   - common_patches/gd32f130_150.yaml
   - ../peripherals/adc/adc.yaml
+  - ../peripherals/adc/adc_vbat.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/dbg/dbg.yaml

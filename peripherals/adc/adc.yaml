@@ -68,9 +68,6 @@ ADC:
       Enabled: [1, "EOC interrupt enabled. An interrupt is generated when the EOC bit is set"]
     WDCHSEL: [0, 18]
   CTL1:
-    VBATEN:
-      Disabled: [0, "VBAT channel disabled"]
-      Enabled: [1, "VBAT channel enabled"]
     TSVREN:
       Disabled: [0, "Channel 16 and 17 disabled"]
       Enabled: [1, "Channel 16 and 17 enabled"]

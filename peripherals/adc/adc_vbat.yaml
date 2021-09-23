@@ -1,0 +1,9 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+ADC:
+  CTL1:
+    VBATEN:
+      Disabled: [0, "VBAT channel disabled"]
+      Enabled: [1, "VBAT channel enabled"]

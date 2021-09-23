@@ -6,3 +6,4 @@ _svd: ../svd/gd32e231.svd
 
 _include:
   - common_patches/gd32e23x.yaml
+  - ../peripherals/adc/adc.yaml
