@@ -17,7 +17,7 @@ import re
 import yaml
 
 VERSION = "0.4.0"
-SVD2RUST_VERSION = "0.18.0"
+SVD2RUST_VERSION = "0.19.0"
 
 CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
