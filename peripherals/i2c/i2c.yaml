@@ -14,8 +14,7 @@
       Disabled: [0, "No PEC transfer"]
       Enabled: [1, "PEC transfer"]
     POAP:
-      Current:
-        [0, "ACK bit controls the (N)ACK of the current byte being received"]
+      Current: [0, "ACK bit controls the (N)ACK of the current byte being received"]
       Next: [1, "ACK bit controls the (N)ACK of the next byte to be received"]
     ACKEN:
       NAK: [0, "No acknowledge returned"]
@@ -77,7 +76,7 @@
   DATA:
     TRB: [0, 0xFF]
   STAT0:
-    SMBALTS:
+    SMBALT:
       NoAlert: [0, "SMBA not pulled down or no alert occured"]
       Alert: [1, "SMBA pulled down or alert occurred"]
     SMBTO:
@@ -115,11 +114,7 @@
       Finished: [1, "Data byte transfer successful"]
     ADDSEND:
       NotMatch: [0, "Adress mismatched or not received"]
-      Match:
-        [
-          1,
-          "Received slave address matched with one of the enabled slave addresses",
-        ]
+      Match: [1, "Received slave address matched with one of the enabled slave addresses"]
     SBSEND:
       NoStart: [0, "No Start condition"]
       Start: [1, "Start condition generated"]

@@ -50,6 +50,8 @@ TIMER15:
     _modify:
       BE:
         name: "BERR"
+      SMBALTS:
+        name: "SMBALT"
   STAT1:
     _modify:
       ECV:
