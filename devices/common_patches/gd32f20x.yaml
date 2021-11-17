@@ -1,0 +1,14 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Fix typos in field names
+TIMER0:
+  SMCFG:
+    _modify:
+      SCM1:
+        name: "SMC1"
+"TIMER[1-2]":
+  SWEVG:
+    _delete:
+      - BRKG

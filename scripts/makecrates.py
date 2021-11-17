@@ -22,12 +22,14 @@ SVD2RUST_VERSION = "0.19.0"
 CRATE_DOC_FEATURES = {
     "gd32e2": ["rt", "gd32e230", "gd32e231"],
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
+    "gd32f2": ["rt", "gd32f207"],
     "gd32f3": ["rt", "gd32f303", "gd32f307"],
 }
 
 CRATE_DOC_TARGETS = {
     "gd32e2": "thumbv8m.base-none-eabi",
     "gd32f1": "thumbv7m-none-eabi",
+    "gd32f2": "thumbv7m-none-eabi",
     "gd32f3": "thumbv7em-none-eabihf",
 }
 
