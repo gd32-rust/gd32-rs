@@ -14,3 +14,44 @@
   _modify:
     CTL:
       name: CTL0
+
+"I2C*":
+  CTL0:
+    _modify:
+      DISSTRC:
+        name: SS
+  SADDR0:
+    _merge: ["ADDRESS*"]
+  STAT1:
+    _modify:
+      ECV:
+        name: PECV
+      TRS:
+        name: TR
+
+"PMU":
+  CS:
+    _modify:
+      WUPEN:
+        name: WUPEN0
+
+"RCU":
+  _modify:
+    CTL:
+      name: CTL0
+  CFG0:
+    _modify:
+      ADCPSC_2:
+        name: ADCPSC2
+      ADCPSC_1_0:
+        name: ADCPSC1
+      PLLMF_4:
+        name: PLLMF_MSB
+      PLLMF_3_0:
+        name: PLLMF
+      PREDV0_LSB:
+        name: PLLPREDV
+      CKOUT0SEL:
+        name: CKOUTSEL
+    _merge:
+      - "ADCPSC*"
