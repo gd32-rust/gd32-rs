@@ -29,7 +29,6 @@ _include:
   - ../peripherals/rcu/rcu_f2.yaml
   - ../peripherals/spi/spi.yaml
   - ../peripherals/spi/spi_high.yaml
-  #- ../peripherals/timers/timers.yaml
-  #- ../peripherals/timers/timers_high.yaml
-  #- ../peripherals/usart/usart.yaml
+  - ../peripherals/timer/timers_f2.yaml
+  - ../peripherals/usart/usart_f2.yaml
   - ../peripherals/wwdg/wwdg.yaml

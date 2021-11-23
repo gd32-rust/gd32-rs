@@ -13,6 +13,12 @@ TIMER0:
     _delete:
       - BRKG
 
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
+
 "SPI*":
   CRCPOLY:
     _modify:
