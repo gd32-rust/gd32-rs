@@ -12,3 +12,18 @@ TIMER0:
   SWEVG:
     _delete:
       - BRKG
+
+"SPI*":
+  CRCPOLY:
+    _modify:
+      CPR:
+        name: "CRCPOLY"
+  RCRC:
+    _modify:
+      RCR:
+        name: "RCRC"
+  TCRC:
+    _modify:
+      TCR:
+        name: "TCRC"
+

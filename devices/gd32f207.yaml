@@ -27,8 +27,8 @@ _include:
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/pmu/pmu.yaml
   - ../peripherals/rcu/rcu_f2.yaml
-  #- ../peripherals/spi/spi.yaml
-  #- ../peripherals/spi/spi_high.yaml
+  - ../peripherals/spi/spi.yaml
+  - ../peripherals/spi/spi_high.yaml
   #- ../peripherals/timers/timers.yaml
   #- ../peripherals/timers/timers_high.yaml
   #- ../peripherals/usart/usart.yaml
