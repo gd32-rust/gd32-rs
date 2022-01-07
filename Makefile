@@ -57,7 +57,8 @@ $(1)/src/%/mod.rs: svd/%.svd.patched $(1)/Cargo.toml
 	mkdir -p $$(@D)
 	cd $$(@D); svd2rust -m -g -i ../../../$$<
 	rustfmt --config-path="rustfmt.toml" $$@
-	sed -i "s/crate::timer/crate::$$(*F)::timer/" $$@
+	sed -i.bak "s/crate::timer/crate::$$(*F)::timer/" $$@
+	rm $$@.bak
 	rm $$(@D)/build.rs
 	mv -f $$(@D)/generic.rs $$(@D)/../
 
