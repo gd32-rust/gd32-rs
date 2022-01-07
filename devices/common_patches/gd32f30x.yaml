@@ -1,0 +1,23 @@
+# Fix access: write -> access: write-only
+RCU:
+  ADDINT:
+    _modify:
+      IRC48MSTBIC:
+        access: write-only
+RTC:
+  PSC[LH]:
+    _modify:
+      PSC:
+        access: write-only
+  _modify:
+    DIV[LH]:
+      access: read-only
+    ALRM[LH]:
+      access: write-only
+USART0:
+  STAT1:
+    _modify:
+      EBF:
+        access: write-only
+      RTF:
+        access: write-only

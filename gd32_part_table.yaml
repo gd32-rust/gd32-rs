@@ -58,3 +58,18 @@ gd32e2:
     rm_url: https://www.gigadevice.com/manual/gd32e231xxxx-user-manual/
     members:
       - GD32E231
+gd32f3:
+  gd32f305:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/mainstream-line/gd32f305-series/
+    rm: GD32F305
+    rm_title: GD32F305
+    rm_url: https://www.gigadevice.com/manual/gd32f305xxxx-user-manual/
+    members:
+      - GD32F305
+  gd32f307:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/mainstream-line/gd32f307-series/
+    rm: GD32F307
+    rm_title: GD32F307
+    rm_url: https://www.gigadevice.com/manual/gd32f307xxxx-user-manual/
+    members:
+      - GD32F307
