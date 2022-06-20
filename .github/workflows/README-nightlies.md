@@ -4,7 +4,7 @@ This repository contains automated builds of the [gd32-rs] crates, rebuilt
 whenever a PR is merged to the main branch. Consult the [gd32-rs] README
 for full details.
 
-[gd32-rs]: https://github.com/qwandor/gd32-rs
+[gd32-rs]: https://github.com/gd32-rust/gd32-rs
 
 ## Using These Builds
 
@@ -12,7 +12,7 @@ Edit your `Cargo.toml`:
 
 ```toml
 [dependencies.gd32f1]
-git = "https://github.com/qwandor/gd32-rs-nightlies"
+git = "https://github.com/gd32-rust/gd32-rs-nightlies"
 features = ["gd32f130", "rt"]
 ```
 

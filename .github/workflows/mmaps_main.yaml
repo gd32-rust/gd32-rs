@@ -17,7 +17,7 @@ jobs:
       - name: Checkout mmaps
         uses: actions/checkout@v2
         with:
-          repository: qwandor/gd32-rs-mmaps
+          repository: gd32-rust/gd32-rs-mmaps
           ssh-key: ${{ secrets.MMAPS_KEY }}
           path: gd32-rs-mmaps
       - name: Install Python dependencies

@@ -36,7 +36,7 @@ name = "{crate}"
 version = "{version}"
 authors = ["Andrew Walbran <qwandor@gmail.com>", "gd32-rs Contributors"]
 description = "Device support crate for {family} devices"
-repository = "https://github.com/qwandor/gd32-rs"
+repository = "https://github.com/gd32-rust/gd32-rs"
 readme = "README.md"
 keywords = ["gd32", "svd2rust", "no_std", "embedded"]
 categories = ["embedded", "no-std"]
@@ -70,15 +70,15 @@ SRC_LIB_RS_TPL = """\
 //! [svd2rust/#peripheral-api](https://docs.rs/svd2rust/{svd2rust_version}/svd2rust/#peripheral-api)
 //!
 //! For more details see the README here:
-//! [gd32-rs](https://github.com/qwandor/gd32-rs)
+//! [gd32-rs](https://github.com/gd32-rust/gd32-rs)
 //!
 //! This crate supports all {family} devices; for the complete list please
 //! see:
-//! [{crate}](https://github.com/qwandor/gd32-rs-nightlies/tree/main/{crate})
+//! [{crate}](https://github.com/gd32-rust/gd32-rs-nightlies/tree/main/{crate})
 //!
 //! Due to doc build limitations, not all devices may be shown on docs.rs;
 //! a representative few have been selected instead. For a complete list of
-//! available registers and fields see: [gd32-rs Device Coverage](https://qwandor.github.io/gd32-rs/)
+//! available registers and fields see: [gd32-rs Device Coverage](https://gd32-rust.github.io/gd32-rs/)
 
 #![allow(non_camel_case_types)]
 #![no_std]
@@ -98,7 +98,7 @@ extensive type-safe support. For more information please see the [main repo].
 Refer to the [documentation] for full details.
 
 [svd2rust]: https://github.com/japaric/svd2rust
-[main repo]: https://github.com/qwandor/gd32-rs
+[main repo]: https://github.com/gd32-rust/gd32-rs
 [documentation]: https://docs.rs/{crate}/latest/{crate}/
 
 ## Usage

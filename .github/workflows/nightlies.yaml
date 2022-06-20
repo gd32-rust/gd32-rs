@@ -73,5 +73,5 @@ jobs:
           git config user.name "gd32-rs builder"
           git config user.email "action@github.com"
           git commit -m "gd32-rs main $COMMIT"
-          git remote add origin git@github.com:qwandor/gd32-rs-nightlies
+          git remote add origin git@github.com:gd32-rust/gd32-rs-nightlies
           git push --force origin main

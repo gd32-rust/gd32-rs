@@ -21,7 +21,7 @@ jobs:
       - name: Checkout mmaps
         uses: actions/checkout@v2
         with:
-          repository: qwandor/gd32-rs-mmaps
+          repository: gd32-rust/gd32-rs-mmaps
           ssh-key: ${{ secrets.MMAPS_KEY }}
           path: mmaps
       - name: Install Python dependencies
@@ -57,6 +57,6 @@ jobs:
         uses: mshick/add-pr-comment@v1
         with:
           message: |
-            [Memory map comparison](https://github.com/qwandor/gd32-rs-mmaps/compare/${{ env.BRANCH }})
+            [Memory map comparison](https://github.com/gd32-rust/gd32-rs-mmaps/compare/${{ env.BRANCH }})
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           repo-token-user-login: 'github-actions[bot]'

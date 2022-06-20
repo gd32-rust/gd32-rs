@@ -1,6 +1,6 @@
 # GD32 Peripheral Access Crates
 
-[![CI](https://github.com/qwandor/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/qwandor/gd32-rs)
+[![CI](https://github.com/gd32-rust/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/gd32-rust/gd32-rs)
 [![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
 
@@ -14,7 +14,7 @@ peripheral access crates or "PACs".
 [svd2rust]: https://github.com/rust-embedded/svd2rust
 
 To view the generated code that makes up each crate, visit the
-[gd32-rs-nightlies](https://github.com/qwandor/gd32-rs-nightlies)
+[gd32-rs-nightlies](https://github.com/gd32-rust/gd32-rs-nightlies)
 repository, which is automatically rebuilt on every commit to gd32-rs main.
 The gd32-rs repository contains the patches to the underlying SVD files and
 the tooling to generate the crates.
@@ -24,7 +24,7 @@ have been tested on hardware, and so errors or omissions may remain. We can't
 make any guarantee of correctness. Please report any bugs you find!
 
 You can see current coverage status for each chip
-[here](https://qwandor.github.io/gd32-rs/). Coverage means that individual fields are
+[here](https://gd32-rust.github.io/gd32-rs/). Coverage means that individual fields are
 documented with possible values, but even devices with low coverage should
 have every register and field available in the API. That page also allows you
 to drill down into each field on each register on each peripheral.
@@ -60,12 +60,12 @@ crate READMEs for the complete list of supported devices.
 
 Whenever the main branch of this repository is updated, all device crates are
 built and deployed to the
-[gd32-rs-nightlies](https://github.com/qwandor/gd32-rs-nightlies)
+[gd32-rs-nightlies](https://github.com/gd32-rust/gd32-rs-nightlies)
 repository. You can use this in your `Cargo.toml`:
 
 ```toml
 [dependencies.gd32f1]
-git = "https://github.com/qwandor/gd32-rs-nightlies"
+git = "https://github.com/gd32-rust/gd32-rs-nightlies"
 features = ["gd32f130", "rt"]
 ```
 
@@ -114,7 +114,7 @@ supports.
 Many peripherals are not yet patched to provide the type-safe friendly-name
 interface (enumerated values); please consider helping out with this!
 
-Check out the full list of supported devices [here](https://qwandor.github.io/gd32-rs/).
+Check out the full list of supported devices [here](https://gd32-rust.github.io/gd32-rs/).
 
 ## Adding New Devices
 
