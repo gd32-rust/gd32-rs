@@ -49,3 +49,20 @@ FMC:
   _modify:
     WPR:
       name: "WP"
+"I2C*":
+  CTL0:
+    _modify:
+      DISSTRC:
+        name: "SS"
+  SADDR0:
+    _merge:
+      ADDRESS:
+        - ADDRESS0
+        - ADDRESS7_1
+        - ADDRESS9_8
+  STAT1:
+    _modify:
+      ECV:
+        name: "PECV"
+      TRS:
+        name: "TR"
