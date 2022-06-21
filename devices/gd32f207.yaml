@@ -11,7 +11,7 @@ _include:
   - common_patches/gd32f20x.yaml
   - common_patches/gd32f205_207.yaml
   - ../peripherals/adc/adc.yaml
-  - ../peripherals/can/can.yaml
+  - ../peripherals/can/can_f2_f3.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml

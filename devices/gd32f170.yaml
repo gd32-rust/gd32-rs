@@ -17,7 +17,6 @@ _include:
   - ../peripherals/adc/adc_vbat.yaml
   - ../peripherals/adc/adc_high.yaml
   - ../peripherals/can/can.yaml
-  - ../peripherals/can/phyctl.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/cmp/cmp_wnd.yaml
   - ../peripherals/crc/crc.yaml
