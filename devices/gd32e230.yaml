@@ -10,6 +10,7 @@ _include:
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/crc/rev_idata.yaml
+  - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
   - ../peripherals/flash/flash_ob.yaml

@@ -2,9 +2,9 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-DMA:
+"DMA,DMA[01]":
   INTF:
-    "TAEIF*":
+    "ERRIF*":
       NoError: [0, "No transfer error"]
       Error: [1, "A transfer error has occured"]
     "HTFIF*":
@@ -17,15 +17,15 @@ DMA:
       NoEvent: [0, "No transfer error, half event, complete event"]
       Event: [1, "A transfer error, half event or complete event has occured"]
   INTC:
-    "TAEIFC*":
+    "ERRIFC*":
       Clear: [1, "Clears the ERRIF flag in INTF"]
     "HTFIFC*":
       Clear: [1, "Clears the HTFIF flag in INTF"]
     "FTFIFC*":
       Clear: [1, "Clears the FDFIF flag in INTF"]
-    "GIC*":
+    "GIFC*":
       Clear: [1, "Clears the GIF flag in INTF"]
-  "CH*CTL0":
+  "CH*CTL":
     M2M:
       Disabled: [0, "Memory to memory mode disabled"]
       Enabled: [1, "Memory to memory mode enabled"]
@@ -47,7 +47,7 @@ DMA:
     DIR:
       FromPeripheral: [0, "Read from peripheral"]
       FromMemory: [1, "Read from memory"]
-    TAEIE:
+    ERRIE:
       Disabled: [0, "Transfer error interrupt disabled"]
       Enabled: [1, "Transfer error interrupt enabled"]
     HTFIE:
