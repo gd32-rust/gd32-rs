@@ -28,3 +28,10 @@ _derive:
   GPIOD: "GPIOA"
   GPIOE: "GPIOA"
   GPIOF: "GPIOA"
+
+# Fix typos in field names.
+"CAN*":
+  BT:
+    _modify:
+      BUADPSC:
+        name: "BAUDPSC"
