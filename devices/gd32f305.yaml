@@ -39,5 +39,5 @@ _include:
   #- ../peripherals/timer/timers.yaml
   #- ../peripherals/timer/timers_high.yaml
   #- ../peripherals/usart/usart.yaml
-  #- ../peripherals/wwdg/wwdg.yaml
+  - ../peripherals/wwdg/wwdg.yaml
   # Note: 307 has an ethernet port, 305 doesn't
