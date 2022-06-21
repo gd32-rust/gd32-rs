@@ -59,6 +59,13 @@ gd32f1:
     members:
       - GD32F190
 gd32f3:
+  gd32f303:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/mainstream-line/gd32f303-series/
+    rm: GD32F303
+    rm_title: GD32F303
+    rm_url: https://www.gigadevice.com/manual/gd32f303xxxx-user-manual/
+    members:
+      - GD32F303
   gd32f305:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/mainstream-line/gd32f305-series/
     rm: GD32F305

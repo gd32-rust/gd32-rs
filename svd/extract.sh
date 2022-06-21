@@ -13,5 +13,6 @@ cp vendor/GD32F1x0.svd gd32f150.svd
 cp vendor/GD32F1x0.svd gd32f170.svd
 cp vendor/GD32F1x0.svd gd32f190.svd
 
+cp vendor/GD32F30x_XD.svd gd32f303.svd
 cp vendor/GD32F30x_CL.svd gd32f305.svd
 cp vendor/GD32F30x_CL.svd gd32f307.svd
