@@ -12,8 +12,9 @@ jobs:
     strategy:
       matrix:
         crate:
-          - gd32f1
           - gd32e2
+          - gd32f1
+          - gd32f3
     env:
       CRATES: ${{ matrix.crate }}
       CARGO_INCREMENTAL: 0
