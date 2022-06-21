@@ -35,3 +35,17 @@ _derive:
     _modify:
       BUADPSC:
         name: "BAUDPSC"
+FMC:
+  STAT[01]:
+    _modify:
+      END:
+        name: "ENDF"
+  CTL[01]:
+    _modify:
+      ERIE:
+        name: "ERRIE"
+      OBWPE:
+        name: "OBWEN"
+  _modify:
+    WPR:
+      name: "WP"
