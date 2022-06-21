@@ -21,6 +21,7 @@ _include:
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/cmp/cmp_wnd.yaml
   - ../peripherals/crc/crc.yaml
+  - ../peripherals/crc/rev_idata.yaml
   - ../peripherals/dbg/dbg.yaml
   - ../peripherals/dbg/dbg_high.yaml
   - ../peripherals/dma/dma.yaml

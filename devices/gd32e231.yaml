@@ -9,6 +9,7 @@ _include:
   - ../peripherals/adc/adc.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/crc/crc.yaml
+  - ../peripherals/crc/rev_idata.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
   - ../peripherals/fwdgt/fwdgt.yaml
