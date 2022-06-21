@@ -1,0 +1,37 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32f305.svd
+
+_modify:
+  name: "GD32F305"
+
+_include:
+  - common_patches/gd32f30x.yaml
+  # - ../peripherals/adc/adc.yaml
+  # - ../peripherals/adc/adc_vbat.yaml
+  # - ../peripherals/adc/adc_high.yaml
+  - ../peripherals/can/can.yaml
+  - ../peripherals/crc/crc.yaml
+  #- ../peripherals/dac/dac_2ch.yaml
+  #- ../peripherals/dbg/dbg.yaml
+  #- ../peripherals/dbg/dbg_high.yaml
+  - ../peripherals/dma/dma.yaml
+  - ../peripherals/exti/exti.yaml
+  - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_wsen.yaml
+  - ../peripherals/fwdgt/fwdgt.yaml
+  #- ../peripherals/gpio/gpio.yaml
+  - ../peripherals/i2c/i2c.yaml
+  #- ../peripherals/pmu/pmu.yaml
+  #- ../peripherals/pmu/pmu_wupen1.yaml
+  #- ../peripherals/rcu/rcu.yaml
+  #- ../peripherals/rcu/rcu_high.yaml
+  - ../peripherals/spi/spi.yaml
+  #- ../peripherals/timer/timers.yaml
+  #- ../peripherals/timer/timers_high.yaml
+  #- ../peripherals/usart/usart.yaml
+  - ../peripherals/wwdg/wwdg.yaml
+
+# Note: 307 has an ethernet port, 305 doesn't

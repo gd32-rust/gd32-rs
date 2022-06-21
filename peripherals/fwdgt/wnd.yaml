@@ -1,0 +1,11 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+FWDGT:
+  STAT:
+    WUD:
+      Valid: [0, "The value read from the WND register is valid"]
+      Ongoing: [1, "A write operation to to the WND register is ongoing, so the value read is invalid"]
+  WND:
+    WND: [0, 4095]

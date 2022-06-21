@@ -1,0 +1,20 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+FMC:
+  CTL:
+    OBRLD:
+      Reload: [1, "Force option bytes reload and reset"]
+  OBSTAT:
+    OB_DATA: [0, 0xFFFF]
+    OB_USER: [0, 0xFF]
+    PLEVEL:
+      None: [0, "No protection level"]
+      Low: [1, "Low protection level"]
+      High: [3, "High protection level"]
+    OBERR:
+      NoError: [0, "No error with option bytes"]
+      Error: [1, "Option bytes and complement bytes do not match"]
+  WP:
+    OB_WP: [0, 0xFFFF]

@@ -14,7 +14,7 @@ FMC:
     KEY: [0, 0xFFFFFFFF]
   OBKEY:
     OBKEY: [0, 0xFFFFFFFF]
-  STAT:
+  "STAT,STAT[01]":
     ENDF:
       _read:
         NoEvent: [0, "No end of operation occurred"]
@@ -37,21 +37,13 @@ FMC:
       _read:
         Inactive: [0, "No operation is in progress"]
         Active: [1, "An operation is in progress"]
-  CTL:
-    OBRLD:
-      Reload: [1, "Force option bytes reload and reset"]
+  "CTL,CTL[01]":
     ENDIE:
       Disabled: [0, "End of operation interrupt disabled"]
       Enabled: [1, "End of operation interrupt enabled"]
     ERRIE:
       Disabled: [0, "Error interrupt generation disabled"]
       Enabled: [1, "Error interrupt generation enabled"]
-    OBWEN:
-      _read:
-        Disabled: [0, "Option byte write disabled"]
-        Enabled: [1, "Option byte write enabled"]
-      _write:
-        Disable: [0, "Disable option byte write"]
     LK:
       _read:
         Unlocked: [0, "CTL register is unlocked"]
@@ -61,29 +53,24 @@ FMC:
     START:
       _write:
         Start: [1, "Trigger an erase operation"]
-    OBER:
-      OptionByteErase: [1, "Erase option byte activated"]
-    OBPG:
-      OptionByteProgramming: [1, "Program option byte activated"]
     MER:
       MassErase: [1, "Erase activated for all user sectors"]
     PER:
       PageErase: [1, "Erase activated for selected page"]
     PG:
       Program: [1, "Flash programming activated"]
-  ADDR:
+  "CTL,CTL0":
+    OBWEN:
+      _read:
+        Disabled: [0, "Option byte write disabled"]
+        Enabled: [1, "Option byte write enabled"]
+      _write:
+        Disable: [0, "Disable option byte write"]
+    OBER:
+      OptionByteErase: [1, "Erase option byte activated"]
+    OBPG:
+      OptionByteProgramming: [1, "Program option byte activated"]
+  "ADDR,ADDR[01]":
     ADDR: [0, 0xFFFFFFFF]
-  OBSTAT:
-    OB_DATA: [0, 0xFFFF]
-    OB_USER: [0, 0xFF]
-    PLEVEL:
-      None: [0, "No protection level"]
-      Low: [1, "Low protection level"]
-      High: [3, "High protection level"]
-    OBERR:
-      NoError: [0, "No error with option bytes"]
-      Error: [1, "Option bytes and complement bytes do not match"]
-  WP:
-    OB_WP: [0, 0xFFFF]
   PID:
     PID: [0, 0xFFFFFFFF]

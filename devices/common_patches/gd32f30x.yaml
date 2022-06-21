@@ -1,0 +1,94 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Fix access: write -> access: write-only
+RCU:
+  ADDINT:
+    _modify:
+      IRC48MSTBIC:
+        access: write-only
+RTC:
+  PSC[LH]:
+    _modify:
+      PSC:
+        access: write-only
+  _modify:
+    DIV[LH]:
+      access: read-only
+    ALRM[LH]:
+      access: write-only
+USART0:
+  STAT1:
+    _modify:
+      EBF:
+        access: write-only
+      RTF:
+        access: write-only
+
+# GPIO peripherals should all be derived from GPIOA, rather than chaining.
+_derive:
+  GPIOC: "GPIOA"
+  GPIOD: "GPIOA"
+  GPIOE: "GPIOA"
+  GPIOF: "GPIOA"
+
+# Fix typos in field names.
+"CAN*":
+  BT:
+    _modify:
+      BUADPSC:
+        name: "BAUDPSC"
+FMC:
+  STAT[01]:
+    _modify:
+      END:
+        name: "ENDF"
+  CTL[01]:
+    _modify:
+      ERIE:
+        name: "ERRIE"
+      OBWPE:
+        name: "OBWEN"
+  _modify:
+    WPR:
+      name: "WP"
+"I2C*":
+  CTL0:
+    _modify:
+      DISSTRC:
+        name: "SS"
+  SADDR0:
+    _merge:
+      ADDRESS:
+        - ADDRESS0
+        - ADDRESS7_1
+        - ADDRESS9_8
+  STAT1:
+    _modify:
+      ECV:
+        name: "PECV"
+      TRS:
+        name: "TR"
+"SPI*":
+  DATA:
+    _modify:
+      SPI_DATA:
+        name: "DATA"
+  CRCPOLY:
+    _modify:
+      CPR:
+        name: "CRCPOLY"
+  RCRC:
+    _modify:
+      RCR:
+        name: "RCRC"
+  TCRC:
+    _modify:
+      TCR:
+        name: "TCRC"
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"

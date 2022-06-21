@@ -27,10 +27,73 @@ FMC:
       OBER:
         name: "OBERR"
 DMA:
-  "CH*CTL0":
+  INTF:
+    _modify:
+      TAEIF0:
+        name: "ERRIF0"
+      TAEIF1:
+        name: "ERRIF1"
+      TAEIF2:
+        name: "ERRIF2"
+      TAEIF3:
+        name: "ERRIF3"
+      TAEIF4:
+        name: "ERRIF4"
+      TAEIF5:
+        name: "ERRIF5"
+      TAEIF6:
+        name: "ERRIF6"
+  INTC:
+    _modify:
+      GIC0:
+        name: "GIFC0"
+      GIC1:
+        name: "GIFC1"
+      GIC2:
+        name: "GIFC2"
+      GIC3:
+        name: "GIFC3"
+      GIC4:
+        name: "GIFC4"
+      GIC5:
+        name: "GIFC5"
+      GIC6:
+        name: "GIFC6"
+      TAEIFC0:
+        name: "ERRIFC0"
+      TAEIFC1:
+        name: "ERRIFC1"
+      TAEIFC2:
+        name: "ERRIFC2"
+      TAEIFC3:
+        name: "ERRIFC3"
+      TAEIFC4:
+        name: "ERRIFC4"
+      TAEIFC5:
+        name: "ERRIFC5"
+      TAEIFC6:
+        name: "ERRIFC6"
+  _modify:
+    CH0CTL0:
+      name: "CH0CTL"
+    CH1CTL0:
+      name: "CH1CTL"
+    CH2CTL0:
+      name: "CH2CTL"
+    CH3CTL0:
+      name: "CH3CTL"
+    CH4CTL0:
+      name: "CH4CTL"
+    CH5CTL0:
+      name: "CH5CTL"
+    CH6CTL0:
+      name: "CH6CTL"
+  "CH*CTL":
     _modify:
       TM:
         name: "DIR"
+      TAEIE:
+        name: "ERRIE"
 CMP:
   CS:
     _modify:

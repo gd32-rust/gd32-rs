@@ -247,12 +247,3 @@
       Enabled: [1, "Filter working enabled"]
   "F*DATA?":
     "FD*": # Meaning is different in mask mode or list mode
-  PHYCTL:
-    POMOD:
-      LowSlope: [0, "Low slope mode"]
-      MiddleSlope: [1, "Middle slope mode"]
-      HighSlope: [2, "High slope mode"]
-      HighSpeed: [3, "High speed mode"]
-    PHYEN:
-      Disabled: [0, "CAN PHY disabled"]
-      Enabled: [1, "CAN PHY enabled"]

@@ -1,0 +1,14 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"CAN*":
+  PHYCTL:
+    POMOD:
+      LowSlope: [0, "Low slope mode"]
+      MiddleSlope: [1, "Middle slope mode"]
+      HighSlope: [2, "High slope mode"]
+      HighSpeed: [3, "High speed mode"]
+    PHYEN:
+      Disabled: [0, "CAN PHY disabled"]
+      Enabled: [1, "CAN PHY enabled"]

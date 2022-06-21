@@ -17,16 +17,20 @@ _include:
   - ../peripherals/adc/adc_vbat.yaml
   - ../peripherals/adc/adc_high.yaml
   - ../peripherals/can/can.yaml
+  - ../peripherals/can/phyctl.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/cmp/cmp_wnd.yaml
   - ../peripherals/crc/crc.yaml
+  - ../peripherals/crc/rev_idata.yaml
   - ../peripherals/dbg/dbg.yaml
   - ../peripherals/dbg/dbg_high.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_ob.yaml
   - ../peripherals/flash/flash_wsen.yaml
   - ../peripherals/fwdgt/fwdgt.yaml
+  - ../peripherals/fwdgt/wnd.yaml
   - ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/i2c/i2c_high.yaml

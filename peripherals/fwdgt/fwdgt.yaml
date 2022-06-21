@@ -23,14 +23,9 @@ FWDGT:
   RLD:
     RLD: [0, 4095]
   STAT:
-    WUD:
-      Valid: [0, "The value read from the WND register is valid"]
-      Ongoing: [1, "A write operation to to the WND register is ongoing, so the value read is invalid"]
     RUD:
       Valid: [0, "The value read from the RLD register is valid"]
       Ongoing: [1, "A write operation to to the RLD register is ongoing, so the value read is invalid"]
     PUD:
       Valid: [0, "The value read from the PSC register is valid"]
       Ongoing: [1, "A write operation to to the PSC register is ongoing, so the value read is invalid"]
-  WND:
-    WND: [0, 4095]

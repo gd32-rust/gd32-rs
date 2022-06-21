@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased]
+
+- GD32E23x
+  - Added DMA peripheral.
+- GD32F1x0
+  - Renamed various DMA registers and fields to be consistent with documentation and other series.
+- GD32F30x
+  - Added support for GD32F305 and GD32F307, in new `gd32f3` crate.
+
 ## [0.5.0]
 
 - GD32E23x

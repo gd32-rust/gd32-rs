@@ -9,9 +9,13 @@ _include:
   - ../peripherals/adc/adc.yaml
   - ../peripherals/cmp/cmp.yaml
   - ../peripherals/crc/crc.yaml
+  - ../peripherals/crc/rev_idata.yaml
+  - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_ob.yaml
   - ../peripherals/fwdgt/fwdgt.yaml
+  - ../peripherals/fwdgt/wnd.yaml
   - ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/i2c/i2c_high.yaml
