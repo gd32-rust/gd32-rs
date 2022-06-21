@@ -66,3 +66,20 @@ FMC:
         name: "PECV"
       TRS:
         name: "TR"
+"SPI*":
+  DATA:
+    _modify:
+      SPI_DATA:
+        name: "DATA"
+  CRCPOLY:
+    _modify:
+      CPR:
+        name: "CRCPOLY"
+  RCRC:
+    _modify:
+      RCR:
+        name: "RCRC"
+  TCRC:
+    _modify:
+      TCR:
+        name: "TCRC"
