@@ -21,3 +21,10 @@ USART0:
         access: write-only
       RTF:
         access: write-only
+
+# GPIO peripherals should all be derived from GPIOA, rather than chaining.
+_derive:
+  GPIOC: "GPIOA"
+  GPIOD: "GPIOA"
+  GPIOE: "GPIOA"
+  GPIOF: "GPIOA"
