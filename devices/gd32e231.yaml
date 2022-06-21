@@ -15,6 +15,7 @@ _include:
   - ../peripherals/flash/flash.yaml
   - ../peripherals/flash/flash_ob.yaml
   - ../peripherals/fwdgt/fwdgt.yaml
+  - ../peripherals/fwdgt/wnd.yaml
   - ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/i2c/i2c_high.yaml
