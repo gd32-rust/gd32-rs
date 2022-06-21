@@ -13,8 +13,6 @@ _include:
   # - ../peripherals/adc/adc_vbat.yaml
   # - ../peripherals/adc/adc_high.yaml
   - ../peripherals/can/can.yaml
-  #- ../peripherals/cmp/cmp.yaml
-  #- ../peripherals/cmp/cmp_wnd.yaml
   - ../peripherals/crc/crc.yaml
   #- ../peripherals/dac/dac_2ch.yaml
   #- ../peripherals/dbg/dbg.yaml
@@ -26,18 +24,14 @@ _include:
   - ../peripherals/fwdgt/fwdgt.yaml
   #- ../peripherals/gpio/gpio.yaml
   - ../peripherals/i2c/i2c.yaml
-  #- ../peripherals/ivref/ivref.yaml
-  #- ../peripherals/opa/opa.yaml
   #- ../peripherals/pmu/pmu.yaml
   #- ../peripherals/pmu/pmu_wupen1.yaml
   #- ../peripherals/rcu/rcu.yaml
   #- ../peripherals/rcu/rcu_high.yaml
   - ../peripherals/spi/spi.yaml
-  #- ../peripherals/syscfg/syscfg.yaml
-  #- ../peripherals/syscfg/syscfg_hcce.yaml
-  #- ../peripherals/syscfg/syscfg_slcd.yaml
   #- ../peripherals/timer/timers.yaml
   #- ../peripherals/timer/timers_high.yaml
   #- ../peripherals/usart/usart.yaml
   - ../peripherals/wwdg/wwdg.yaml
-  # Note: 307 has an ethernet port, 305 doesn't
+
+# Note: 307 has an ethernet port, 305 doesn't
