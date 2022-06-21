@@ -83,3 +83,8 @@ FMC:
     _modify:
       TCR:
         name: "TCRC"
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
