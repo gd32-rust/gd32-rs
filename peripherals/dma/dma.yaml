@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-"DMA,DMA[01]":
+DMA*:
   INTF:
     "ERRIF*":
       NoError: [0, "No transfer error"]

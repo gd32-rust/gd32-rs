@@ -1,0 +1,138 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"USART*":
+  CTL0:
+    UEN:
+      Disabled: [0, "USART disabled"]
+      Enabled: [1, "USART enabled"]
+    WL:
+      Bit8: [0, "8 data bits"]
+      Bit9: [1, "9 data bits"]
+    WM:
+      Idle: [0, "Idle line"]
+      Address: [1, "Address mask"]
+    PCEN:
+      Disabled: [0, "Parity control disabled"]
+      Enabled: [1, "Parity control enabled"]
+    PM:
+      Even: [0, "Even parity"]
+      Odd: [1, "Odd parity"]
+    PERRIE:
+      Disabled: [0, "Parity error interrupt is disabled"]
+      Enabled: [1, "Interrupt is generated whenever PERR=1 in the STAT register"]
+    TBEIE:
+      Disabled: [0, "Transmission register empty interrupt is disabled"]
+      Enabled: [1, "Interrupt is generated whenever TBE=1 in the STAT register"]
+    TCIE:
+      Disabled: [0, "Transmission complete interrupt is disabled"]
+      Enabled: [1, "Interrupt is generated whenever TC=1 in the STAT register"]
+    RBNEIE:
+      Disabled: [0, "Read data buffer not empty and overrrun error interrupts are disabled"]
+      Enabled: [1, "Interrupt is generated whenever ORERR=1 or RBNE=1 in the STAT register"]
+    IDLEIE:
+      Disabled: [0, "Idle line detected interrupt is disabled"]
+      Enabled: [1, "Interrupt is generated whenever IDLEF=1 in the STAT register"]
+    TEN:
+      Disabled: [0, "Transmitter is disabled"]
+      Enabled: [1, "Transmitter is enabled"]
+    REN:
+      Disabled: [0, "Receiver is disabled"]
+      Enabled: [1, "Receiver is enabled"]
+    RWU:
+      Disabled: [0, "Receiver wakeup from mute mode"]
+      Enabled: [1, " Receiver in mute mode"]
+    SBKCMD:
+      Disabled: [0, "Do not transmit a break frame"]
+      Enabled: [1, " Do not transmit a break frame"]
+  CTL1:
+    LMEN:
+      Disabled: [0, "LIN mode disabled"]
+      Enabled: [1, "LIN mode enabled"]
+    STB:
+      Stop1: [0, "1 stop bit"]
+      Stop0p5: [1, "0.5 stop bit"]
+      Stop2: [2, "2 stop bit"]
+      Stop1p5: [3, "1.5 stop bit"]
+    CKEN:
+      Disabled: [0, "CK pin disabled"]
+      Enabled: [1, "CK pin enabled"]
+    CPL:
+      NotInverted: [0, "Steady low value on CK pin outside tranmission window"]
+      Inverted: [1, "Steady high value on CK pin outside tranmission window"]
+    CPH:
+      First: [0, "The first clock transition is the first data capture edge"]
+      Second: [1, "The second clock transition is the first data capture edge"]
+    CLEN:
+      NotOutput: [0, "The clock pulse of the last data bit is not output to the CK pin"]
+      Output: [1, "The clock pulse of the last data bit is output to the CK pin"]
+    LBDIE:
+      Disabled: [0, "Interrupt is disabled"]
+      Enabled: [1, "An interrupt is generated whenever LBDF=1 in the STAT register"]
+    LBLEN:
+      Bit10: [0, "10-bit break detection"]
+      Bit11: [1, "11-bit break detection"]
+    ADDR:
+      Bit4: [0, "4-bit address detection"]
+      Full: [1, "Full-bit address detection"]
+  CTL2:
+    CTSIE:
+      Disabled: [0, "Interrupt is disabled"]
+      Enabled: [1, "An interrupt is generated whenever CTS=1 in the STAT register"]
+    CTSEN:
+      Disabled: [0, "CTS hardware flow control disabled"]
+      Enabled: [1, "CTS mode enabled, data is only transmitted when the CTS input is asserted"]
+    RTSEN:
+      Disabled: [0, "RTS hardware flow control disabled"]
+      Enabled: [1, "RTS output enabled, data is only requested when there is space in the receive buffer"]
+    DENT:
+      Disabled: [0, "DMA mode is disabled for transmission"]
+      Enabled: [1, "DMA mode is enabled for transmission"]
+    DENR:
+      Disabled: [0, "DMA mode is disabled for reception"]
+      Enabled: [1, "DMA mode is enabled for reception"]
+    SCEN:
+      Disabled: [0, "Smartcard Mode disabled"]
+      Enabled: [1, "Smartcard Mode enabled"]
+    NKEN:
+      Disabled: [0, "NACK transmission in case of parity error is disabled"]
+      Enabled: [1, "NACK transmission during parity error is enabled"]
+    HDEN:
+      NotSelected: [0, "Half duplex mode is not selected"]
+      Selected: [1, "Half duplex mode is selected"]
+    IRLP:
+      Normal: [0, "Normal mode"]
+      LowPower: [1, "Low-power mode"]
+    IREN:
+      Disabled: [0, "IrDA disabled"]
+      Enabled: [1, "IrDA enabled"]
+    ERRIE:
+      Disabled: [0, "Error interrupt is disabled"]
+      Enabled: [1, "An interrupt is generated when FERR=1 or ORERR=1 or NERR=1 in the STAT register"]
+  BAUD:
+    INTDIV: [0, 0xFFF]
+    FRADIV: [0, 0xF]
+  GP:
+    GUAT: [0, 0xFF]
+    PSC: [0, 0xFF]
+  RT:
+    BL: [0, 0xFF]
+    RT: [0, 0xFFFFFF]
+  STAT0:
+    BSY:
+    EBF:
+    RTF:
+  STAT1:
+    CTSF:
+    LBDF:
+    TBE:
+    TC:
+    RBNE:
+    IDLEF:
+    ORERR:
+    NERR:
+    FERR:
+    PERR:
+  DATA:
+    DATA: [0, 0xFF]

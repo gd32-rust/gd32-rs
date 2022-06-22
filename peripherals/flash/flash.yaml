@@ -10,7 +10,7 @@ FMC:
       WS0: [0, "0 wait states added"]
       WS1: [1, "1 wait state added"]
       WS2: [2, "2 wait states added"]
-  KEY:
+  KEY*:
     KEY: [0, 0xFFFFFFFF]
   OBKEY:
     OBKEY: [0, 0xFFFFFFFF]

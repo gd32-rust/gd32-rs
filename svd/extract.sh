@@ -16,3 +16,6 @@ cp vendor/GD32F1x0.svd gd32f190.svd
 cp vendor/GD32F30x_XD.svd gd32f303.svd
 cp vendor/GD32F30x_CL.svd gd32f305.svd
 cp vendor/GD32F30x_CL.svd gd32f307.svd
+
+unzip -juLL vendor/gd32f207_svd.zip '**.svd'
+mv gd32f20x_cl.svd gd32f207.svd

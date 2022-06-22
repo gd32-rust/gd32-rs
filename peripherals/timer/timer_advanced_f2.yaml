@@ -1,0 +1,16 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Advanced timer TIMER0
+
+TIMER0:
+  CTL1:
+    "ISO[2-3]":
+      _derivedFrom: "ISO0"
+    "ISO[1-2]N":
+      _derivedFrom: "ISO0N"
+  DMAINTEN:
+    CMTDEN:
+      Disabled: [0, "Commutation DMA request disabled"]
+      Enabled: [1, "Commutation DMA request enabled"]

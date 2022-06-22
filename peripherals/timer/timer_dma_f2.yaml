@@ -1,0 +1,30 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# TIMER8-13 doesn't have single pulse mode or DMA.
+"TIMER[0-7]":
+  CTL0:
+    SPM:
+      Disabled: [0, "Counter is not stopped at update event"]
+      Enabled: [1, "Counter stops counting at the next update event (clearing the CEN bit)"]
+  DMAINTEN:
+    UPDEN:
+      Disabled: [0, "Update DMA request disabled"]
+      Enabled: [1, "Update DMA request enabled"]
+
+# TIMER5/6 doesn't have DMA configuration registers or capture/compare.
+"TIMER[0-4],TIMER7":
+  CTL1:
+    DMAS:
+      OnCompare: [0, "CCx DMA request sent when CCx event occurs"]
+      OnUpdate: [1, "CCx DMA request sent when update event occurs"]
+  DMAINTEN:
+    "CH?DEN":
+      Disabled: [0, "Capture/compare DMA request disabled"]
+      Enabled: [1, "Capture/compare DMA request enabled"]
+  DMACFG:
+    DMATC: [0, 0x1F]
+    DMATA: [0, 0x1F]
+  DMATB:
+    DMATB: [0, 0xFFFF]

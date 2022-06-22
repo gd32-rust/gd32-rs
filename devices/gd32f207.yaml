@@ -1,0 +1,34 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32f207.svd
+
+_modify:
+  name: "GD32F207"
+
+_include:
+  - common_patches/gd32f20x.yaml
+  - common_patches/gd32f205_207.yaml
+  - ../peripherals/adc/adc.yaml
+  - ../peripherals/adc/adc_high_f2.yaml
+  - ../peripherals/can/can_f2_f3.yaml
+  - ../peripherals/crc/crc.yaml
+  - ../peripherals/dac/dac_f2.yaml
+  - ../peripherals/dbg/dbg_f2.yaml
+  - ../peripherals/dma/dma.yaml
+  - ../peripherals/exti/exti.yaml
+  - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_wsen.yaml
+  #- ../peripherals/fsmc/fsmc_sram.yaml
+  #- ../peripherals/fsmc/fsmc_nand.yaml
+  - ../peripherals/fwdgt/fwdgt_f2_f3.yaml
+  - ../peripherals/gpio/gpio_f2.yaml
+  - ../peripherals/i2c/i2c.yaml
+  - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/rcu/rcu_f2.yaml
+  - ../peripherals/spi/spi.yaml
+  - ../peripherals/spi/spi_high.yaml
+  - ../peripherals/timer/timers_f2.yaml
+  - ../peripherals/usart/usart_f2.yaml
+  - ../peripherals/wwdg/wwdg.yaml

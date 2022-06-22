@@ -1,0 +1,44 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"GPIO*":
+  CTL*:
+    "CTL*":
+      AnalogOrPushPull: [0, "Analog mode/GPIO output with push-pull"]
+      FloatingOrOpenDrain: [1, "Floating input/GPIO output with open-drain"]
+      InputOrAfioPP: [2, "Input with pull-up pull-down/AFIO output with push-pull"]
+      RSVDOrAfioOD: [3, "Reserved/AFIO output with open-drain"]
+    "MD*":
+      Input: [0, "Input mode (reset state)"]
+      Speed10M: [1, "Output mode ,max speed 10MHz"]
+      Speed2M: [2, "Output mode ,max speed 2MHz"]
+      Speed50M: [3, "Output mode ,max speed 50MHz"]
+  ISTAT:
+    "ISTAT*":
+      Low: [0, "Input is logic low"]
+      High: [1, "Input is logic high"]
+  OCTL:
+    "OCTL*":
+      Low: [0, "Set output to logic low"]
+      High: [1, "Set output to logic high"]
+  BOP:
+    "CR*":
+      _write:
+        Reset: [1, "Resets the corresponding OCTLx bit"]
+    "BOP*":
+      _write:
+        Set: [1, "Sets the corresponding OCTLx bit"]
+  BC:
+    "CR*":
+      _write:
+        Reset: [1, "Resets the corresponding OCTLx bit"]
+
+"GPIO[AB]":
+  LOCK:
+    LKK:
+      NotActive: [0, "Port configuration lock key not active"]
+      Active: [1, "Port configuration lock key active"]
+    "LK[0-15]":
+      Unlocked: [0, "Port configuration not locked"]
+      Locked: [1, "Port configuration locked"]
