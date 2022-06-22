@@ -27,5 +27,5 @@ _include:
   - ../peripherals/spi/spi.yaml
   #- ../peripherals/timer/timers.yaml
   #- ../peripherals/timer/timers_high.yaml
-  #- ../peripherals/usart/usart.yaml
+  - ../peripherals/usart/usart_f2_f3.yaml
   - ../peripherals/wwdg/wwdg.yaml
