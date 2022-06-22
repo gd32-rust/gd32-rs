@@ -59,6 +59,13 @@ gd32f1:
     members:
       - GD32F190
 gd32f2:
+  gd32f205:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f205-series/
+    rm: GD32F205
+    rm_title: GD32F205
+    rm_url: https://www.gigadevice.com/datasheet/gd32f205xxxx-datasheet/
+    members:
+      - GD32F205
   gd32f207:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/performance-line/gd32f207-series/
     rm: GD32F207
