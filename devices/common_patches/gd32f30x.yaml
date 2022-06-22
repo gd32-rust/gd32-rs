@@ -8,6 +8,10 @@ RCU:
     _modify:
       IRC48MSTBIC:
         access: write-only
+  # Be more consistent with other families.
+  _modify:
+    CTL:
+      name: CTL0
 RTC:
   PSC[LH]:
     _modify:
