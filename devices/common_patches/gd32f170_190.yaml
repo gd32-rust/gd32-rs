@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-# Patches for both GD31F170 and GD32F190.
+# Patches for both GD32F170 and GD32F190.
 
 RCU:
   CFG0:

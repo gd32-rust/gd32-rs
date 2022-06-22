@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-# Patches for both GD31F130 and GD32F150.
+# Patches for both GD32F130 and GD32F150.
 
 ADC:
   CTL0:
