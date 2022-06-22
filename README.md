@@ -105,8 +105,9 @@ This project is still young and there's a lot to do!
 
 ## Supported Device Families
 
-[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
+[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
+[![crates.io](https://img.shields.io/crates/v/gd32f2.svg?label=gd32f2)](https://crates.io/crates/gd32f2)
 
 Please see the individual crate READMEs for the full list of devices each crate
 supports.
