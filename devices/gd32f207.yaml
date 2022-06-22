@@ -22,7 +22,7 @@ _include:
   #- ../peripherals/fsmc/fsmc_sram.yaml
   #- ../peripherals/fsmc/fsmc_nand.yaml
   - ../peripherals/fwdgt/fwdgt_f2_f3.yaml
-  - ../peripherals/gpio/gpio_f2.yaml
+  - ../peripherals/gpio/gpio_f2_f3.yaml
   - ../peripherals/i2c/i2c.yaml
   - ../peripherals/pmu/pmu.yaml
   - ../peripherals/rcu/rcu_f2.yaml
