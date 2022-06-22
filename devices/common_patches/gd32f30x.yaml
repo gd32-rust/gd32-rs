@@ -96,3 +96,10 @@ FMC:
     _modify:
       CARL:
         name: "CAR"
+
+# Be more consistent with other families.
+PMU:
+  CS:
+    _modify:
+      WUPEN:
+        name: WUPEN0
