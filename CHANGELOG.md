@@ -10,6 +10,7 @@
   - Added support for GD32F205 and GD32F207 in new `gd32f2` crate.
 - GD32F30x
   - Added support for GD32F303, GD32F305 and GD32F307, in new `gd32f3` crate.
+- Updated to `svd2rust` 0.24.0.
 
 ## [0.5.0]
 
