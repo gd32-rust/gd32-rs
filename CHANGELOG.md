@@ -6,6 +6,8 @@
   - Added DMA peripheral.
 - GD32F1x0
   - Renamed various DMA registers and fields to be consistent with documentation and other series.
+- GD32F20x
+  - Added support for GD32F207 in new `gd32f2` crate.
 - GD32F30x
   - Added support for GD32F303, GD32F305 and GD32F307, in new `gd32f3` crate.
 
