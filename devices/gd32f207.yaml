@@ -17,7 +17,7 @@ _include:
   - ../peripherals/exti/exti.yaml
   - ../peripherals/flash/flash.yaml
   - ../peripherals/flash/flash_wsen.yaml
-  - ../peripherals/fwdgt/fwdgt.yaml
+  - ../peripherals/fwdgt/fwdgt_f2_f3.yaml
   #- ../peripherals/gpio/gpio.yaml
   #- ../peripherals/pmu/pmu.yaml
   #- ../peripherals/rcu/rcu.yaml

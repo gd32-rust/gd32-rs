@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
+# Free watchdog timer
+
 _include:
   - "fwdgt_common.yaml"
-  - "wnd.yaml"
