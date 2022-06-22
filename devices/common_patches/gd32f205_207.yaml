@@ -9,3 +9,8 @@
     _modify:
       BUADPSC:
         name: "BAUDPSC"
+
+"DBG":
+  _modify:
+    CTL:
+      name: CTL0

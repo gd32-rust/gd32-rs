@@ -1,0 +1,6 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "dac_2ch_common.yaml"

@@ -1,0 +1,43 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+DAC:
+  CTL:
+    "DDMAEN?":
+      Disabled: [0, "DAC DMA mode disabled"]
+      Enabled: [1, "DAC DMA mode enabled"]
+    "DTSEL?":
+      TIMER5_TRGO: [0, "Timer 5 TRGO event"]
+      TIMER2_TRGO: [1, "Timer 2 TRGO event"]
+      TIMER14_TRGO: [3, "Timer 14 TRGO event"]
+      TIMER1_TRGO: [4, "Timer 1 TRGO event"]
+      EXTERNAL9: [6, "External line9"]
+      SOFTWARE: [7, "Software trigger"]
+    "DTEN?":
+      Disabled: [0, "DAC trigger disabled"]
+      Enabled: [1, "DAC trigger enabled"]
+    "DBOFF?":
+      Enabled: [0, "DAC X output buffer enabled"]
+      Disabled: [1, "DAC X output buffer disabled"]
+    "DEN?":
+      Disabled: [0, "DAC channel disabled"]
+      Enabled: [1, "DAC channel enabled"]
+  SWT:
+    "SWTR?":
+      Disabled: [0, "DAC channel X software trigger disabled"]
+      Enabled: [1, "DAC channel X software trigger enabled"]
+  "DAC[01]_R12DH":
+    "DAC?_DH": [0, 0xFFF]
+  "DAC[01]_L12DH":
+    "DAC?_DH": [0, 0xFFF]
+  "DAC[01]_R8DH":
+    "DAC?_DH": [0, 0xFF]
+  "DACC_R12DH":
+    "DAC?_DH": [0, 0xFFF]
+  "DACC_L12DH":
+    "DAC?_DH": [0, 0xFFF]
+  "DACC_R8DH":
+    "DAC?_DH": [0, 0xFFF]
+  "DAC[01]_DO":
+    "DAC?_DO": [0, 0xFFF]
