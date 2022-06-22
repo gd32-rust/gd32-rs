@@ -1,8 +1,9 @@
 # GD32 Peripheral Access Crates
 
 [![CI](https://github.com/gd32-rust/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/gd32-rust/gd32-rs)
-[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
+[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
+[![crates.io](https://img.shields.io/crates/v/gd32f2.svg?label=gd32f2)](https://crates.io/crates/gd32f2)
 
 This repository provides Rust device support crates for Cortex-M based GD32
 microcontrollers, providing a safe API to that device's peripherals using
