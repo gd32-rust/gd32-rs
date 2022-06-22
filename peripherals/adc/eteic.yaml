@@ -1,0 +1,9 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+ADC*:
+  CTL1:
+    ETEIC:
+      Disabled: [0, "Conversion on external event disabled"]
+      Enabled: [1, "Conversion on external event enabled"]
