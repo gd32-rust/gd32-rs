@@ -1,0 +1,157 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+ADC*:
+  STAT:
+    STRC:
+      _read:
+        NotStarted: [0, "No regular channel conversion started"]
+        Started: [1, "Regular channel conversion has started"]
+      _write:
+        Clear: [0, "Clear the regular channel start flag"]
+    STIC:
+      _read:
+        NotStarted: [0, "No inserted channel group conversion started"]
+        Started: [1, "Inserted channel group conversion has started"]
+      _write:
+        Clear: [0, "Clear the inserted channel group start flag"]
+    EOIC:
+      _read:
+        NotComplete: [0, "Conversion is not complete"]
+        Complete: [1, "Conversion complete"]
+      _write:
+        Clear: [0, "Clear end of inserted group conversion flag"]
+    EOC:
+      _read:
+        NotComplete: [0, "Conversion is not complete"]
+        Complete: [1, "Conversion complete"]
+      _write:
+        Clear: [0, "Clear end of group conversion flag"]
+    WDE:
+      _read:
+        NoEvent: [0, "No analog watchdog event occurred"]
+        Event: [1, "Analog watchdog event occurred"]
+      _write:
+        Clear: [0, "Clear the analog watchdog event flag"]
+  CTL0:
+    RWDEN:
+      Disabled: [0, "Analog watchdog disabled on regular channels"]
+      Enabled: [1, "Analog watchdog enabled on regular channels"]
+    IWDEN:
+      Disabled: [0, "Analog watchdog disabled on inserted channels"]
+      Enabled: [1, "Analog watchdog enabled on inserted channels"]
+    DISNUM: [0, 7]
+    DISIC:
+      Disabled: [0, "Discontinuous mode on inserted channels disabled"]
+      Enabled: [1, "Discontinuous mode on inserted channels enabled"]
+    DISRC:
+      Disabled: [0, "Discontinuous mode on regular channels disabled"]
+      Enabled: [1, "Discontinuous mode on regular channels enabled"]
+    ICA:
+      Disabled: [0, "Automatic inserted group conversion disabled"]
+      Enabled: [1, "Automatic inserted group conversion enabled"]
+    WDSC:
+      All: [0, "Analog watchdog enabled on all channels"]
+      Single: [1, "Analog watchdog enabled on a single channel"]
+    SM:
+      Disabled: [0, "Scan mode disabled"]
+      Enabled: [1, "Scan mode enabled"]
+    EOICIE:
+      Disabled: [0, "EOIC interrupt disabled"]
+      Enabled: [1, "EOIC interrupt enabled. An interrupt is generated when the EOIC bit is set"]
+    WDEIE:
+      Disabled: [0, "WDE interrupt disabled"]
+      Enabled: [1, "WDE interrupt enabled. An interrupt is generated when the WDE bit is set"]
+    EOCIE:
+      Disabled: [0, "EOC interrupt disabled"]
+      Enabled: [1, "EOC interrupt enabled. An interrupt is generated when the EOC bit is set"]
+    WDCHSEL: [0, 18]
+  CTL1:
+    TSVREN:
+      Disabled: [0, "Channel 16 and 17 disabled"]
+      Enabled: [1, "Channel 16 and 17 enabled"]
+    SWRCST:
+      _read:
+        Started: [0, "Reset state"]
+        NotStarted: [1, "Starting conversion of regular channels"]
+      _write:
+        Start: [1, "Start conversion of regular channels"]
+    SWICST:
+      _read:
+        Started: [0, "Reset state"]
+        NotStarted: [1, "Starting conversion of inserted channels"]
+      _write:
+        Start: [1, "Start conversion of inserted channels"]
+    ETERC:
+      Disabled: [0, "Conversion on external event disabled"]
+      Enabled: [1, "Conversion on external event enabled"]
+    ETSRC:
+      Timer0Ch0: [0, "Timer 0 channel 0 event"]
+      Timer0Ch1: [1, "Timer 0 channel 1 event"]
+      Timer0Ch2: [2, "Timer 0 channel 2 event"]
+      Timer1Ch1: [3, "Timer 1 channel 1 event"]
+      Timer2Trgo: [4, "Timer 2 TRGO event"]
+      Timer14Ch0: [5, "Timer 14 channel 0 event"]
+      Exti11: [6, "EXTI line 11"]
+      Swrcst: [7, "SWRCST"]
+    ETSIC:
+      Timer0Trgo: [0, "Timer 0 TRGO event"]
+      Timer0Ch3: [1, "Timer 0 channel 3 event"]
+      Timer1Trgo: [2, "Timer 1 TRGO event"]
+      Timer1Ch0: [3, "Timer 1 channel 0 event"]
+      Timer2Ch2: [4, "Timer 2 channel 3 event"]
+      Timer14Trgo: [5, "Timer 14 TRGO event"]
+      Exti15: [6, "EXTI line 15"]
+      Swicst: [7, "SWICST"]
+    DAL:
+      Right: [0, "Right alignment"]
+      Left: [1, "Left alignment"]
+    DMA:
+      Disabled: [0, "DMA mode disabled"]
+      Enabled: [1, "DMA mode enabled"]
+    RSTCLB:
+      _read:
+        Complete: [0, "Calibration completed"]
+        NotComplete: [1, "Calibrating"]
+      _write:
+        Start: [1, "Enable calibration"]
+    CLB:
+      _read:
+        Complete: [0, "Calibration completed"]
+        NotComplete: [1, "Calibrating"]
+      _write:
+        Start: [1, "Enable calibration"]
+    CTN:
+      Single: [0, "Single conversion mode"]
+      Continuous: [1, "Continuous conversion mode"]
+    ADCON:
+      Disabled: [0, "Disable ADC conversion/calibration and go to power down mode"]
+      Enabled: [1, "Enable ADC and to start conversion"]
+  "SAMPT?":
+    "SPT*":
+      Cycles1_5: [0, "1.5 ADC clock cycles"]
+      Cycles7_5: [1, "7.5 ADC clock cycles"]
+      Cycles13_5: [2, "13.5 ADC clock cycles"]
+      Cycles28_5: [3, "28.5 ADC clock cycles"]
+      Cycles41_5: [4, "41.5 ADC clock cycles"]
+      Cycles55_5: [5, "55.5 ADC clock cycles"]
+      Cycles71_5: [6, "71.5 ADC clock cycles"]
+      Cycles239_5: [7, "239.5 ADC clock cycles"]
+  "IOFF?":
+    IOFF: [0, 0xFFF]
+  WDHT:
+    WDHT: [0, 0xFFF]
+  WDLT:
+    WDLT: [0, 0xFFF]
+  RSQ0:
+    RL: [0, 15]
+  "RSQ?":
+    "RSQ*": [0, 18]
+  ISQ:
+    IL: [0, 3]
+    "ISQ?": [0, 18]
+  "IDATA?":
+    "IDATA?": [0, 0xFFFF]
+  RDATA:
+    RDATA: [0, 0xFFFF]

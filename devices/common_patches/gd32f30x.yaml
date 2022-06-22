@@ -8,6 +8,10 @@ RCU:
     _modify:
       IRC48MSTBIC:
         access: write-only
+  # Be more consistent with other families.
+  _modify:
+    CTL:
+      name: CTL0
 RTC:
   PSC[LH]:
     _modify:
@@ -92,3 +96,10 @@ FMC:
     _modify:
       CARL:
         name: "CAR"
+
+# Be more consistent with other families.
+PMU:
+  CS:
+    _modify:
+      WUPEN:
+        name: WUPEN0
