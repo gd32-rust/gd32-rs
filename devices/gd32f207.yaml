@@ -13,7 +13,7 @@ _include:
   - ../peripherals/adc/adc_f2.yaml
   - ../peripherals/can/can_f2_f3.yaml
   - ../peripherals/crc/crc.yaml
-  - ../peripherals/dac/dac_f2.yaml
+  - ../peripherals/dac/dac_f2_f3.yaml
   - ../peripherals/dbg/dbg_f2.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
