@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Updated to `svd2rust` 0.24.1.
+
 ## [0.6.0]
 
 - GD32E23x
