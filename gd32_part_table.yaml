@@ -29,6 +29,35 @@ gd32e2:
     rm_url: https://www.gigadevice.com/manual/gd32e231xxxx-user-manual/
     members:
       - GD32E231
+gd32e5:
+  gd32e503:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m33/high-performance-line/
+    rm: GD32E503
+    rm_title: GD32E503
+    rm_url: https://www.gd32mcu.com/download/down/document_id/249/path_type/1
+    members:
+      - GD32E503
+  gd32e505:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m33/high-performance-line/
+    rm: GD32E505
+    rm_title: GD32E505
+    rm_url: https://www.gd32mcu.com/download/down/document_id/249/path_type/1
+    members:
+      - GD32E505
+  gd32e507:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m33/high-performance-line/
+    rm: GD32E507
+    rm_title: GD32E507
+    rm_url: https://www.gd32mcu.com/download/down/document_id/249/path_type/1
+    members:
+      - GD32E507
+  gd32e508:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m33/high-performance-line/
+    rm: GD32E508
+    rm_title: GD32E508
+    rm_url: https://www.gd32mcu.com/download/down/document_id/249/path_type/1
+    members:
+      - GD32E508
 gd32f1:
   gd32f130:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m3/value-line/gd32f130-series/
