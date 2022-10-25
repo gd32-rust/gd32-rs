@@ -13,6 +13,7 @@ jobs:
       matrix:
         crate:
           - gd32e2
+          - gd32e5
           - gd32f1
           - gd32f2
           - gd32f3

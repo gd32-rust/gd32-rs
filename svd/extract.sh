@@ -8,6 +8,11 @@
 cp vendor/GD32E230.svd gd32e230.svd
 cp vendor/GD32E231.svd gd32e231.svd
 
+cp vendor/GD32E50x_HD.svd gd32e503.svd
+cp vendor/GD32E50x_CL.svd gd32e505.svd
+cp vendor/GD32E50x_CL.svd gd32e507.svd
+cp vendor/GD32E50x_CL.svd gd32e508.svd
+
 cp vendor/GD32F1x0.svd gd32f130.svd
 cp vendor/GD32F1x0.svd gd32f150.svd
 cp vendor/GD32F1x0.svd gd32f170.svd
