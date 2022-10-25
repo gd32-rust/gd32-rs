@@ -3,6 +3,8 @@
 ## [Unreleased]
 
 - Updated to `svd2rust` 0.27.0.
+- GD32E50x
+  - Added support for GD32E503, GD32E505, GD32E507, GD32E508 in new `gd32e5` crate.
 
 ## [0.6.0]
 
