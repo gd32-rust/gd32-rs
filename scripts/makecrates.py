@@ -21,7 +21,7 @@ SVD2RUST_VERSION = "0.27.0"
 
 CRATE_DOC_FEATURES = {
     "gd32e2": ["rt", "gd32e230", "gd32e231"],
-    "gd32e5": ["rt", "gd32e503", "gd32e505", "gd32e507", "gd32e508"],
+    "gd32e5": ["rt", "gd32e503", "gd32e508"],
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
     "gd32f2": ["rt", "gd32f205", "gd32f207"],
     "gd32f3": ["rt", "gd32f303", "gd32f307"],
