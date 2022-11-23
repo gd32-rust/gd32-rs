@@ -5,6 +5,8 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 # Copy GD32 SVD files and give them lower-case names.
+cp vendor/GD32E10x.svd gd32e103.svd
+
 cp vendor/GD32E230.svd gd32e230.svd
 cp vendor/GD32E231.svd gd32e231.svd
 

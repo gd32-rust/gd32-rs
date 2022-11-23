@@ -20,6 +20,7 @@ VERSION = "0.6.0"
 SVD2RUST_VERSION = "0.27.0"
 
 CRATE_DOC_FEATURES = {
+    "gd32e1": ["rt", "gd32e103"],
     "gd32e2": ["rt", "gd32e230", "gd32e231"],
     "gd32e5": ["rt", "gd32e503", "gd32e508"],
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
@@ -28,6 +29,7 @@ CRATE_DOC_FEATURES = {
 }
 
 CRATE_DOC_TARGETS = {
+    "gd32e1": "thumbv8m.base-none-eabi",
     "gd32e2": "thumbv8m.base-none-eabi",
     "gd32e5": "thumbv8m.base-none-eabi",
     "gd32f1": "thumbv7m-none-eabi",

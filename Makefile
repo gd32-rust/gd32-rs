@@ -5,7 +5,7 @@ all: patch svd2rust
 
 SHELL := /usr/bin/env bash
 
-CRATES ?= gd32e2 gd32e5 gd32f1 gd32f2 gd32f3
+CRATES ?= gd32e1 gd32e2 gd32e5 gd32f1 gd32f2 gd32f3
 
 # All yaml files in devices/ will be used to patch an SVD
 YAMLS := $(foreach crate, $(CRATES), \

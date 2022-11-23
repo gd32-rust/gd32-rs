@@ -1,0 +1,51 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+RCU:
+  _modify:
+    CTL:
+      name: "CTL0"
+  ADDINT:
+    _modify:
+      IRC48MSTBIC:
+        access: write-only
+  CFG0:
+    _modify:
+      PLLMF_5_4:
+        name: "PLLMF_MSB"
+      PLLMF_3_0:
+        name: "PLLMF"
+      CKOUT0SEL:
+        name: "CKOUTSEL"
+
+"SPI*":
+  DATA:
+    _modify:
+      SPI_DATA:
+        name: "DATA"
+
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
+
+RTC:
+  _modify:
+    ALRMH:
+      access: write-only
+    ALRML:
+      access: write-only
+
+"U*ART*":
+  CHC:
+    _modify:
+      EPERR:
+        access: write-only
+
+PMU:
+  CS:
+    _modify:
+      WUPEN:
+        name: "WUPEN0"
