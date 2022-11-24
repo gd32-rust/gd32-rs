@@ -156,8 +156,6 @@ TIMER0:
     "CH?G":
       _derivedFrom: "TIMER0.SWEVG.CH0G.CH0G"
   CHCTL[01]_Output:
-    "CH?COMCEN":
-      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMCEN.CH0COMCEN"
     "CH?COMCTL":
       _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMCTL.CH0COMCTL"
     "CH?COMSEN":
@@ -178,3 +176,7 @@ TIMER0:
       _derivedFrom: "TIMER0.CHCTL2.CH0P.CH0P"
     "CH?EN":
       _derivedFrom: "TIMER0.CHCTL2.CH0EN.CH0EN"
+"TIMER[1-2]":
+  CHCTL[01]_Output:
+    "CH?COMCEN":
+      _derivedFrom: "TIMER0.CHCTL0_Output.CH0COMCEN.CH0COMCEN"

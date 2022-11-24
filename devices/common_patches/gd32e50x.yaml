@@ -1,0 +1,35 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"CAN*":
+  BT:
+    _modify:
+      BS1_0_3:
+        name: "BS1"
+      BS2_0_2:
+        name: "BS2"
+
+"SPI*":
+  DATA:
+    _modify:
+      SPI_DATA:
+        name: "DATA"
+  CRCPOLY:
+    _modify:
+      CPR:
+        name: "CRCPOLY"
+  RCRC:
+    _modify:
+      RCR:
+        name: "RCRC"
+  TCRC:
+    _modify:
+      TCR:
+        name: "TCRC"
+
+"TIMER*":
+  CAR:
+    _modify:
+      CARL:
+        name: "CAR"
