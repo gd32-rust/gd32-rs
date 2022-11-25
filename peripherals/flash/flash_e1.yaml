@@ -1,0 +1,36 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+# Flash memory controller
+
+_include:
+  - flash.yaml
+
+FMC:
+  WS:
+    PFEN:
+      Disable: [0, "Pre-fetch disabled"]
+      Enable: [1, "Pre-fetch enabled"]
+    ICEN:
+      Disable: [0, "IBUS cache disabled"]
+      Enable: [1, "IBUS cache enabled"]
+    DCEN:
+      Disable: [0, "DBUS cache disabled"]
+      Enable: [1, "DBUS cache enabled"]
+    ICRST:
+      NoEffect: [0, "No effect"]
+      Reset: [1, "IBUS cache reset"]
+    DCRST:
+      NoEffect: [0, "No effect"]
+      Reset: [1, "DBUS cache reset"]
+    PGW:
+      Width32: [0, "32b program width to flash memory"]
+      Width64: [1, "64b program width to flash memory"]
+  STAT:
+    PGAERR:
+      _read:
+        NoError: [0, "There was no error"]
+        Error: [1, "There was an error in program alignment"]
+      _write:
+        Clear: [1, "Clears flag"]

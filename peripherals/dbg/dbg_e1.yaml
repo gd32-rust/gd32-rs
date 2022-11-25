@@ -1,0 +1,13 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "dbg_common.yaml"
+  - "dbg_high.yaml"
+
+DBG:
+  CTL0:
+    TRACE_IOEN:
+      Disable: [0, "Disable trace pin allocation"]
+      Enable: [1, "Enable trace pin allocation"]

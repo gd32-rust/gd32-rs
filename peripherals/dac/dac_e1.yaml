@@ -1,0 +1,26 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "dac_2ch_common.yaml"
+
+DAC:
+  CTL:
+    "DWM*":
+      WaveDisabled: [0, "Wave disabled"]
+      Lfsr: [1, "LFSR noise mode"]
+      Triangle: [2, "Triangle noise mode"]
+    "DWBW*":
+      BitWidth1: [0, "The bit width of the wave signal is 1"]
+      BitWidth2: [1, "The bit width of the wave signal is 2"]
+      BitWidth3: [2, "The bit width of the wave signal is 3"]
+      BitWidth4: [3, "The bit width of the wave signal is 4"]
+      BitWidth5: [4, "The bit width of the wave signal is 5"]
+      BitWidth6: [5, "The bit width of the wave signal is 6"]
+      BitWidth7: [6, "The bit width of the wave signal is 7"]
+      BitWidth8: [7, "The bit width of the wave signal is 8"]
+      BitWidth9: [8, "The bit width of the wave signal is 9"]
+      BitWidth10: [9, "The bit width of the wave signal is 10"]
+      BitWidth11: [10, "The bit width of the wave signal is 11"]
+      BitWidth12: [11, "The bit width of the wave signal is 12"]
