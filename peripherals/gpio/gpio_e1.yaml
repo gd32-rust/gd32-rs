@@ -1,0 +1,12 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - gpio_f2_f3.yaml
+
+"GPIO*":
+  SPD:
+    "SPD*":
+      Speed50M: [0, "Max output speed 50 MHz"]
+      Speed120M: [1, "Max output speed 120 MHz"]
