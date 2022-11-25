@@ -1,0 +1,22 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - rcu_common.yaml
+
+RCU:
+  CTL0:
+    "PLL?EN":
+      Disabled: [0, "PLL Disabled"]
+      Enabled: [1, "PLL Enabled"]
+    "PLL?STB":
+      _read:
+        NotReady: [0, "PLL is not stable"]
+        Ready: [1, "PLL is stable"]
+  CFG0:
+    USBFSPSC:
+      DIV1_5: [0, "PLL clock is divided by 1.5"]
+      DIV1: [1, "PLL clock is not divided"]
+      DIV2_5: [2, "PLL clock is divided by 2.5"]
+      DIV2: [3, "PLL clock is divided by 2"]
