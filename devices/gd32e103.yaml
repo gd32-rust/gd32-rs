@@ -9,18 +9,17 @@ _include:
     #- ../peripherals/adc/adc.yaml
   - ../peripherals/can/can.yaml
   - ../peripherals/crc/crc.yaml
-  - ../peripherals/dac/dac_2ch_common.yaml
-  - ../peripherals/dbg/dbg_common.yaml
+  - ../peripherals/dac/dac_e1.yaml
+  - ../peripherals/dbg/dbg_e1.yaml
   - ../peripherals/dma/dma.yaml
   - ../peripherals/exti/exti.yaml
-  - ../peripherals/flash/flash.yaml
+  - ../peripherals/flash/flash_e1.yaml
   - ../peripherals/fwdgt/fwdgt_f2_f3.yaml
-  - ../peripherals/gpio/gpio_f2_f3.yaml
-    #- ../peripherals/i2c/i2c.yaml
-    #- ../peripherals/i2c/i2c_high.yaml
+  - ../peripherals/gpio/gpio_e1.yaml
+  - ../peripherals/i2c/i2c_e1.yaml
   - ../peripherals/pmu/pmu.yaml
-    #- ../peripherals/rcu/rcu_common.yaml
-  - ../peripherals/spi/spi.yaml
-  - ../peripherals/timer/timers_f2.yaml
+  - ../peripherals/rcu/rcu_e1.yaml
+  - ../peripherals/spi/spi_e1.yaml
+  - ../peripherals/timer/timers_e1.yaml
   - ../peripherals/usart/usart_f2_f3.yaml
   - ../peripherals/wwdg/wwdg.yaml

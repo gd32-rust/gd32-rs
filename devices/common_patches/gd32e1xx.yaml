@@ -18,6 +18,14 @@ RCU:
         name: "PLLMF"
       CKOUT0SEL:
         name: "CKOUTSEL"
+      PREDV0_LSB:
+        name: "PLLPREDV"
+      ADCPSC_1_0:
+        name: "ADCPSC"
+      USBFSPSC:
+        name: "USBFSPSC_3"
+      USBFSPSC_1_0:
+        name: "USBFSPSC"
 
 "SPI*":
   DATA:
@@ -49,3 +57,11 @@ PMU:
     _modify:
       WUPEN:
         name: "WUPEN0"
+  CTL:
+    _delete:
+      - LDOVS
+
+DBG:
+  CTL0:
+    _delete:
+      - TRACE_MODE
