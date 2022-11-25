@@ -93,13 +93,13 @@ RCU:
       HXTAL: [1, "HXTAL used as system clock"]
       PLL: [2, "PLL used as system clock"]
   INT:
-    PLLSTBIC:
+    PLL*STBIC:
       _write:
         Clear: [1, "Clear PLLSTBIF flag"]
-    PLLSTBIE:
+    PLL*STBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
-    PLLSTBIF:
+    PLL*STBIF:
       _read:
         NotInterrupted: [0, "No interrupt generated"]
         Interrupted: [1, "PLL stabilisation interrupt generated"]
