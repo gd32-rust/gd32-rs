@@ -4,3 +4,142 @@
 
 _include:
   - usart_common.yaml
+
+"USART*":
+  CTL0:
+    EBIE:
+      Disabled: [0, "End of block interrupt is disabled"]
+      Enabled: [1, "End of block interrupt is enabled"]
+    RTIE:
+      Disabled: [0, "Receiver timeout interrupt is disabled"]
+      Enabled: [1, "Receiver timeout interrupt is enabled"]
+    DEA: [0, 0b11111]
+    DED: [0, 0b11111]
+    OVSMOD:
+      Oversampling16: [0, "Oversampling by 16"]
+      Oversampling8: [1, "Oversampling by 8"]
+    AMIE:
+      Disabled: [0, "Address match interrupt is disabled"]
+      Enabled: [1, "Address match interrupt is enabled"]
+    MEN:
+      Disabled: [0, "Receiver in active mode permanently"]
+      Enabled: [1, "Receiver can switch between mute mode and active mode"]
+    UESM:
+      Disabled: [0, "USART not able to wake the MCU from deep-sleep mode"]
+      Enabled: [1, "USART is able to wake the MCU from deep-sleep mode, as long as the clock source for the USART is IRC8M or LXTAL"]
+  CTL1:
+    ADDR: [0, 0xFF]
+    RTEN:
+      Disabled: [0, "Receiver timeout feature disabled"]
+      Enabled: [1, "Receiver timeout feature enabled"]
+    ABDM:
+      Start: [0, "Measurement of the start bit is used to detect the baud rate"]
+      Edge: [1, "Falling edge to falling edge measurement"]
+    ABDEN:
+      Disabled: [0, "Auto baud rate detection is disabled"]
+      Enabled: [1, "Auto baud rate detection is enabled"]
+    MSBF:
+      LSB: [0, "Data is transmitted/received with data bit 0 first, following the start bit"]
+      MSB: [1, "Data is transmitted/received with MSB (bit 7/8/9) first, following the start bit"]
+    DINV:
+      Positive: [0, "Logical data from the data register are send/received in positive/direct logic"]
+      Negative: [1, "Logical data from the data register are send/received in negative/inverse logic"]
+    TINV:
+      Standard: [0, "TX pin signal works using the standard logic levels"]
+      Inverted: [1, "TX pin signal values are inverted"]
+    RINV:
+      Standard: [0, "RX pin signal works using the standard logic levels"]
+      Inverted: [1, "RX pin signal values are inverted"]
+    STRP:
+      Standard: [0, "TX/RX pins are used as defined in standard pinout"]
+      Swapped: [1, "The TX and RX pins functions are swapped"]
+    ADDM:
+      Bit4: [0, "4-bit address detection"]
+      Full: [1, "Full-bit address detection"]
+  CTL2:
+    WUIE:
+      Disabled: [0, "Wake-up from deep-sleep mode interrupt is disabled"]
+      Enabled: [1, "Wake-up from deep-sleep mode interrupt is generated whenever WUF=1 in the STAT register"]
+    WUM:
+      Address: [0, "WUF active on address match"]
+      Start: [2, "WUF active on start bit detection"]
+      RXNE: [3, "WUF active on RBNE"]
+    SCRTNUM: [0, 7]
+    DEP:
+      High: [0, "DE signal is active high"]
+      Low: [1, "DE signal is active low"]
+    DEM:
+      Disabled: [0, "DE function is disabled"]
+      Enabled: [1, "The DE signal is output on the RTS pin"]
+    DDRE:
+      NotDisabled: [0, "DMA is not disabled in case of reception error"]
+      Disabled: [1, "DMA is disabled following a reception error"]
+    OVRD:
+      Enabled: [0, "Overrun Error Flag, ORE, is set when received data is not read before receiving new data"]
+      Disabled: [1, "Overrun functionality is disabled. If new data is received while the RXNE flag is still set the ORE flag is not set and the new received data overwrites the previous content of the RDATA register"]
+    OSB:
+      Sample3: [0, "Three sample bit method"]
+      Sample1: [1, "One sample bit method"]
+  CMD:
+    TXFCMD:
+      Discard: [1, "Set the TBE flag. This allows to discard the transmit data"]
+    RXFCMD:
+      Discard: [1, "Clears the RBNE flag. This allows to discard the received data without reading it, and avoid an overrun condition"]
+    MMCMD:
+      Mute: [1, "Puts the USART in mute mode and sets the RWU flag"]
+    SBKCMD:
+      Break: [1, "Sets the SBKF flag and request to send a BREAK on the line, as soon as the transmit machine is available"]
+    ABDCMD:
+      Request: [1, "Resets the ABRF flag in the USART_ISR and request an automatic baud rate measurement on the next received data frame"]
+  "STAT*":
+    REA:
+    TEA:
+    WUF:
+    RWU:
+    SBF:
+    AMF:
+    BSY:
+    ABDF:
+    ABDE:
+    EBF:
+    RTF:
+    CTS:
+    CTSF:
+    LBDF:
+    TBE:
+    TC:
+    RBNE:
+    IDLEF:
+    ORERR:
+    NERR:
+    FERR:
+    PERR:
+  INTC:
+    WUC:
+      Clear: [1, "Clears the WUF flag in the STAT register"]
+    AMC:
+      Clear: [1, "Clears the AMF flag in the STAT register"]
+    EBC:
+      Clear: [1, "Clears the EBF flag in the STAT register"]
+    RTC:
+      Clear: [1, "Clears the RCF flag in the STAT register"]
+    CTSC:
+      Clear: [1, "Clears the CTSF flag in the STAT register"]
+    LBDC:
+      Clear: [1, "Clears the LBDF flag in the STAT register"]
+    TCC:
+      Clear: [1, "Clears the TC bit in the STAT register"]
+    IDLEC:
+      Clear: [1, "Clears the IDLEF flag in the STAT register"]
+    OREC:
+      Clear: [1, "Clears the ORERR bit in the STAT register"]
+    NEC:
+      Clear: [1, "Clears the NERR bit in the STAT register"]
+    FEC:
+      Clear: [1, "Clears the FERR bit in the STAT register"]
+    PEC:
+      Clear: [1, "Clears the PERR bit in the STAT register"]
+  RDATA:
+    RDATA: [0, 0x1FF]
+  TDATA:
+    TDATA: [0, 0xFF]
