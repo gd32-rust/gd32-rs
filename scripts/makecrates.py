@@ -58,6 +58,10 @@ cortex-m = "0.7.3"
 optional = true
 version = "0.7.0"
 
+[dependencies.critical-section]
+optional = true
+version = "1.1.1"
+
 [package.metadata.docs.rs]
 features = {docs_features}
 default-target = "{doc_target}"
@@ -116,7 +120,7 @@ compile the device(s) you want. To use, in your Cargo.toml:
 ```toml
 [dependencies.{crate}]
 version = "{version}"
-features = ["{device}", "rt"]
+features = ["{device}", "rt", "critical-section"]
 ```
 
 The `rt` feature is optional and brings in support for `cortex-m-rt`.
