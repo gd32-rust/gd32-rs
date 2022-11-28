@@ -1,7 +1,9 @@
 # GD32 Peripheral Access Crates
 
 [![CI](https://github.com/gd32-rust/gd32-rs/workflows/CI/badge.svg?branch=main)](https://github.com/gd32-rust/gd32-rs)
+[![crates.io](https://img.shields.io/crates/v/gd32e1.svg?label=gd32e1)](https://crates.io/crates/gd32e1)
 [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
+[![crates.io](https://img.shields.io/crates/v/gd32e5.svg?label=gd32e5)](https://crates.io/crates/gd32e5)
 [![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
 [![crates.io](https://img.shields.io/crates/v/gd32f2.svg?label=gd32f2)](https://crates.io/crates/gd32f2)
 
