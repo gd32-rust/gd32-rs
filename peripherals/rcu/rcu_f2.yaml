@@ -6,21 +6,6 @@ _include:
   - "rcu_common.yaml"
 
 RCU:
-  CTL0:
-    PLL2STB:
-      _read:
-        NotReady: [0, "PLL2 is not stable"]
-        Ready: [1, "PLL2 is stable"]
-    PLL2EN:
-      "Off": [0, "PLL2 Off"]
-      "On": [1, "PLL2 On"]
-    PLL1STB:
-      _read:
-        NotReady: [0, "PLL1 is not stable"]
-        Ready: [1, "PLL1 is stable"]
-    PLL1EN:
-      "Off": [0, "PLL1 Off"]
-      "On": [1, "PLL1 On"]
   CFG0:
     ADCPSC:
       Div12: [4, "CK_APB2 divided by 12"]

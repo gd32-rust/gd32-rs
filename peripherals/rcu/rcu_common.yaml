@@ -4,11 +4,14 @@
 
 RCU:
   CTL0:
-    PLLSTB:
+    "PLL*STB":
       _read:
         NotReady: [0, "PLL is not stable"]
         Ready: [1, "PLL is stable"]
-    PLLEN,HXTALEN,IRC8MEN:
+    "PLL*EN":
+      "Off": [0, "Clock Off"]
+      "On": [1, "Clock On"]
+    HXTALEN,IRC8MEN:
       "Off": [0, "Clock Off"]
       "On": [1, "Clock On"]
     CKMEN:
