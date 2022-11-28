@@ -2,7 +2,8 @@
 
 ## [Unreleased]
 
-- Updated to `svd2rust` 0.27.0.
+- Updated to `svd2rust` 0.27.2.
+- Updated to `cortex-m` 0.7.6 and `cortex-m-rt` 0.7.2.
 - GD32E10X
   - Added support for GD32E10X in new `gd32e1` crate.
 - GD32E50x
