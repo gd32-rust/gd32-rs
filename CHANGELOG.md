@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.7.0]
 
 - Updated to `svd2rust` 0.27.2.
 - Updated to `cortex-m` 0.7.6 and `cortex-m-rt` 0.7.2.
@@ -61,10 +61,11 @@
 
 First release.
 
-[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.6.0...HEAD
+[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...HEAD
 [0.2.0]: https://github.com/gd32-rust/gd32-rs/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/gd32-rust/gd32-rs/compare/0.2.0...0.2.1
 [0.3.0]: https://github.com/gd32-rust/gd32-rs/compare/0.2.1...0.3.0
 [0.4.0]: https://github.com/gd32-rust/gd32-rs/compare/0.3.0...0.4.0
 [0.5.0]: https://github.com/gd32-rust/gd32-rs/compare/0.4.0...0.5.0
 [0.6.0]: https://github.com/gd32-rust/gd32-rs/compare/0.5.0...0.6.0
+[0.7.0]: https://github.com/gd32-rust/gd32-rs/compare/0.6.0...0.7.0
