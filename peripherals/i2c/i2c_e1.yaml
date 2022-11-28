@@ -1,0 +1,13 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - i2c_common.yaml
+  - i2c_high.yaml
+
+"I2C*":
+  FMPCFG:
+    FMPEN:
+      Disabled: [0, "Fast mode plus disabled"]
+      Enabled: [1, "Fast mode plus (1MHz max) enabled"]

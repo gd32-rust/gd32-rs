@@ -18,12 +18,28 @@ RCU:
         name: "PLLMF"
       CKOUT0SEL:
         name: "CKOUTSEL"
+      PREDV0_LSB:
+        name: "PLLPREDV"
+      ADCPSC_1_0:
+        name: "ADCPSC"
+      USBFSPSC:
+        name: "USBFSPSC_3"
+      USBFSPSC_1_0:
+        name: "USBFSPSC"
 
 "SPI*":
   DATA:
     _modify:
       SPI_DATA:
         name: "DATA"
+
+"I2C*":
+  SADDR0:
+    _merge:
+      ADDRESS:
+        - ADDRESS0
+        - ADDRESS7_1
+        - ADDRESS9_8
 
 "TIMER*":
   CAR:
@@ -49,3 +65,11 @@ PMU:
     _modify:
       WUPEN:
         name: "WUPEN0"
+  CTL:
+    _delete:
+      - LDOVS
+
+DBG:
+  CTL0:
+    _delete:
+      - TRACE_MODE

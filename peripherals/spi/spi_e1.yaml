@@ -1,0 +1,23 @@
+# Copyright 2022 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - spi.yaml
+  - spi_high.yaml
+
+"SPI*":
+  CTL1:
+    NSSP:
+      Disabled: [0, "NSSP Mode disabled"]
+      Enabled: [1, "NSSP Mode enabled"]
+    TMOD:
+      Disabled: [0, "SPI TI Mode disabled"]
+      Enabled: [1, "SPI TI Mode enabled"]
+  STAT:
+    FERR:
+      _read:
+        NoError: [0, "No format error"]
+        Error: [1, "Format error"]
+      _write:
+        Clear: [0, "Clear format error"]
