@@ -33,6 +33,14 @@ RCU:
       SPI_DATA:
         name: "DATA"
 
+"I2C*":
+  SADDR0:
+    _merge:
+      ADDRESS:
+        - ADDRESS0
+        - ADDRESS7_1
+        - ADDRESS9_8
+
 "TIMER*":
   CAR:
     _modify:

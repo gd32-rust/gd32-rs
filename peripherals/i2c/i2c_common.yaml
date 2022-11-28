@@ -65,8 +65,9 @@
     I2CCLK: [2, 72]
   SADDR0:
     ADDFORMAT:
-      Add7: [0, "7-bit slave address"]
+      Add7: [0, "7-bit slave address (note that you'll need to shift the address by 1b)"]
       Add10: [1, "10-bit slave address"]
+    ADDRESS: [0, 1023]
   SADDR1:
     ADDRESS2: [0, 0x7F]
     DUADEN:

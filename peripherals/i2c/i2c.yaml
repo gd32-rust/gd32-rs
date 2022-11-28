@@ -4,7 +4,3 @@
 
 _include:
   - i2c_common.yaml
-
-"I2C*":
-  SADDR0:
-    ADDRESS: [0, 1023]
