@@ -29,7 +29,7 @@ CRATE_DOC_FEATURES = {
 }
 
 CRATE_DOC_TARGETS = {
-    "gd32e1": "thumbv8m.base-none-eabi",
+    "gd32e1": "thumbv7m-none-eabi",
     "gd32e2": "thumbv8m.base-none-eabi",
     "gd32e5": "thumbv8m.base-none-eabi",
     "gd32f1": "thumbv7m-none-eabi",
