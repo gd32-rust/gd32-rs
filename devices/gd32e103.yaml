@@ -6,7 +6,7 @@ _svd: ../svd/gd32e103.svd
 
 _include:
   - common_patches/gd32e1xx.yaml
-    #- ../peripherals/adc/adc.yaml
+  - ../peripherals/adc/adc_e1.yaml
   - ../peripherals/can/can.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/dac/dac_e1.yaml

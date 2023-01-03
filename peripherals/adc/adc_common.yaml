@@ -71,12 +71,6 @@ ADC*:
     TSVREN:
       Disabled: [0, "Channel 16 and 17 disabled"]
       Enabled: [1, "Channel 16 and 17 enabled"]
-    SWRCST:
-      _read:
-        Started: [0, "Reset state"]
-        NotStarted: [1, "Starting conversion of regular channels"]
-      _write:
-        Start: [1, "Start conversion of regular channels"]
     SWICST:
       _read:
         Started: [0, "Reset state"]
