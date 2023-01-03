@@ -2,13 +2,13 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-"TIMER[0-2],TIMER1[3-6]":
+"TIMER[012],TIMER1[3456]":
   CFG:
     CHVSEL:
       Normal: [0, "Normal behaviour"]
       IgnoreSame: [1, "Duplicate writes to CHxVAL are ignored"]
 
-"TIMER0,TIMER1[4-6]":
+"TIMER0,TIMER1[456]":
   CFG:
     OUTSEL:
       Normal: [0, "Normal behaviour"]

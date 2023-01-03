@@ -4,7 +4,7 @@
 
 # Common features found on all timers.
 
-TIMER0:
+"TIMER*":
   CTL0:
     ARSE:
       Disabled: [0, "The shadow register for CAR is disabled"]
@@ -34,27 +34,5 @@ TIMER0:
   SWEVG:
     UPG:
       Update: [1, "Re-initializes the timer counter and generates an update of the registers."]
-
-"TIMER[1-9],TIMER1[0-9]":
-  CTL0:
-    ARSE:
-      _derivedFrom: "TIMER0.CTL0.ARSE.ARSE"
-    UPS:
-      _derivedFrom: "TIMER0.CTL0.UPS.UPS"
-    UPDIS:
-      _derivedFrom: "TIMER0.CTL0.UPDIS.UPDIS"
-    CEN:
-      _derivedFrom: "TIMER0.CTL0.CEN.CEN"
-  DMAINTEN:
-    UPIE:
-      _derivedFrom: "TIMER0.DMAINTEN.UPIE.UPIE"
-  INTF:
-    UPIF:
-      _derivedFrom: "TIMER0.INTF.UPIF.UPIF"
-  SWEVG:
-    UPG:
-      _derivedFrom: "TIMER0.SWEVG.UPG.UPG"
-
-"TIMER*":
   PSC:
     PSC: [0, 0xFFFF]

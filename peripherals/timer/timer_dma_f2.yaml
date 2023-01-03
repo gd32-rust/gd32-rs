@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
 # TIMER8-13 doesn't have single pulse mode or DMA.
-"TIMER[0-7]":
+"TIMER[01234567]":
   CTL0:
     SPM:
       Disabled: [0, "Counter is not stopped at update event"]
@@ -14,7 +14,7 @@
       Enabled: [1, "Update DMA request enabled"]
 
 # TIMER5/6 doesn't have DMA configuration registers or capture/compare.
-"TIMER[0-4],TIMER7":
+"TIMER[012347]":
   CTL1:
     DMAS:
       OnCompare: [0, "CCx DMA request sent when CCx event occurs"]

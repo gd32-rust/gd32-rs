@@ -9,6 +9,6 @@
   CAR:
     CAR: [0, 0xFFFF]
 
-"TIMER[0-4],TIMER[7-9],TIMER1[0-3]":
+"TIMER[01234789],TIMER1[0123]":
   "CH?CV":
     "CH?VAL": [0, 0xFFFF]

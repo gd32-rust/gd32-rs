@@ -6,9 +6,9 @@
 
 TIMER0:
   CTL1:
-    "ISO[2-3]":
+    "ISO[23]":
       _derivedFrom: "ISO0"
-    "ISO[1-2]N":
+    "ISO[12]N":
       _derivedFrom: "ISO0N"
   DMAINTEN:
     CMTDEN:

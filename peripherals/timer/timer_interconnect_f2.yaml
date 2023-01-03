@@ -5,7 +5,7 @@
 # Interconnection and slave mode.
 # Timers 13-16 don't have interconnection.
 
-"TIMER[0-2],TIMER14":
+"TIMER[012],TIMER14":
   SMCFG:
     MSM:
       NoSync: [0, "No action"]
@@ -45,14 +45,14 @@ TIMER0:
       CompareO2C: [6, "O2CPRE signal is used as trigger output"]
       CompareO3C: [7, "O3CPRE signal is used as trigger output"]
 
-"TIMER[1-5],TIMER14":
+"TIMER[12345],TIMER14":
   CTL1:
     MMC:
       Reset: [0, "Use UPG bit from SWEVG register"]
       Enable: [1, "Use CEN bit from CTL0 register"]
       Update: [2, "Use the update event"]
 
-"TIMER[0-2]":
+"TIMER[012]":
   CTL1:
     TI0S:
       Normal: [0, "The CH0 pin input is selected as channel 0 trigger input"]

@@ -2,7 +2,7 @@
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-TIMER0:
+"TIMER[012]":
   CTL0:
     CAM:
       EdgeAligned: [0, "The counter counts up or down depending on the direction bit"]
@@ -24,10 +24,3 @@ TIMER0:
     DIR:
       Up: [0, "Counter used as upcounter"]
       Down: [1, "Counter used as downcounter"]
-
-"TIMER[1-2]":
-  CTL0:
-    CAM:
-      _derivedFrom: "TIMER0.CTL0.CAM.CAM"
-    DIR:
-      _derivedFrom: "TIMER0.CTL0.DIR.DIR"
