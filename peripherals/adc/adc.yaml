@@ -5,3 +5,4 @@
 _include:
   - "adc_common.yaml"
   - "eteic.yaml"
+  - "swrcst.yaml"

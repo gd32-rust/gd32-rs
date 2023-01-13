@@ -1,0 +1,12 @@
+# Copyright 2023 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+ADC*:
+  CTL1:
+    SWRCST:
+      _read:
+        Started: [0, "Reset state"]
+        NotStarted: [1, "Starting conversion of regular channels"]
+      _write:
+        Start: [1, "Start conversion of regular channels"]

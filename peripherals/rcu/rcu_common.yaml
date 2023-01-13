@@ -71,7 +71,7 @@ RCU:
       Div4: [1, "CK_APB2 divided by 4"]
       Div6: [2, "CK_APB2 divided by 6"]
       Div8: [3, "CK_APB2 divided by 8"]
-    APB[12]PSC:
+    "APB[12]PSC":
       Div1: [0, "CK_AHB"]
       Div2: [4, "CK_AHB divided by 2"]
       Div4: [5, "CK_AHB divided by 4"]

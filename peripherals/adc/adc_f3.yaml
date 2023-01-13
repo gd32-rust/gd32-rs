@@ -5,3 +5,4 @@
 _include:
   - "adc_common.yaml"
   - "adc_high_f2_f3.yaml"
+  - "swrcst.yaml"
