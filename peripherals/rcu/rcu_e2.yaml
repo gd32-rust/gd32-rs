@@ -44,59 +44,32 @@ RCU:
       LXTAL: [2, "LXTAL selected as USART0 clock source"]
       IRC8M: [3, "IRC8M selected as USART0 clock source"]
   INT:
-    CKMIC:
-      _write:
-        Clear: [1, "Clear CKMIF flag"]
     IRC28MSTBIC:
       _write:
         Clear: [1, "Clear IRC28MSTBIF flag"]
-    HXTALSTBIC:
-      _write:
-        Clear: [1, "Clear HXTALSTBIF flag"]
     IRC8MSTBIC:
       _write:
         Clear: [1, "Clear IRC8MSTBIF flag"]
-    LXTALSTBIC:
-      _write:
-        Clear: [1, "Clear LXTALSTBIF flag"]
     IRC40KSTBIC:
       _write:
         Clear: [1, "Clear IRC40KSTBIF flag"]
     IRC28MSTBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
-    HXTALSTBIE:
-      Disabled: [0, "Interrupt disabled"]
-      Enabled: [1, "Interrupt enabled"]
     IRC8MSTBIE:
-      Disabled: [0, "Interrupt disabled"]
-      Enabled: [1, "Interrupt enabled"]
-    LXTALSTBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
     IRC40KSTBIE:
       Disabled: [0, "Interrupt disabled"]
       Enabled: [1, "Interrupt enabled"]
-    CKMIF:
-      _read:
-        NotInterrupted: [0, "Clock operating normally"]
-        Interrupted: [1, "HXTAL clock stuck"]
     IRC28MSTBIF:
       _read:
         NotInterrupted: [0, "No interrupt generated"]
         Interrupted: [1, "IRC14M stabilisation interrupt generated"]
-    HXTALSTBIF:
-      _read:
-        NotInterrupted: [0, "No interrupt generated"]
-        Interrupted: [1, "HXTAL stabilisation interrupt generated"]
     IRC8MSTBIF:
       _read:
         NotInterrupted: [0, "No interrupt generated"]
         Interrupted: [1, "IRC8M stabilisation interrupt generated"]
-    LXTALSTBIF:
-      _read:
-        NotInterrupted: [0, "No interrupt generated"]
-        Interrupted: [1, "LXTAL stabilisation interrupt generated"]
     IRC40KSTBIF:
       _read:
         NotInterrupted: [0, "No interrupt generated"]
@@ -115,9 +88,3 @@ RCU:
     KEY:
       _write:
         Enable: [0x1A2B3C4D, "Allow PDVSEL and DSV to be written"]
-  DSV:
-    DSLPVS:
-      V1_2: [0, "The core voltage is 1.2 V in deep-sleep mode"]
-      V1_1: [1, "The core voltage is 1.1 V in deep-sleep mode"]
-      V1_0: [2, "The core voltage is 1.0 V in deep-sleep mode"]
-      V0_9: [3, "The core voltage is 0.9 V in deep-sleep mode"]
