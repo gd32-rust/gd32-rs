@@ -182,9 +182,3 @@ RCU:
     IRC40KEN:
       "Off": [0, "IRC40K oscillator disabled"]
       "On": [1, "IRC40K oscillator enabled"]
-  DSV:
-    DSLPVS:
-      V1_2: [0, "The core voltage is 1.2 V in deep-sleep mode"]
-      V1_1: [1, "The core voltage is 1.1 V in deep-sleep mode"]
-      V1_0: [2, "The core voltage is 1.0 V in deep-sleep mode"]
-      V0_9: [3, "The core voltage is 0.9 V in deep-sleep mode"]

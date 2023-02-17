@@ -28,3 +28,9 @@ RCU:
     IRC28MEN:
       "Off": [0, "Clock Off"]
       "On": [1, "Clock On"]
+  DSV:
+    DSLPVS:
+      V1_0: [0, "The core voltage is 1.0 V in deep-sleep mode"]
+      V0_9: [1, "The core voltage is 0.9 V in deep-sleep mode"]
+      V0_8: [2, "The core voltage is 0.8 V in deep-sleep mode"]
+      V1_2: [3, "The core voltage is 1.2 V in deep-sleep mode"]
