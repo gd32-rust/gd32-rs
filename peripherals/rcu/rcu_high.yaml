@@ -21,3 +21,9 @@ RCU:
       IRC8M: [5, "Internal RC 8 MHz (HSI) oscillator clock selected"]
       HXTAL: [6, "External 4-32 MHz (HSE) oscillator clock selected"]
       PLL: [7, "PLL clock selected (divided by 1 or 2, depending on PLLDV)"]
+  DSV:
+    DSLPVS:
+      V1_8: [0, "The core voltage is 1.8 V in deep-sleep mode"]
+      V1_6: [1, "The core voltage is 1.6 V in deep-sleep mode"]
+      V1_4: [2, "The core voltage is 1.4 V in deep-sleep mode"]
+      V1_2: [3, "The core voltage is 1.2 V in deep-sleep mode"]

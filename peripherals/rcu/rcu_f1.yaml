@@ -1,0 +1,41 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "rcu_common.yaml"
+  - "rcu_f1_e2.yaml"
+
+RCU:
+  CFG2:
+    CECSEL:
+      IRC8M_Div244: [0, "IRC8M clock divided by 244 selected as CEC clock source"]
+      LXTAL: [1, "LXTAL clock selected as CEC clock source"]
+  INT:
+    IRC14MSTBIC:
+      _write:
+        Clear: [1, "Clear IRC14MSTBIF flag"]
+    IRC14MSTBIE:
+      Disabled: [0, "Interrupt disabled"]
+      Enabled: [1, "Interrupt enabled"]
+    IRC14MSTBIF:
+      _read:
+        NotInterrupted: [0, "No interrupt generated"]
+        Interrupted: [1, "IRC14M stabilisation interrupt generated"]
+  CTL1:
+    IRC14MCALIB: [0, 255]
+    IRC14MADJ: [0, 31]
+    IRC14MSTB:
+      _read:
+        NotReady: [0, "IRC14M is not stable"]
+        Ready: [1, "IRC14M is stable"]
+    IRC14MEN:
+      "Off": [0, "Clock Off"]
+      "On": [1, "Clock On"]
+  ADDEN:
+    I2C2EN:
+      Disabled: [0, "The selected clock is disabled"]
+      Enabled: [1, "The selected clock is enabled"]
+  ADDRST:
+    I2C2RST:
+      Reset: [1, "Reset the selected module"]

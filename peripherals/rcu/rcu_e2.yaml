@@ -1,0 +1,36 @@
+# Copyright 2023 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "rcu_common.yaml"
+  - "rcu_f1_e2.yaml"
+
+RCU:
+  INT:
+    IRC28MSTBIC:
+      _write:
+        Clear: [1, "Clear IRC28MSTBIF flag"]
+    IRC28MSTBIE:
+      Disabled: [0, "Interrupt disabled"]
+      Enabled: [1, "Interrupt enabled"]
+    IRC28MSTBIF:
+      _read:
+        NotInterrupted: [0, "No interrupt generated"]
+        Interrupted: [1, "IRC14M stabilisation interrupt generated"]
+  CTL1:
+    IRC28MCALIB: [0, 255]
+    IRC28MADJ: [0, 31]
+    IRC28MSTB:
+      _read:
+        NotReady: [0, "IRC14M is not stable"]
+        Ready: [1, "IRC14M is stable"]
+    IRC28MEN:
+      "Off": [0, "Clock Off"]
+      "On": [1, "Clock On"]
+  DSV:
+    DSLPVS:
+      V1_0: [0, "The core voltage is 1.0 V in deep-sleep mode"]
+      V0_9: [1, "The core voltage is 0.9 V in deep-sleep mode"]
+      V0_8: [2, "The core voltage is 0.8 V in deep-sleep mode"]
+      V1_2: [3, "The core voltage is 1.2 V in deep-sleep mode"]

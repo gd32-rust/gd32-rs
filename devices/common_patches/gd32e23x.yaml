@@ -7,6 +7,10 @@ RCU:
     _modify:
       KEY:
         access: write-only
+  CFG1:
+    _modify:
+      PREDV:
+        name: "HXTALPREDV"
 
 # Rename FMC fields to match GD32F1x0 devices.
 FMC:
