@@ -43,3 +43,7 @@ FMC:
         name: "INTDIV"
       BRR_FRA:
         name: "FRADIV"
+
+_modify:
+  DBGMCU:
+    name: "DBG"

@@ -23,3 +23,4 @@ _include:
   - ../peripherals/syscfg/syscfg.yaml
   - ../peripherals/usart/usart.yaml
   - ../peripherals/wwdg/wwdg.yaml
+  - ../peripherals/dbg/dbg.yaml
