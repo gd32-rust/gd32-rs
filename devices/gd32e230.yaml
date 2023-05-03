@@ -25,3 +25,4 @@ _include:
   - ../peripherals/syscfg/syscfg_hcce.yaml
   - ../peripherals/usart/usart.yaml
   - ../peripherals/wwdg/wwdg.yaml
+  - ../peripherals/dbg/dbg.yaml
