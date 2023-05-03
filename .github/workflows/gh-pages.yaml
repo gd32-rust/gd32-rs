@@ -7,7 +7,7 @@ on:
 jobs:
   build_html:
     name: Build HTML
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
