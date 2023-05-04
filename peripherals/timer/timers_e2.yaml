@@ -1,0 +1,14 @@
+# Copyright 2023 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - timer_16bit.yaml
+  - timer_advanced.yaml
+  - timer_basic.yaml
+  - timer_complementary.yaml
+  - timer_dma.yaml
+  - timer_general.yaml
+  - timer_interconnect.yaml
+  - timer_updown.yaml
+  - timer13.yaml
