@@ -11,11 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout gd32-rs
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: gd32-rs
       - name: Checkout mmaps
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: gd32-rust/gd32-rs-mmaps
           ssh-key: ${{ secrets.MMAPS_KEY }}
