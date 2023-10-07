@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Updated to `svd2rust` 0.30.1.
 - GD32E103
   - Added some more field details to `RCU.INT`.
 - GD32E23x
