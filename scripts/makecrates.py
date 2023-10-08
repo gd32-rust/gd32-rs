@@ -17,7 +17,7 @@ import re
 import yaml
 
 VERSION = "0.7.0"
-SVD2RUST_VERSION = "0.27.2"
+SVD2RUST_VERSION = "0.30.1"
 
 CRATE_DOC_FEATURES = {
     "gd32e1": ["rt", "gd32e103"],
@@ -52,15 +52,15 @@ license = "MIT OR Apache-2.0"
 
 [dependencies]
 vcell = "0.1.3"
-cortex-m = "0.7.6"
+cortex-m = "0.7.7"
 
 [dependencies.cortex-m-rt]
 optional = true
-version = "0.7.2"
+version = "0.7.3"
 
 [dependencies.critical-section]
 optional = true
-version = "1.1.1"
+version = "1.1.2"
 
 [package.metadata.docs.rs]
 features = {docs_features}

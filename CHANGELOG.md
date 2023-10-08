@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+- Updated to `critical-section` to 1.1.2.
+- Updated to `cortex-m-rt` to 0.7.3.
+- Updated to `cortex-m` to 0.7.7.
+- Updated to `svd2rust` 0.30.1.
 - GD32E103
   - Added some more field details to `RCU.INT`.
 - GD32E23x
