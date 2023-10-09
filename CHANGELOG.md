@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.8.0]
 
 - Updated to `critical-section` to 1.1.2.
 - Updated to `cortex-m-rt` to 0.7.3.
@@ -76,7 +76,7 @@
 
 First release.
 
-[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...HEAD
+[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...HEAD
 [0.2.0]: https://github.com/gd32-rust/gd32-rs/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/gd32-rust/gd32-rs/compare/0.2.0...0.2.1
 [0.3.0]: https://github.com/gd32-rust/gd32-rs/compare/0.2.1...0.3.0
@@ -84,3 +84,4 @@ First release.
 [0.5.0]: https://github.com/gd32-rust/gd32-rs/compare/0.4.0...0.5.0
 [0.6.0]: https://github.com/gd32-rust/gd32-rs/compare/0.5.0...0.6.0
 [0.7.0]: https://github.com/gd32-rust/gd32-rs/compare/0.6.0...0.7.0
+[0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...0.8.0
