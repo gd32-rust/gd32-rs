@@ -38,6 +38,6 @@ DAC:
   "DACC_L12DH":
     "DAC?_DH": [0, 0xFFF]
   "DACC_R8DH":
-    "DAC?_DH": [0, 0xFFF]
+    "DAC?_DH": [0, 0xFF]
   "DAC[01]_DO":
     "DAC?_DO": [0, 0xFFF]

@@ -11,3 +11,7 @@ _include:
     FMPEN:
       Disabled: [0, "Fast mode plus disabled"]
       Enabled: [1, "Fast mode plus (1MHz max) enabled"]
+  CTL1:
+    I2CCLK: [2, 60]
+  RT:
+    RISETIME: [0, 0x3F]

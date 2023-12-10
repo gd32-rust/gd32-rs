@@ -20,6 +20,10 @@
     _modify:
       DISSTRC:
         name: SS
+  CTL1:
+    I2CCLK: [2,60]
+  RT:
+    RISETIME: [0,63]
   SADDR0:
     _merge: ["ADDRESS*"]
   STAT1:
