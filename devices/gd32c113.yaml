@@ -1,0 +1,25 @@
+# Copyright 2023 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32c113.svd
+
+_include:
+  - common_patches/gd32e1xx.yaml
+  - ../peripherals/adc/adc_e1.yaml
+  - ../peripherals/can/can_c1.yaml
+  - ../peripherals/crc/crc.yaml
+  - ../peripherals/dac/dac_e1.yaml
+  - ../peripherals/dbg/dbg_e1.yaml
+  - ../peripherals/dma/dma.yaml
+  - ../peripherals/exti/exti.yaml
+  - ../peripherals/flash/flash_e1.yaml
+  - ../peripherals/fwdgt/fwdgt_f2_f3.yaml
+  - ../peripherals/gpio/gpio_e1.yaml
+  - ../peripherals/i2c/i2c_e1.yaml
+  - ../peripherals/pmu/pmu.yaml
+  - ../peripherals/rcu/rcu_e1.yaml
+  - ../peripherals/spi/spi_e1.yaml
+  - ../peripherals/timer/timers_e1.yaml
+  - ../peripherals/usart/usart_f2_f3.yaml
+  - ../peripherals/wwdg/wwdg.yaml

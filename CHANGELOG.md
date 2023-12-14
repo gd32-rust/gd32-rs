@@ -1,5 +1,25 @@
 # Changelog
 
+## [unreleased]
+
+- GD32C1x3
+  - Added support for GD32C103 and GD32C113 in new `gd32c1` crate.
+- GD32E103
+  - Fixed range of `I2C*.CTL1.I2CCLK` and `I2C*.RT.RISETIME`.
+  - Fixed range of `DAC.DACC_R8DH.DAC*_DH`.
+  - Fixed range of `CAN*.BT.BAUDPSC`.
+- GD32F1x0
+  - Fixed width of `I2C*.CTL1.I2CCLK` and `I2C*.RT.RISETIME` to be 7 bits rather than 6.
+  - Fixed range of `DAC.DACC_R8DH.DAC*_DH`.
+  - Fixed range of `CAN*.BT.BAUDPSC`.
+- GD32F20x
+  - Fixed range of `I2C*.CTL1.I2CCLK` and `I2C*.RT.RISETIME`.
+  - Fixed range of `DAC.DACC_R8DH.DAC*_DH`.
+  - Fixed range of `CAN*.BT.BAUDPSC`.
+- GD32F30x
+  - Fixed range of `DAC.DACC_R8DH.DAC*_DH`.
+  - Fixed range of `CAN*.BT.BAUDPSC`.
+
 ## [0.8.0]
 
 - Updated to `critical-section` to 1.1.2.

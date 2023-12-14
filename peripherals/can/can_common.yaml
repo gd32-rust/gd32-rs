@@ -196,7 +196,7 @@
       Enabled: [1, "Loop Back Mode enabled"]
     SJW: [0, 3]
     "BS?": [0, 3]
-    BAUDPSC: [0, 0x400]
+    BAUDPSC: [0, 0x3FF]
   "TMI?,RFIFOMI?":
     SFID:
     EFID:

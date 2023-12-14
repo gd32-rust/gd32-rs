@@ -1,0 +1,17 @@
+# Copyright 2023 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+"CAN*":
+  BT:
+    _modify:
+      "BS1_0_3":
+        name: "BS1"
+      "BS1_4_6":
+        name: "BS1H"
+      "BS2_0_2":
+        name: "BS2"
+      "BS2_3_4":
+        name: "BS2H"
+_include:
+  - can_common.yaml

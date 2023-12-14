@@ -121,6 +121,15 @@ TIMER15:
         name: "PECV"
       TRS:
         name: "TR"
+  CTL1:
+    _modify:
+      I2CCLK:
+        bitWidth: 7
+  RT:
+    _modify:
+      RISETIME:
+        bitWidth: 7
+
 "SPI*":
   STAT:
     _modify:
