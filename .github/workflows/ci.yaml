@@ -12,6 +12,7 @@ jobs:
     strategy:
       matrix:
         crate:
+          - gd32c1
           - gd32e1
           - gd32e2
           - gd32e5
