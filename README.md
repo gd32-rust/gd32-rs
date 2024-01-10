@@ -108,11 +108,15 @@ This project is still young and there's a lot to do!
 
 ## Supported Device Families
 
-[![crates.io](https://img.shields.io/crates/v/gd32e1.svg?label=gd32e1)](https://crates.io/crates/gd32e1)
-[![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2)
-[![crates.io](https://img.shields.io/crates/v/gd32e5.svg?label=gd32e5)](https://crates.io/crates/gd32e5)
-[![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1)
-[![crates.io](https://img.shields.io/crates/v/gd32f2.svg?label=gd32f2)](https://crates.io/crates/gd32f2)
+| Crate                                                                                                    | Supported devices                      | Notes                              |
+| -------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------- |
+| `gd32c1`                                                                                                 | GD32C103, GD32C113                     | Not yet published                  |
+| [![crates.io](https://img.shields.io/crates/v/gd32e1.svg?label=gd32e1)](https://crates.io/crates/gd32e1) | GD32E103                               |                                    |
+| [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2) | GD32E230, GD32E231                     |                                    |
+| [![crates.io](https://img.shields.io/crates/v/gd32e5.svg?label=gd32e5)](https://crates.io/crates/gd32e5) | GD32E503, GD32E505, GD32E507, GD32E508 |                                    |
+| [![crates.io](https://img.shields.io/crates/v/gd32f1.svg?label=gd32f1)](https://crates.io/crates/gd32f1) | GD32F130, GD32F150, GD32F170, GD32F190 |                                    |
+| [![crates.io](https://img.shields.io/crates/v/gd32f2.svg?label=gd32f2)](https://crates.io/crates/gd32f2) | GD32F205, GD32F207                     |                                    |
+| `gd32f3`                                                                                                 | GD32F303, GD32F305, GD32F307           | Not published due to name conflict |
 
 Please see the individual crate READMEs for the full list of devices each crate
 supports.
