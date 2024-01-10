@@ -4,6 +4,10 @@ set -euxo pipefail
 mkdir -p html/gd32
 python3 scripts/htmlcomparesvd.py html/gd32 svd/gd32*.svd.patched
 
+mkdir -p html/gd32c1
+python3 scripts/htmlcomparesvd.py html/gd32c1 svd/gd32c1*.svd.patched
+mkdir -p html/gd32e1
+python3 scripts/htmlcomparesvd.py html/gd32e1 svd/gd32e1*.svd.patched
 mkdir -p html/gd32e2
 python3 scripts/htmlcomparesvd.py html/gd32e2 svd/gd32e2*.svd.patched
 mkdir -p html/gd32e5
@@ -42,6 +46,8 @@ cat > html/comparisons.html <<EOF
 <h1>Device families</h1>
 <ul>
   <li><a href="gd32/index.html">GD32 overview</a></li>
+  <li><a href="gd32c1/index.html">GD32C1</a></li>
+  <li><a href="gd32e1/index.html">GD32E1</a></li>
   <li><a href="gd32e2/index.html">GD32E2</a></li>
   <li><a href="gd32e5/index.html">GD32E5</a></li>
   <li><a href="gd32f1/index.html">GD32F1</a></li>
