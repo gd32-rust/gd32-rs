@@ -14,14 +14,6 @@
 #
 # This data is used to generate more informative crate READMEs.
 
-gd32e1:
-  gd32e103:
-    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/value-line/gd32e103-series/
-    rm: GD32E103
-    rm_title: GD32E103
-    rm_url: https://www.gigadevice.com/manual/gd32e103xx-user-manual/
-    members:
-      - GD32E103
 gd32c1:
   gd32c103:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/value-line/gd32c103-series/
@@ -37,6 +29,14 @@ gd32c1:
     rm_url: https://gd32mcu.com/download/down/document_id/382/path_type/1
     members:
       - GD32C113
+gd32e1:
+  gd32e103:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/value-line/gd32e103-series/
+    rm: GD32E103
+    rm_title: GD32E103
+    rm_url: https://www.gigadevice.com/manual/gd32e103xx-user-manual/
+    members:
+      - GD32E103
 gd32e2:
   gd32e230:
     url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m23/value-line/gd32e230-series/
