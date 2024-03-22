@@ -2,6 +2,7 @@
 
 ## [unreleased]
 
+- Updated to `svd2rust` 0.32.0.
 - GD32C1x3
   - Added support for GD32C103 and GD32C113 in new `gd32c1` crate.
 - GD32E103
