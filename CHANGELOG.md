@@ -1,6 +1,6 @@
 # Changelog
 
-## [unreleased]
+## [0.9.0]
 
 - Updated to `svd2rust` 0.32.0.
 - GD32C1x3
@@ -97,7 +97,7 @@
 
 First release.
 
-[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...HEAD
+[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.9.0...HEAD
 [0.2.0]: https://github.com/gd32-rust/gd32-rs/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/gd32-rust/gd32-rs/compare/0.2.0...0.2.1
 [0.3.0]: https://github.com/gd32-rust/gd32-rs/compare/0.2.1...0.3.0
@@ -106,3 +106,4 @@ First release.
 [0.6.0]: https://github.com/gd32-rust/gd32-rs/compare/0.5.0...0.6.0
 [0.7.0]: https://github.com/gd32-rust/gd32-rs/compare/0.6.0...0.7.0
 [0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...0.8.0
+[0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...0.9.0
