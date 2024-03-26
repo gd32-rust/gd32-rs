@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+
+- Re-enabled re-export of `cortex_m_rt::interrupt` macro.
+
 ## [0.9.0]
 
 - Updated to `svd2rust` 0.32.0.

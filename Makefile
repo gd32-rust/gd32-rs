@@ -55,7 +55,7 @@ crates:
 define crate_template
 $(1)/src/%/mod.rs: svd/%.svd.patched $(1)/Cargo.toml
 	mkdir -p $$(@D)
-	cd $$(@D); svd2rust -m -g -i ../../../$$<
+	cd $$(@D); svd2rust --reexport-interrupt -m -g -i ../../../$$<
 	rustfmt --config-path="rustfmt.toml" $$@
 	sed -i.bak "s/crate::timer/crate::$$(*F)::timer/" $$@
 	rm $$@.bak
