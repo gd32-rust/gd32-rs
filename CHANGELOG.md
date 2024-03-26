@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [0.9.1]
 
 - Re-enabled re-export of `cortex_m_rt::interrupt` macro.
 
@@ -101,7 +101,7 @@
 
 First release.
 
-[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.9.0...HEAD
+[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.9.1...HEAD
 [0.2.0]: https://github.com/gd32-rust/gd32-rs/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/gd32-rust/gd32-rs/compare/0.2.0...0.2.1
 [0.3.0]: https://github.com/gd32-rust/gd32-rs/compare/0.2.1...0.3.0
@@ -110,4 +110,5 @@ First release.
 [0.6.0]: https://github.com/gd32-rust/gd32-rs/compare/0.5.0...0.6.0
 [0.7.0]: https://github.com/gd32-rust/gd32-rs/compare/0.6.0...0.7.0
 [0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...0.8.0
-[0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...0.9.0
+[0.9.0]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...0.9.0
+[0.9.1]: https://github.com/gd32-rust/gd32-rs/compare/0.9.0...0.9.1
