@@ -1,0 +1,11 @@
+# Copyright 2021 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_svd: ../svd/gd32f4xx.svd
+
+_modify:
+  name: "GD32F4xx"
+
+_include:
+  - ../peripherals/wwdg/wwdg.yaml
