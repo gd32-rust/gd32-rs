@@ -24,11 +24,15 @@ if __name__ == '__main__':
     # Load the SVD file
     tree = ET.parse(args.svdpath)
 
+
     # Iterate over the tree and replace text in <access> tags that
     # are "write" with "write-only"
     for access in tree.iter('access'):
         if access.text == 'write':
             access.text = 'write-only'
+
+            # Print the full path of the access tag
+            print(f"Found access tag with text 'write' at {tree.}")
 
     # Iterate over the tree and replace text in <access> tags that
     # are "read" with "read-only"
@@ -46,5 +50,8 @@ if __name__ == '__main__':
                 # Replace the text with RTC_T_tamper
                 name.text = "RTC_T_tamper"
 
-    # Write the modified SVD overwriting the original file
-    tree.write(args.svdpath)
+    # Write the modified SVD to a new file in the same directory
+    # as the original file with a .patched extension
+    # new_svdpath = Path(args.svdpath).with_name(f"patched_{Path(args.svdpath).name}")
+
+    tree.write(new_svdpath)

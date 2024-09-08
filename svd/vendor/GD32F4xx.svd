@@ -13,7 +13,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
   <fpuPresent>1</fpuPresent>
   <nvicPrioBits>4</nvicPrioBits>
   <vendorSystickConfig>0</vendorSystickConfig>
-</cpu> 
+</cpu>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <!--Bus Interface Properties-->
@@ -109,28 +109,28 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>RWDEN</name>
-              <description>Regular channel analog watchdog 
+              <description>Regular channel analog watchdog
 	     enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>IWDEN</name>
-              <description>Inserted channel analog watchdog 
+              <description>Inserted channel analog watchdog
 	     enable</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>DISNUM</name>
-              <description>Number of conversions in 
+              <description>Number of conversions in
 	     discontinuous mode</description>
               <bitOffset>13</bitOffset>
               <bitWidth>3</bitWidth>
             </field>
             <field>
               <name>DISIC</name>
-              <description>Discontinuous mode on 
+              <description>Discontinuous mode on
 	     inserted channels</description>
               <bitOffset>12</bitOffset>
               <bitWidth>1</bitWidth>
@@ -144,7 +144,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>ICA</name>
-              <description>Inserted channel group convert 
+              <description>Inserted channel group convert
 	     automatically</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
@@ -205,14 +205,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           </field>
             <field>
               <name>ETMRC</name>
-              <description>External trigger mode for regular 
+              <description>External trigger mode for regular
 	     channel</description>
               <bitOffset>28</bitOffset>
               <bitWidth>2</bitWidth>
           </field>
             <field>
               <name>ETSRC</name>
-              <description>External trigger select for regular 
+              <description>External trigger select for regular
 	     channel</description>
               <bitOffset>24</bitOffset>
               <bitWidth>4</bitWidth>
@@ -225,14 +225,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           </field>
             <field>
               <name>ETMIC</name>
-              <description>External trigger mode for inserted 
+              <description>External trigger mode for inserted
 	     channel</description>
               <bitOffset>20</bitOffset>
               <bitWidth>2</bitWidth>
             </field>
             <field>
               <name>ETSIC</name>
-              <description>External trigger select for inserted 
+              <description>External trigger select for inserted
 	     channel</description>
               <bitOffset>16</bitOffset>
               <bitWidth>4</bitWidth>
@@ -1031,14 +1031,14 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <fields>
             <field>
               <name>TSVREN</name>
-              <description>Channel 16 (temperature sensor) and 
+              <description>Channel 16 (temperature sensor) and
 	     17 (internal reference voltage) enable of ADC0</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
             </field>
             <field>
               <name>VBATEN</name>
-              <description>Channel 18 (1/4 voltate of external battery) enable 
+              <description>Channel 18 (1/4 voltate of external battery) enable
 	     of ADC0</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1236,7 +1236,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>SLPIF</name>
-              <description>Status change interrupt flag of sleep 
+              <description>Status change interrupt flag of sleep
 	     working mode entering</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1244,7 +1244,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>WUIF</name>
-              <description>Status change interrupt flag of wakeup 
+              <description>Status change interrupt flag of wakeup
 	     from sleep working mode</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1283,7 +1283,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <fields>
             <field>
               <name>TMLS2</name>
-              <description>Transmit mailbox 2 last sending 
+              <description>Transmit mailbox 2 last sending
 	     in transmit FIFO</description>
               <bitOffset>31</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1291,7 +1291,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>TMLS1</name>
-              <description>Transmit mailbox 1 last sending 
+              <description>Transmit mailbox 1 last sending
 	     in transmit FIFO</description>
               <bitOffset>30</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1299,7 +1299,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>TMLS0</name>
-              <description>Transmit mailbox 0 last sending 
+              <description>Transmit mailbox 0 last sending
 	     in transmit FIFO</description>
               <bitOffset>29</bitOffset>
               <bitWidth>1</bitWidth>
@@ -1328,7 +1328,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>NUM</name>
-              <description>number of the transmit FIFO mailbox in 
+              <description>number of the transmit FIFO mailbox in
 	     which the frame will be transmitted if at least one mailbox is empty</description>
               <bitOffset>24</bitOffset>
               <bitWidth>2</bitWidth>
@@ -1622,7 +1622,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <fields>
             <field>
               <name>RECNT</name>
-              <description>Receive Error Count defined 
+              <description>Receive Error Count defined
 	     by the CAN standard</description>
               <bitOffset>24</bitOffset>
               <bitWidth>8</bitWidth>
@@ -1630,7 +1630,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>TECNT</name>
-              <description>Transmit Error Count defined 
+              <description>Transmit Error Count defined
 	     by the CAN standard</description>
               <bitOffset>16</bitOffset>
               <bitWidth>8</bitWidth>
@@ -14605,7 +14605,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>RCU_CTC</name>  
+        <name>RCU_CTC</name>
         <value>5</value>
       </interrupt>
       <registers>
@@ -14828,7 +14828,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIMER5_DAC</name>       
+        <name>TIMER5_DAC</name>
         <value>54</value>
       </interrupt>
       <registers>
@@ -15393,7 +15393,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>CAN1 hold register</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-             </field>                      
+             </field>
           </fields>
         </register>
         <register>
@@ -15633,7 +15633,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>FIFO Overrun Interrupt Enable</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>            
+            </field>
             <field>
               <name>EFIE</name>
               <description>End of Frame Interrupt Enable</description>
@@ -15674,7 +15674,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>FIFO Overrun Interrupt Flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>  
+            </field>
             <field>
               <name>EFIF</name>
               <description>End of Frame Interrupt Flag</description>
@@ -15715,7 +15715,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>Clear FIFO Overrun Flag</description>
               <bitOffset>1</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>EFFC</name>
               <description>Clear End of Frame Flag</description>
@@ -16190,127 +16190,127 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <size>0x20</size>
           <access>write-only</access>
           <resetValue>0x00000000</resetValue>
-          <fields>            
+          <fields>
             <field>
               <name>FEEIFC0</name>
               <description>Clear bit for FIFO error and exception of channel 0</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC0</name>
               <description>Clear bit for single data mode exception of channel 0</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC0</name>
               <description>Clear bit for transfer access error flag of channel 0</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC0</name>
               <description>Clear bit for half transfer finish flag of channel 0</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC0</name>
               <description>Clear bit for Full transfer finish flag of channel 0</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FEEIFC1</name>
               <description>Clear bit for FIFO error and exception of channel 1</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC1</name>
               <description>Clear bit for single data mode exception of channel 1</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC1</name>
               <description>Clear bit for transfer access error flag of channel 1</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC1</name>
               <description>Clear bit for half transfer finish flag of channel 1</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC1</name>
               <description>Clear bit for Full transfer finish flag of channel 1</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>FEEIFC2</name>
               <description>Clear bit for FIFO error and exception of channel 2</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC2</name>
               <description>Clear bit for single data mode exception of channel 2</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC2</name>
               <description>Clear bit for transfer access error flag of channel 2</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC2</name>
               <description>Clear bit for half transfer finish flag of channel 2</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC2</name>
               <description>Clear bit for Full transfer finish flag of channel 2</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>FEEIFC3</name>
               <description>Clear bit for FIFO error and exception of channel 3</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC3</name>
               <description>Clear bit for single data mode exception of channel 3</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC3</name>
               <description>Clear bit for transfer access error flag of channel 3</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC3</name>
               <description>Clear bit for half transfer finish flag of channel 3</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC3</name>
               <description>Clear bit for Full transfer finish flag of channel 3</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>               
+            </field>
           </fields>
         </register>
         <register>
@@ -16321,127 +16321,127 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
           <size>0x20</size>
           <access>write-only</access>
           <resetValue>0x00000000</resetValue>
-          <fields>            
+          <fields>
             <field>
               <name>FEEIFC4</name>
               <description>Clear bit for FIFO error and exception of channel 4</description>
               <bitOffset>0</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC4</name>
               <description>Clear bit for single data mode exception of channel 4</description>
               <bitOffset>2</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC4</name>
               <description>Clear bit for transfer access error flag of channel 4</description>
               <bitOffset>3</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC4</name>
               <description>Clear bit for half transfer finish flag of channel 4</description>
               <bitOffset>4</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC4</name>
               <description>Clear bit for Full transfer finish flag of channel 4</description>
               <bitOffset>5</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FEEIFC5</name>
               <description>Clear bit for FIFO error and exception of channel 5</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC5</name>
               <description>Clear bit for single data mode exception of channel 5</description>
               <bitOffset>8</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC5</name>
               <description>Clear bit for transfer access error flag of channel 5</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC5</name>
               <description>Clear bit for half transfer finish flag of channel 5</description>
               <bitOffset>10</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC5</name>
               <description>Clear bit for Full transfer finish flag of channel 5</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>FEEIFC6</name>
               <description>Clear bit for FIFO error and exception of channel 6</description>
               <bitOffset>16</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC6</name>
               <description>Clear bit for single data mode exception of channel 6</description>
               <bitOffset>18</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC6</name>
               <description>Clear bit for transfer access error flag of channel 6</description>
               <bitOffset>19</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC6</name>
               <description>Clear bit for half transfer finish flag of channel 6</description>
               <bitOffset>20</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC6</name>
               <description>Clear bit for Full transfer finish flag of channel 6</description>
               <bitOffset>21</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>          
+            </field>
             <field>
               <name>FEEIFC7</name>
               <description>Clear bit for FIFO error and exception of channel 7</description>
               <bitOffset>22</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>SDEIFC7</name>
               <description>Clear bit for single data mode exception of channel 7</description>
               <bitOffset>24</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>TAEIFC7</name>
               <description>Clear bit for transfer access error flag of channel 7</description>
               <bitOffset>25</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>HTFIFC7</name>
               <description>Clear bit for half transfer finish flag of channel 7</description>
               <bitOffset>26</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>           
+            </field>
             <field>
               <name>FTFIFC7</name>
               <description>Clear bit for Full transfer finish flag of channel 7</description>
               <bitOffset>27</bitOffset>
               <bitWidth>1</bitWidth>
-            </field>               
+            </field>
           </fields>
         </register>
         <register>
@@ -18966,7 +18966,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
        <register>
           <name>MAC_FCTH</name>
           <displayName>MAC_FCTH</displayName>
-          <description>Ethernet MAC flow control threshold 
+          <description>Ethernet MAC flow control threshold
           register</description>
           <addressOffset>0x00</addressOffset>
           <size>0x20</size>
@@ -20500,7 +20500,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>NRWTCFG</name>
-              <description>NWAIT signal configuration, only work in 
+              <description>NWAIT signal configuration, only work in
 	     synchronous mode</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -20661,7 +20661,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>NRWTCFG</name>
-              <description>NWAIT signal configuration, only work in 
+              <description>NWAIT signal configuration, only work in
 	     synchronous mode</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -20822,7 +20822,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>NRWTCFG</name>
-              <description>NWAIT signal configuration, only work in 
+              <description>NWAIT signal configuration, only work in
 	     synchronous mode</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -20983,7 +20983,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
             </field>
             <field>
               <name>NRWTCFG</name>
-              <description>NWAIT signal configuration, only work in 
+              <description>NWAIT signal configuration, only work in
 	     synchronous mode</description>
               <bitOffset>11</bitOffset>
               <bitWidth>1</bitWidth>
@@ -21094,7 +21094,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>SNWTCFG0</name>
           <displayName>SNWTCFG0</displayName>
-          <description>SRAM/NOR flash write timing configuration 
+          <description>SRAM/NOR flash write timing configuration
 	 register 0</description>
           <addressOffset>0x104</addressOffset>
           <size>0x20</size>
@@ -21136,7 +21136,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>SNWTCFG1</name>
           <displayName>SNWTCFG1</displayName>
-          <description>SRAM/NOR flash write timing configuration 
+          <description>SRAM/NOR flash write timing configuration
 	 register 1</description>
           <addressOffset>0x10C</addressOffset>
           <size>0x20</size>
@@ -21178,7 +21178,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>SNWTCFG2</name>
           <displayName>SNWTCFG2</displayName>
-          <description>SRAM/NOR flash write timing configuration 
+          <description>SRAM/NOR flash write timing configuration
 	 register 2</description>
           <addressOffset>0x114</addressOffset>
           <size>0x20</size>
@@ -21220,7 +21220,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>SNWTCFG3</name>
           <displayName>SNWTCFG3</displayName>
-          <description>SRAM/NOR flash write timing configuration 
+          <description>SRAM/NOR flash write timing configuration
 	 register 3</description>
           <addressOffset>0x11C</addressOffset>
           <size>0x20</size>
@@ -21598,7 +21598,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPCTCFG1</name>
           <displayName>NPCTCFG1</displayName>
-          <description>NAND flash/PC card common space timing 
+          <description>NAND flash/PC card common space timing
 	 configuration register 1</description>
           <addressOffset>0x68</addressOffset>
           <size>0x20</size>
@@ -21634,7 +21634,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPCTCFG2</name>
           <displayName>NPCTCFG2</displayName>
-          <description>NAND flash/PC card common space timing 
+          <description>NAND flash/PC card common space timing
 	 configuration register 2</description>
           <addressOffset>0x88</addressOffset>
           <size>0x20</size>
@@ -21670,7 +21670,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPCTCFG3</name>
           <displayName>NPCTCFG3</displayName>
-          <description>NAND flash/PC card common space timing 
+          <description>NAND flash/PC card common space timing
 	 configuration register 3</description>
           <addressOffset>0xA8</addressOffset>
           <size>0x20</size>
@@ -21706,7 +21706,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPATCFG1</name>
           <displayName>NPATCFG1</displayName>
-          <description>NAND flash/PC card attribute space timing 
+          <description>NAND flash/PC card attribute space timing
 	 configuration register 1</description>
           <addressOffset>0x6C</addressOffset>
           <size>0x20</size>
@@ -21742,7 +21742,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPATCFG2</name>
           <displayName>NPATCFG2</displayName>
-          <description>NAND flash/PC card attribute space timing 
+          <description>NAND flash/PC card attribute space timing
 	 configuration register 2</description>
           <addressOffset>0x8C</addressOffset>
           <size>0x20</size>
@@ -21778,7 +21778,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>NPATCFG3</name>
           <displayName>NPATCFG3</displayName>
-          <description>NAND flash/PC card attribute space timing 
+          <description>NAND flash/PC card attribute space timing
 	 configuration register 3</description>
           <addressOffset>0xAC</addressOffset>
           <size>0x20</size>
@@ -21814,7 +21814,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <register>
           <name>PIOTCFG3</name>
           <displayName>PIOTCFG3</displayName>
-          <description>PC card I/O space timing configuration 
+          <description>PC card I/O space timing configuration
 	 register</description>
           <addressOffset>0xB0</addressOffset>
           <size>0x20</size>
@@ -22408,31 +22408,31 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>EXTI_Line0</name> 
+        <name>EXTI_Line0</name>
         <value>6</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_Line1</name> 
+        <name>EXTI_Line1</name>
         <value>7</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_Line2</name> 
+        <name>EXTI_Line2</name>
         <value>8</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_Line3</name> 
+        <name>EXTI_Line3</name>
         <value>9</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_Line4</name> 
+        <name>EXTI_Line4</name>
         <value>10</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_line9_5</name> 
+        <name>EXTI_line9_5</name>
         <value>23</value>
       </interrupt>
       <interrupt>
-        <name>EXTI_line15_10</name> 
+        <name>EXTI_line15_10</name>
         <value>40</value>
       </interrupt>
       <registers>
@@ -23434,7 +23434,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <description>wait state counter register</description>
               <bitOffset>0</bitOffset>
               <bitWidth>4</bitWidth>
-            </field>            
+            </field>
           </fields>
         </register>
         <register>
@@ -23815,7 +23815,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register>       
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -27918,11 +27918,11 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>I2C0_EV</name>       
+        <name>I2C0_EV</name>
         <value>31</value>
       </interrupt>
       <interrupt>
-        <name>I2C0_ER</name>  
+        <name>I2C0_ER</name>
         <value>32</value>
       </interrupt>
       <registers>
@@ -28495,7 +28495,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
         <value>72</value>
       </interrupt>
       <interrupt>
-        <name>I2C2_ER</name>      
+        <name>I2C2_ER</name>
         <value>73</value>
       </interrupt>
     </peripheral>
@@ -29449,7 +29449,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>8</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
      <register>
           <name>IPR3</name>
           <displayName>IPR3</displayName>
@@ -32644,7 +32644,7 @@ xs:noNamespaceSchemaLocation="CMSIS-SVD_Schema_1_1.xsd">
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
         <register>
           <name>BDCTL</name>
           <displayName>BDCTL</displayName>
@@ -32826,7 +32826,7 @@ frequency</description>
               <access>read-write</access>
             </field>
           </fields>
-        </register>      
+        </register>
         <register>
           <name>PLLI2S</name>
           <displayName>PLLI2S</displayName>
@@ -32865,7 +32865,7 @@ frequency</description>
               <access>read-write</access>
             </field>
           </fields>
-        </register>      
+        </register>
       <register>
           <name>PLLSAI</name>
           <displayName>PLLSAI</displayName>
@@ -32904,7 +32904,7 @@ frequency</description>
               <access>read-write</access>
             </field>
           </fields>
-        </register>      
+        </register>
         <register>
           <name>CFG1</name>
           <displayName>CFG1</displayName>
@@ -33112,7 +33112,7 @@ frequency</description>
               <access>read-write</access>
             </field>
           </fields>
-        </register>           
+        </register>
       </registers>
     </peripheral>
     <peripheral>
@@ -33126,7 +33126,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>RTC_T	amper</name>
+        <name>RTC_T_tamper</name>
         <value>2</value>
       </interrupt>
       <interrupt>
@@ -34548,7 +34548,7 @@ frequency</description>
             </field>
             <field>
               <name>CLKPWRSAV</name>
-              <description>SDIO_CLK clock dynamic switch on/off for 
+              <description>SDIO_CLK clock dynamic switch on/off for
 	     power saving</description>
               <bitOffset>9</bitOffset>
               <bitWidth>1</bitWidth>
@@ -35243,7 +35243,7 @@ frequency</description>
             </field>
             <field>
               <name>ATAENDIE</name>
-              <description>CE-ATA command completion signal received 
+              <description>CE-ATA command completion signal received
 	     interrupt enable</description>
               <bitOffset>23</bitOffset>
               <bitWidth>1</bitWidth>
@@ -35297,7 +35297,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>SPI0</name>  
+        <name>SPI0</name>
         <value>35</value>
       </interrupt>
       <registers>
@@ -35312,7 +35312,7 @@ frequency</description>
           <fields>
             <field>
               <name>BDEN</name>
-              <description>Bidirectional 
+              <description>Bidirectional
               enable</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -35690,7 +35690,7 @@ frequency</description>
       <name>SPI1</name>
       <baseAddress>0x40003800</baseAddress>
       <interrupt>
-        <name>SPI1</name> 
+        <name>SPI1</name>
         <value>36</value>
       </interrupt>
     </peripheral>
@@ -35698,7 +35698,7 @@ frequency</description>
       <name>SPI2</name>
       <baseAddress>0x40003C00</baseAddress>
       <interrupt>
-        <name>SPI2</name> 
+        <name>SPI2</name>
         <value>51</value>
       </interrupt>
     </peripheral>
@@ -35706,7 +35706,7 @@ frequency</description>
       <name>SPI3</name>
       <baseAddress>0x40013400</baseAddress>
       <interrupt>
-        <name>SPI3</name> 
+        <name>SPI3</name>
         <value>84</value>
       </interrupt>
     </peripheral>
@@ -35714,7 +35714,7 @@ frequency</description>
       <name>SPI4</name>
       <baseAddress>0x40015000</baseAddress>
       <interrupt>
-        <name>SPI4</name> 
+        <name>SPI4</name>
         <value>85</value>
       </interrupt>
     </peripheral>
@@ -35729,7 +35729,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>SPI5</name>  
+        <name>SPI5</name>
         <value>86</value>
       </interrupt>
       <registers>
@@ -35744,7 +35744,7 @@ frequency</description>
           <fields>
             <field>
               <name>BDEN</name>
-              <description>Bidirectional 
+              <description>Bidirectional
               enable</description>
               <bitOffset>15</bitOffset>
               <bitWidth>1</bitWidth>
@@ -36397,7 +36397,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TIMER0_BRK_TIMER8</name>  
+        <name>TIMER0_BRK_TIMER8</name>
         <value>24</value>
       </interrupt>
       <interrupt>
@@ -40398,7 +40398,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>TRNG</name>  
+        <name>TRNG</name>
         <value>80</value>
       </interrupt>
       <registers>
@@ -40502,7 +40502,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>USART0</name>       
+        <name>USART0</name>
         <value>37</value>
       </interrupt>
       <registers>
@@ -41039,14 +41039,14 @@ frequency</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
       </registers>
     </peripheral>
     <peripheral derivedFrom="USART0">
       <name>USART1</name>
       <baseAddress>0x40004400</baseAddress>
       <interrupt>
-        <name>USART1</name>    
+        <name>USART1</name>
         <value>38</value>
       </interrupt>
     </peripheral>
@@ -41054,7 +41054,7 @@ frequency</description>
       <name>USART2</name>
       <baseAddress>0x40004800</baseAddress>
       <interrupt>
-        <name>USART2</name>    
+        <name>USART2</name>
         <value>39</value>
       </interrupt>
     </peripheral>
@@ -41062,7 +41062,7 @@ frequency</description>
       <name>USART5</name>
       <baseAddress>0x40011400</baseAddress>
       <interrupt>
-        <name>USART5</name>    
+        <name>USART5</name>
         <value>71</value>
       </interrupt>
     </peripheral>
@@ -41078,7 +41078,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>UART3</name>       
+        <name>UART3</name>
         <value>52</value>
       </interrupt>
       <registers>
@@ -41502,14 +41502,14 @@ frequency</description>
               <bitWidth>1</bitWidth>
             </field>
           </fields>
-        </register> 
+        </register>
       </registers>
     </peripheral>
    <peripheral derivedFrom="UART3">
       <name>UART4</name>
       <baseAddress>0x40005000</baseAddress>
       <interrupt>
-        <name>UART4</name>    
+        <name>UART4</name>
         <value>53</value>
       </interrupt>
     </peripheral>
@@ -41517,7 +41517,7 @@ frequency</description>
       <name>UART6</name>
       <baseAddress>0x40007800</baseAddress>
       <interrupt>
-        <name>UART6</name>    
+        <name>UART6</name>
         <value>82</value>
       </interrupt>
     </peripheral>
@@ -41525,7 +41525,7 @@ frequency</description>
       <name>UART7</name>
       <baseAddress>0x40007C00</baseAddress>
       <interrupt>
-        <name>UART7</name>    
+        <name>UART7</name>
         <value>83</value>
       </interrupt>
     </peripheral>
@@ -41553,7 +41553,7 @@ frequency</description>
         <register>
           <name>GOTGCS</name>
           <displayName>GOTGCS</displayName>
-          <description>Global OTG control and status register 
+          <description>Global OTG control and status register
           (USBFS_GOTGCS)</description>
           <addressOffset>0x0</addressOffset>
           <size>0x20</size>
@@ -44868,7 +44868,7 @@ frequency</description>
             </field>
             <field>
               <name>TXFEEN</name>
-              <description>Trabsmit FIFO empty 
+              <description>Trabsmit FIFO empty
               interrupt enable</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -46012,7 +46012,7 @@ frequency</description>
         <register>
           <name>DOEP0INTF</name>
           <displayName>DOEP0INTF</displayName>
-          <description>device out endpoint-0 interrupt flag 
+          <description>device out endpoint-0 interrupt flag
           register</description>
           <addressOffset>0x308</addressOffset>
           <size>0x20</size>
@@ -46054,7 +46054,7 @@ frequency</description>
         <register>
           <name>DOEP1INTF</name>
           <displayName>DOEP1INTF</displayName>
-          <description>device out endpoint-1 interrupt flag 
+          <description>device out endpoint-1 interrupt flag
           register</description>
           <addressOffset>0x328</addressOffset>
           <size>0x20</size>
@@ -46096,7 +46096,7 @@ frequency</description>
         <register>
           <name>DOEP2INTF</name>
           <displayName>DOEP2INTF</displayName>
-          <description>device out endpoint-2 interrupt flag 
+          <description>device out endpoint-2 interrupt flag
           register</description>
           <addressOffset>0x348</addressOffset>
           <size>0x20</size>
@@ -46138,7 +46138,7 @@ frequency</description>
         <register>
           <name>DOEP3INTF</name>
           <displayName>DOEP3INTF</displayName>
-          <description>device out endpoint-3 interrupt flag 
+          <description>device out endpoint-3 interrupt flag
           register</description>
           <addressOffset>0x368</addressOffset>
           <size>0x20</size>
@@ -47906,7 +47906,7 @@ frequency</description>
         <register>
           <name>HCH0CTL</name>
           <displayName>HCH0CTL</displayName>
-          <description>host channel-0 control 
+          <description>host channel-0 control
           register (HCH0CTL)</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -47978,7 +47978,7 @@ frequency</description>
         <register>
           <name>HCH1CTL</name>
           <displayName>HCH1CTL</displayName>
-          <description> host channel-1 control 
+          <description> host channel-1 control
           register (HCH1CTL)</description>
           <addressOffset>0x120</addressOffset>
           <size>0x20</size>
@@ -48050,7 +48050,7 @@ frequency</description>
         <register>
           <name>HCH2CTL</name>
           <displayName>HCH2CTL</displayName>
-          <description>host channel-2 control 
+          <description>host channel-2 control
           register (HCH2CTL)</description>
           <addressOffset>0x140</addressOffset>
           <size>0x20</size>
@@ -48122,7 +48122,7 @@ frequency</description>
         <register>
           <name>HCH3CTL</name>
           <displayName>HCH3CTL</displayName>
-          <description>host channel-3 control 
+          <description>host channel-3 control
           register (HCH3CTL)</description>
           <addressOffset>0x160</addressOffset>
           <size>0x20</size>
@@ -48194,7 +48194,7 @@ frequency</description>
         <register>
           <name>HCH4CTL</name>
           <displayName>HCH4CTL</displayName>
-          <description> host channel-4 control 
+          <description> host channel-4 control
           register (HCH4CTL)</description>
           <addressOffset>0x180</addressOffset>
           <size>0x20</size>
@@ -48266,7 +48266,7 @@ frequency</description>
         <register>
           <name>HCH5CTL</name>
           <displayName>HCH5CTL</displayName>
-          <description>host channel-5 control 
+          <description>host channel-5 control
           register (HCH5CTL)</description>
           <addressOffset>0x1A0</addressOffset>
           <size>0x20</size>
@@ -48338,7 +48338,7 @@ frequency</description>
         <register>
           <name>HCH6CTL</name>
           <displayName>HCH6CTL</displayName>
-          <description>host channel-6 control 
+          <description>host channel-6 control
           register (HCH6CTL)</description>
           <addressOffset>0x1C0</addressOffset>
           <size>0x20</size>
@@ -48410,7 +48410,7 @@ frequency</description>
         <register>
           <name>HCH7CTL</name>
           <displayName>HCH7CTL</displayName>
-          <description>host channel-7 control 
+          <description>host channel-7 control
           register (HCH7CTL)</description>
           <addressOffset>0x1E0</addressOffset>
           <size>0x20</size>
@@ -48482,7 +48482,7 @@ frequency</description>
        <register>
           <name>HCH8CTL</name>
           <displayName>HCH8CTL</displayName>
-          <description>host channel-8 control 
+          <description>host channel-8 control
           register (HCH8CTL)</description>
           <addressOffset>0x200</addressOffset>
           <size>0x20</size>
@@ -48554,7 +48554,7 @@ frequency</description>
         <register>
           <name>HCH9CTL</name>
           <displayName>HCH9CTL</displayName>
-          <description>host channel-9 control 
+          <description>host channel-9 control
           register (HCH9CTL)</description>
           <addressOffset>0x220</addressOffset>
           <size>0x20</size>
@@ -48626,7 +48626,7 @@ frequency</description>
         <register>
           <name>HCH10CTL</name>
           <displayName>HCH10CTL</displayName>
-          <description>host channel-10 control 
+          <description>host channel-10 control
           register (HCH10CTL)</description>
           <addressOffset>0x240</addressOffset>
           <size>0x20</size>
@@ -48698,7 +48698,7 @@ frequency</description>
         <register>
           <name>HCH11CTL</name>
           <displayName>HCH11CTL</displayName>
-          <description>host channel-11 control 
+          <description>host channel-11 control
           register (HCH11CTL)</description>
           <addressOffset>0x260</addressOffset>
           <size>0x20</size>
@@ -52059,7 +52059,7 @@ frequency</description>
             </field>
             <field>
               <name>TXFEEN</name>
-              <description>Trabsmit FIFO empty 
+              <description>Trabsmit FIFO empty
               interrupt enable</description>
               <bitOffset>7</bitOffset>
               <bitWidth>1</bitWidth>
@@ -52110,7 +52110,7 @@ frequency</description>
             </field>
             <field>
               <name>BTBSTPEN</name>
-              <description> Back-to-back SETUP packets 
+              <description> Back-to-back SETUP packets
               ( Only for control OUT endpoint) interrupt enable bit</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -52326,7 +52326,7 @@ frequency</description>
             </field>
             <field>
               <name>NAKEN</name>
-              <description>NAK handshake sent by USBHS 
+              <description>NAK handshake sent by USBHS
               interrupt enable bit</description>
               <bitOffset>13</bitOffset>
               <bitWidth>1</bitWidth>
@@ -52371,7 +52371,7 @@ frequency</description>
             </field>
             <field>
               <name>BTBSTPEN</name>
-              <description> Back-to-back SETUP packets ( Only for control OUT endpoint) 
+              <description> Back-to-back SETUP packets ( Only for control OUT endpoint)
               interrupt enable bit</description>
               <bitOffset>6</bitOffset>
               <bitWidth>1</bitWidth>
@@ -52387,7 +52387,7 @@ frequency</description>
         <register>
           <name>DIEP0CTL</name>
           <displayName>DIEP0CTL</displayName>
-          <description>Device IN endpoint 0 control register 
+          <description>Device IN endpoint 0 control register
           (USBHS_DIEP0CTL)</description>
           <addressOffset>0x100</addressOffset>
           <size>0x20</size>
@@ -54282,7 +54282,7 @@ frequency</description>
               <description>Multi count</description>
               <bitOffset>29</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>            
+            </field>
             <field>
               <name>PCNT</name>
               <description>Packet count</description>
@@ -54312,7 +54312,7 @@ frequency</description>
               <description>Multi count</description>
               <bitOffset>29</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>       
+            </field>
             <field>
               <name>PCNT</name>
               <description>Packet count</description>
@@ -54342,7 +54342,7 @@ frequency</description>
               <description>Multi count</description>
               <bitOffset>29</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>       
+            </field>
             <field>
               <name>PCNT</name>
               <description>Packet count</description>
@@ -54372,7 +54372,7 @@ frequency</description>
               <description>Multi count</description>
               <bitOffset>29</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>       
+            </field>
             <field>
               <name>PCNT</name>
               <description>Packet count</description>
@@ -54402,7 +54402,7 @@ frequency</description>
               <description>Multi count</description>
               <bitOffset>29</bitOffset>
               <bitWidth>2</bitWidth>
-            </field>       
+            </field>
             <field>
               <name>PCNT</name>
               <description>Packet count</description>
@@ -54935,7 +54935,7 @@ frequency</description>
         <usage>registers</usage>
       </addressBlock>
       <interrupt>
-        <name>WWDGT</name>  
+        <name>WWDGT</name>
         <value>0</value>
       </interrupt>
       <registers>

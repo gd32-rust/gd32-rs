@@ -5,7 +5,7 @@ all: patch svd2rust
 
 SHELL := /usr/bin/env bash
 
-CRATES ?= gd32c1 gd32e1 gd32e2 gd32e5 gd32f1 gd32f2 gd32f3
+CRATES ?= gd32c1 gd32e1 gd32e2 gd32e5 gd32f1 gd32f2 gd32f3 gd32f4
 
 # All yaml files in devices/ will be used to patch an SVD
 YAMLS := $(foreach crate, $(CRATES), \
@@ -50,7 +50,7 @@ mmaps/%.mmap: svd/%.svd.patched
 
 # Generates the common crate files: Cargo.toml, build.rs, src/lib.rs, README.md
 crates:
-	python3 scripts/makecrates.py devices/ -y --families $(CRATES)
+	python scripts/makecrates.py devices/ -y --families $(CRATES)
 
 define crate_template
 $(1)/src/%/mod.rs: svd/%.svd.patched $(1)/Cargo.toml
