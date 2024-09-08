@@ -46,8 +46,5 @@ if __name__ == '__main__':
                 # Replace the text with RTC_T_tamper
                 name.text = "RTC_T_tamper"
 
-    # Write the modified SVD file to a new file in the same directory
-    # as the original file
-    new_svdpath = Path(args.svdpath).with_name(f"patched_{Path(args.svdpath).name}")
-
-    tree.write(new_svdpath)
+    # Write the modified SVD overwriting the original file
+    tree.write(args.svdpath)

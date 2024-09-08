@@ -5,7 +5,7 @@
 _svd: ../svd/gd32f4xx.svd
 
 _modify:
-  name: "GD32F4xx"
+  name: "GD32F425"
 
 _include:
   - ../peripherals/wwdg/wwdg.yaml
