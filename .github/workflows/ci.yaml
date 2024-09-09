@@ -19,6 +19,7 @@ jobs:
           - gd32f1
           - gd32f2
           - gd32f3
+          - gd32f4
     env:
       CRATES: ${{ matrix.crate }}
       CARGO_INCREMENTAL: 0

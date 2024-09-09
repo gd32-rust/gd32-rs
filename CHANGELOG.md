@@ -1,5 +1,12 @@
 # Changelog
 
+## [unreleased]
+- GD32F4
+  - Added support for the GD32F4xx series of microcontrollers in the new `gd32f4` crate.
+  - Added support for the GD32F425
+  - Added SVD patches for read / write access fields in various peripherals.
+  - Tested with blink.
+
 ## [0.9.1]
 
 - Re-enabled re-export of `cortex_m_rt::interrupt` macro.

@@ -27,7 +27,7 @@ CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
     "gd32f2": ["rt", "gd32f205", "gd32f207"],
     "gd32f3": ["rt", "gd32f303", "gd32f307"],
-    "gd32f4": ["rt", "gd32f425", "gd32f405"],
+    "gd32f4": ["rt", "gd32f425"],
 }
 
 CRATE_DOC_TARGETS = {
