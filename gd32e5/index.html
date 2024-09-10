@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Compare peripherals</title>
+</head>
+<style>
+table thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: white;
+}
+td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background: white;
+}
+</style>
+<body>
+<h1>Compare peripherals</h1>
+<table><thead><tr><th>Peripheral</th><th>Address</th>
+<th>gd32e503</th>
+<th>gd32e505</th>
+<th>gd32e507</th>
+<th>gd32e508</th>
+</thead><tbody>
+<tr><td><a href="ADC0_0x40012400.html">ADC0</a></td><td>0x40012400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC1_0x40012800.html">ADC1</a></td><td>0x40012800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ADC2_0x40013C00.html">ADC2</a></td><td>0x40013C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="AFIO_0x40010000.html">AFIO</a></td><td>0x40010000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="BKP_0x40006C00.html">BKP</a></td><td>0x40006C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN0_0x40006400.html">CAN0</a></td><td>0x40006400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800.html">CAN1</a></td><td>0x40006800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN2_0x4000CC00.html">CAN2</a></td><td>0x4000CC00</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CMP_0x40017C00.html">CMP</a></td><td>0x40017C00</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CRC_0x40023000.html">CRC</a></td><td>0x40023000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CTC_0x4000C800.html">CTC</a></td><td>0x4000C800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DAC_0x40007400.html">DAC</a></td><td>0x40007400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DBG_0xE0044000.html">DBG</a></td><td>0xE0044000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DMA0_0x40020000.html">DMA0</a></td><td>0x40020000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="DMA1_0x40020400.html">DMA1</a></td><td>0x40020400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ENET_DMA_0x40029000.html">ENET_DMA</a></td><td>0x40029000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ENET_MAC_0x40028000.html">ENET_MAC</a></td><td>0x40028000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ENET_MAC_FCTH_0x40029080.html">ENET_MAC_FCTH</a></td><td>0x40029080</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ENET_MSC_0x40028100.html">ENET_MSC</a></td><td>0x40028100</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="ENET_PTP_0x40028700.html">ENET_PTP</a></td><td>0x40028700</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="EXMC_0xA0000000.html">EXMC</a></td><td>0xA0000000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="EXTI_0x40010400.html">EXTI</a></td><td>0x40010400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FMC_0x40022000.html">FMC</a></td><td>0x40022000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="FWDGT_0x40003000.html">FWDGT</a></td><td>0x40003000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOA_0x40010800.html">GPIOA</a></td><td>0x40010800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOB_0x40010C00.html">GPIOB</a></td><td>0x40010C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOC_0x40011000.html">GPIOC</a></td><td>0x40011000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOD_0x40011400.html">GPIOD</a></td><td>0x40011400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOE_0x40011800.html">GPIOE</a></td><td>0x40011800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOF_0x40011C00.html">GPIOF</a></td><td>0x40011C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="GPIOG_0x40012000.html">GPIOG</a></td><td>0x40012000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C0_0x40005400.html">I2C0</a></td><td>0x40005400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C1_0x40005800.html">I2C1</a></td><td>0x40005800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="I2C2_0x4000C000.html">I2C2</a></td><td>0x4000C000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="MASTER_TIMER_0x40017400.html">MASTER_TIMER</a></td><td>0x40017400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="NVIC_0xE000E100.html">NVIC</a></td><td>0xE000E100</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="PMU_0x40007000.html">PMU</a></td><td>0x40007000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="RCU_0x40021000.html">RCU</a></td><td>0x40021000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="RTC_0x40002800.html">RTC</a></td><td>0x40002800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SDIO_0x40018000.html">SDIO</a></td><td>0x40018000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+</tr>
+<tr><td><a href="SHRTIMER_COMMON_0x40017780.html">SHRTIMER_COMMON</a></td><td>0x40017780</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SLAVE_TIMER0_0x40017480.html">SLAVE_TIMER0</a></td><td>0x40017480</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SLAVE_TIMER1_0x40017500.html">SLAVE_TIMER1</a></td><td>0x40017500</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SLAVE_TIMER2_0x40017580.html">SLAVE_TIMER2</a></td><td>0x40017580</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SLAVE_TIMER3_0x40017600.html">SLAVE_TIMER3</a></td><td>0x40017600</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SLAVE_TIMER4_0x40017680.html">SLAVE_TIMER4</a></td><td>0x40017680</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI0_0x40013000.html">SPI0</a></td><td>0x40013000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI1_0x40003800.html">SPI1</a></td><td>0x40003800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SPI2_0x40003C00.html">SPI2</a></td><td>0x40003C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="SQPI_0xA0001000.html">SQPI</a></td><td>0xA0001000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER0_0x40012C00.html">TIMER0</a></td><td>0x40012C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER1_0x40000000.html">TIMER1</a></td><td>0x40000000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER10_0x40015400.html">TIMER10</a></td><td>0x40015400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER11_0x40001800.html">TIMER11</a></td><td>0x40001800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER12_0x40001C00.html">TIMER12</a></td><td>0x40001C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER13_0x40002000.html">TIMER13</a></td><td>0x40002000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER2_0x40000400.html">TIMER2</a></td><td>0x40000400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER3_0x40000800.html">TIMER3</a></td><td>0x40000800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER4_0x40000C00.html">TIMER4</a></td><td>0x40000C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER5_0x40001000.html">TIMER5</a></td><td>0x40001000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER6_0x40001400.html">TIMER6</a></td><td>0x40001400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER7_0x40013400.html">TIMER7</a></td><td>0x40013400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER8_0x40014C00.html">TIMER8</a></td><td>0x40014C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TIMER9_0x40015000.html">TIMER9</a></td><td>0x40015000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="TMU_0x40080000.html">TMU</a></td><td>0x40080000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART3_0x40004C00.html">UART3</a></td><td>0x40004C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="UART4_0x40005000.html">UART4</a></td><td>0x40005000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART0_0x40013800.html">USART0</a></td><td>0x40013800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART1_0x40004400.html">USART1</a></td><td>0x40004400</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART2_0x40004800.html">USART2</a></td><td>0x40004800</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USART5_0x40017000.html">USART5</a></td><td>0x40017000</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USBD_0x40005C00.html">USBD</a></td><td>0x40005C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+</tr>
+<tr><td><a href="USBGS_HOST_0x50000400.html">USBGS_HOST</a></td><td>0x50000400</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USBHS_DEVICE_0x50000800.html">USBHS_DEVICE</a></td><td>0x50000800</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USBHS_GLOBAL_0x50000000.html">USBHS_GLOBAL</a></td><td>0x50000000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="USBHS_PWRCLK_0x50000E00.html">USBHS_PWRCLK</a></td><td>0x50000E00</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="WWDGT_0x40002C00.html">WWDGT</a></td><td>0x40002C00</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+</tr>
+</tbody></table>
+</body></html>

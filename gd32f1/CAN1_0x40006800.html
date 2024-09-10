@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+<title>Registers In CAN1 0x40006800</title>
+</head>
+<style>
+table thead tr th {
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    background: white;
+}
+td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5;
+    background: white;
+}
+</style>
+<body>
+<h1>Registers In CAN1 0x40006800</h1>
+<table><thead><tr><th>Register</th><th>Offset</th>
+<th>gd32f130</th>
+<th>gd32f150</th>
+<th>gd32f170</th>
+<th>gd32f190</th>
+</thead><tbody>
+<tr><td><a href="CAN1_0x40006800_CTL_0x0000.html">CTL</a></td><td>0x0000</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_STAT_0x0004.html">STAT</a></td><td>0x0004</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TSTAT_0x0008.html">TSTAT</a></td><td>0x0008</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFO0_0x000C.html">RFIFO0</a></td><td>0x000C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFO1_0x0010.html">RFIFO1</a></td><td>0x0010</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_INTEN_0x0014.html">INTEN</a></td><td>0x0014</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_ERR_0x0018.html">ERR</a></td><td>0x0018</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_BT_0x001C.html">BT</a></td><td>0x001C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMI0_0x0180.html">TMI0</a></td><td>0x0180</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMP0_0x0184.html">TMP0</a></td><td>0x0184</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA00_0x0188.html">TMDATA00</a></td><td>0x0188</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA10_0x018C.html">TMDATA10</a></td><td>0x018C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMI1_0x0190.html">TMI1</a></td><td>0x0190</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMP1_0x0194.html">TMP1</a></td><td>0x0194</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA01_0x0198.html">TMDATA01</a></td><td>0x0198</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA11_0x019C.html">TMDATA11</a></td><td>0x019C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMI2_0x01A0.html">TMI2</a></td><td>0x01A0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMP2_0x01A4.html">TMP2</a></td><td>0x01A4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA02_0x01A8.html">TMDATA02</a></td><td>0x01A8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_TMDATA12_0x01AC.html">TMDATA12</a></td><td>0x01AC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMI0_0x01B0.html">RFIFOMI0</a></td><td>0x01B0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMP0_0x01B4.html">RFIFOMP0</a></td><td>0x01B4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMDATA00_0x01B8.html">RFIFOMDATA00</a></td><td>0x01B8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMDATA10_0x01BC.html">RFIFOMDATA10</a></td><td>0x01BC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMI1_0x01C0.html">RFIFOMI1</a></td><td>0x01C0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMP1_0x01C4.html">RFIFOMP1</a></td><td>0x01C4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMDATA01_0x01C8.html">RFIFOMDATA01</a></td><td>0x01C8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_RFIFOMDATA11_0x01CC.html">RFIFOMDATA11</a></td><td>0x01CC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_FCTL_0x0200.html">FCTL</a></td><td>0x0200</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_FMCFG_0x0204.html">FMCFG</a></td><td>0x0204</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_FSCFG_0x020C.html">FSCFG</a></td><td>0x020C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_FAFIFO_0x0214.html">FAFIFO</a></td><td>0x0214</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_FW_0x021C.html">FW</a></td><td>0x021C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F0DATA0_0x0240.html">F0DATA0</a></td><td>0x0240</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F0DATA1_0x0244.html">F0DATA1</a></td><td>0x0244</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F1DATA0_0x0248.html">F1DATA0</a></td><td>0x0248</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F1DATA1_0x024C.html">F1DATA1</a></td><td>0x024C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F2DATA0_0x0250.html">F2DATA0</a></td><td>0x0250</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F2DATA1_0x0254.html">F2DATA1</a></td><td>0x0254</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F3DATA0_0x0258.html">F3DATA0</a></td><td>0x0258</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F3DATA1_0x025C.html">F3DATA1</a></td><td>0x025C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F4DATA0_0x0260.html">F4DATA0</a></td><td>0x0260</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F4DATA1_0x0264.html">F4DATA1</a></td><td>0x0264</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F5DATA0_0x0268.html">F5DATA0</a></td><td>0x0268</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F5DATA1_0x026C.html">F5DATA1</a></td><td>0x026C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F6DATA0_0x0270.html">F6DATA0</a></td><td>0x0270</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F6DATA1_0x0274.html">F6DATA1</a></td><td>0x0274</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F7DATA0_0x0278.html">F7DATA0</a></td><td>0x0278</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F7DATA1_0x027C.html">F7DATA1</a></td><td>0x027C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F8DATA0_0x0280.html">F8DATA0</a></td><td>0x0280</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F8DATA1_0x0284.html">F8DATA1</a></td><td>0x0284</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F9DATA0_0x0288.html">F9DATA0</a></td><td>0x0288</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F9DATA1_0x028C.html">F9DATA1</a></td><td>0x028C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F10DATA0_0x0290.html">F10DATA0</a></td><td>0x0290</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F10DATA1_0x0294.html">F10DATA1</a></td><td>0x0294</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F11DATA0_0x0298.html">F11DATA0</a></td><td>0x0298</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F11DATA1_0x029C.html">F11DATA1</a></td><td>0x029C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F12DATA0_0x02A0.html">F12DATA0</a></td><td>0x02A0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F12DATA1_0x02A4.html">F12DATA1</a></td><td>0x02A4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F13DATA0_0x02A8.html">F13DATA0</a></td><td>0x02A8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F13DATA1_0x02AC.html">F13DATA1</a></td><td>0x02AC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F14DATA0_0x02B0.html">F14DATA0</a></td><td>0x02B0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F14DATA1_0x02B4.html">F14DATA1</a></td><td>0x02B4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F15DATA0_0x02B8.html">F15DATA0</a></td><td>0x02B8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F15DATA1_0x02BC.html">F15DATA1</a></td><td>0x02BC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F16DATA0_0x02C0.html">F16DATA0</a></td><td>0x02C0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F16DATA1_0x02C4.html">F16DATA1</a></td><td>0x02C4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F17DATA0_0x02C8.html">F17DATA0</a></td><td>0x02C8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F17DATA1_0x02CC.html">F17DATA1</a></td><td>0x02CC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F18DATA0_0x02D0.html">F18DATA0</a></td><td>0x02D0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F18DATA1_0x02D4.html">F18DATA1</a></td><td>0x02D4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F19DATA0_0x02D8.html">F19DATA0</a></td><td>0x02D8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F19DATA1_0x02DC.html">F19DATA1</a></td><td>0x02DC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F20DATA0_0x02E0.html">F20DATA0</a></td><td>0x02E0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F20DATA1_0x02E4.html">F20DATA1</a></td><td>0x02E4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F21DATA0_0x02E8.html">F21DATA0</a></td><td>0x02E8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F21DATA1_0x02EC.html">F21DATA1</a></td><td>0x02EC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F22DATA0_0x02F0.html">F22DATA0</a></td><td>0x02F0</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F22DATA1_0x02F4.html">F22DATA1</a></td><td>0x02F4</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F23DATA0_0x02F8.html">F23DATA0</a></td><td>0x02F8</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F23DATA1_0x02FC.html">F23DATA1</a></td><td>0x02FC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F24DATA0_0x0300.html">F24DATA0</a></td><td>0x0300</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F24DATA1_0x0304.html">F24DATA1</a></td><td>0x0304</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F25DATA0_0x0308.html">F25DATA0</a></td><td>0x0308</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F25DATA1_0x030C.html">F25DATA1</a></td><td>0x030C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F26DATA0_0x0310.html">F26DATA0</a></td><td>0x0310</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F26DATA1_0x0314.html">F26DATA1</a></td><td>0x0314</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F27DATA0_0x0318.html">F27DATA0</a></td><td>0x0318</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_F27DATA1_0x031C.html">F27DATA1</a></td><td>0x031C</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+<tr><td><a href="CAN1_0x40006800_PHYCTL_0x03FC.html">PHYCTL</a></td><td>0x03FC</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ffcccc">&#10008;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+<td align=center bgcolor="#ccffcc">&#10004;</td>
+</tr>
+</tr>
+</tbody></table>
+</body></html>
