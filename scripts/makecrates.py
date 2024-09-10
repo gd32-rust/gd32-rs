@@ -27,6 +27,7 @@ CRATE_DOC_FEATURES = {
     "gd32f1": ["rt", "gd32f130", "gd32f190"],
     "gd32f2": ["rt", "gd32f205", "gd32f207"],
     "gd32f3": ["rt", "gd32f303", "gd32f307"],
+    "gd32f4": ["rt", "gd32f425"],
 }
 
 CRATE_DOC_TARGETS = {
@@ -37,6 +38,7 @@ CRATE_DOC_TARGETS = {
     "gd32f1": "thumbv7m-none-eabi",
     "gd32f2": "thumbv7m-none-eabi",
     "gd32f3": "thumbv7em-none-eabihf",
+    "gd32f4": "thumbv7em-none-eabihf",
 }
 
 CARGO_TOML_TPL = """\

@@ -1,5 +1,10 @@
 # Changelog
 
+## [unreleased]
+
+- GD32F4xx
+  - Added support for GD32F425 in new `gd32f4` crate.
+
 ## [0.9.1]
 
 - Re-enabled re-export of `cortex_m_rt::interrupt` macro.

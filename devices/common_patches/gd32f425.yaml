@@ -1,0 +1,27 @@
+# Copyright 2024 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+RCU:
+  _modify:
+    CTL:
+      name: "CTL0"
+  ADDINT:
+    _modify:
+      IRC48MSTBIC:
+        access: write-only
+  VKEY:
+    _modify:
+      KEY:
+        access: write-only
+USART0:
+  STAT1:
+    _modify:
+      EBF:
+        access: write-only
+      RTF:
+        access: write-only
+TLI:
+  _modify:
+    CPPOS:
+      access: read-only
