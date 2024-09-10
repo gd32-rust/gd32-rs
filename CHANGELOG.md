@@ -1,11 +1,9 @@
 # Changelog
 
 ## [unreleased]
-- GD32F4
-  - Added support for the GD32F4xx series of microcontrollers in the new `gd32f4` crate.
-  - Added support for the GD32F425
-  - Added SVD patches for read / write access fields in various peripherals.
-  - Tested with blink.
+
+- GD32F4xx
+  - Added support for GD32F425 in new `gd32f4` crate.
 
 ## [0.9.1]
 
