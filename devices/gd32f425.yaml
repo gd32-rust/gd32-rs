@@ -12,3 +12,4 @@ _include:
   - ../peripherals/rcu/rcu_f4.yaml
   - ../peripherals/ctc/ctc_f4.yaml
   - ../peripherals/gpio/gpio_f4.yaml
+  - ../peripherals/exti/exti.yaml
