@@ -38,3 +38,28 @@ CTC:
       DIV32: [5, "Reference signal divided by 32"]
       DIV64: [6, "Reference signal divided by 64"]
       DIV128: [7, "Reference signal divided by 128"]
+  STAT:
+    REFDIR:
+      Up: [0, "CTC trim counter up-counting"]
+      Down: [1, "CTC trim counter down-counting"]
+    TRIMERR:
+      NoError: [0, "No trim value error occurs"]
+      ErrorOccurred: [1, "Trim value error occurs"]
+    REFMISS:
+      NoMiss: [0, "No reference sync pulse miss occurs"]
+      MissOccurred: [1, "Reference sync pulse miss occurs"]
+    CKERR:
+      NoError: [0, "No clock trim error occurs"]
+      ErrorOccurred: [1, "Clock trim error occurs"]
+    EREFIF:
+      NoReference: [0, "No expected reference occurs"]
+      ReferenceOccurred: [1, "Expected reference occurs"]
+    ERRIF:
+      NoError: [0, "No error occurs"]
+      ErrorOccurred: [1, "An error occurs"]
+    CKWARNIF:
+      NoWarning: [0, "No clock trim warning occurs"]
+      WarningOccurred: [1, "Clock trim warning occurs"]
+    CKOKIF:
+      NotOK: [0, "No clock trim OK occurs"]
+      OK: [1, "Clock trim OK occurs"]
