@@ -63,3 +63,16 @@ CTC:
     CKOKIF:
       NotOK: [0, "No clock trim OK occurs"]
       OK: [1, "Clock trim OK occurs"]
+  INTC:
+    EREFIC:
+      _write:
+        Clear: [1, "Clear the EREFIF bit in CTC_STAT register"]
+    ERRIC:
+      _write:
+        Clear: [1, "Clear ERRIF, TRIMERR, REFMISS, and CKERR bits in CTC_STAT register"]
+    CKWARNIC:
+      _write:
+        Clear: [1, "Clear CKWARNIF bit in CTC_STAT register"]
+    CKOKIC:
+      _write:
+        Clear: [1, "Clear CKOKIF bit in CTC_STAT register"]
