@@ -1,0 +1,86 @@
+PMU:
+  CTL:
+    BKPWEN:
+      Disabled: [0, "Access to backup domain registers disabled"]
+      Enabled: [1, "Access to backup domain registers enabled"]
+    LVDT:
+      V2_1: [0, "2.1 V"]
+      V2_3: [1, "2.3 V"]
+      V2_4: [2, "2.4 V"]
+      V2_6: [3, "2.6 V"]
+      V2_7: [4, "2.7 V"]
+      V2_9: [5, "2.9 V"]
+      V3_0: [6, "3.0 V"]
+      V3_1: [7, "3.1 V"]
+    LVDEN:
+      Disabled: [0, "Low voltage detector disabled"]
+      Enabled: [1, "Low voltage detector enabled"]
+    STBRST:
+      _write:
+        Clear: [1, "Clear the standby flag"]
+    WURST:
+      _write:
+        Clear: [1, "Clear the wakeup flag"]
+    STBMOD:
+      DeepSleep: [0, "Enter Deep-sleep mode when the CPU enters deepsleep"]
+      Standby: [1, "Enter Standby mode when the CPU enters deepsleep"]
+    LDOLP:
+      Normal: [0, "LDO operates normally during Deepsleep mode"]
+      LowPower: [1, "LDO in low-power mode during Deepsleep mode"]
+    LDOVS:
+      LowMode: [1, "LDO output voltage low mode"]
+      MidMode: [2, "LDO output voltage mid mode"]
+      HighMode: [3, "LDO output voltage high mode"]
+    LDEN:
+      Disabled: [0, "Low-driver mode disabled in Deep-sleep mode"]
+      Enabled: [3, "Low-driver mode enabled in Deep-sleep mode"]
+    HDS:
+      NoSwitch: [0, "No high-driver mode switch"]
+      Switch: [1, "High-driver mode switch enabled"]
+    HDEN:
+      Disabled: [0, "High-driver mode disabled"]
+      Enabled: [1, "High-driver mode enabled"]
+    LDNP:
+      NormalDriver: [0, "Normal-driver mode with normal power LDO"]
+      LowDriver: [1, "Low-driver mode enabled with normal power LDO"]
+    LDLP:
+      NormalDriver: [0, "Normal-driver mode with low power LDO"]
+      LowDriver: [1, "Low-driver mode enabled with low power LDO"]
+  CS:
+    LDRF:
+      NormalDriver: [0, "Normal driver in Deep-sleep mode"]
+      LowDriver: [3, "Low-driver mode in Deep-sleep mode"]
+    HDSRF:
+      _read:
+        NotReady: [0, "High-driver switch not ready"]
+        Ready: [1, "High-driver switch ready"]
+    HDRF:
+      _read:
+        NotReady: [0, "High-driver not ready"]
+        Ready: [1, "High-driver ready"]
+    LDOVSRF:
+      _read:
+        NotReady: [0, "LDO voltage select not ready"]
+        Ready: [1, "LDO voltage select ready"]
+    BLDOON:
+      Closed: [0, "Backup SRAM LDO closed"]
+      Open: [1, "Open the Backup SRAM LDO"]
+    WUPEN:
+      Disabled: [0, "WKUP pin function disabled"]
+      Enabled: [1, "WKUP pin function enabled"]
+    BLDORF:
+      _read:
+        NotReady: [0, "Backup SRAM LDO not ready"]
+        Ready: [1, "Backup SRAM LDO ready"]
+    LVDF:
+      _read:
+        NoEvent: [0, "No Low Voltage event occurred (VDD > threshold)"]
+        EventOccurred: [1, "Low Voltage event occurred (VDD ≤ threshold)"]
+    STBF:
+      _read:
+        NotEntered: [0, "The device has not entered Standby mode"]
+        Entered: [1, "The device has been in Standby mode"]
+    WUF:
+      _read:
+        NoEvent: [0, "No wakeup event received"]
+        EventOccurred: [1, "Wakeup event occurred"]
