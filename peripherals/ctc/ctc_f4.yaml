@@ -1,0 +1,22 @@
+CTC:
+  CTL0:
+    SWREFPUL:
+      "Generate": [1, "Generates a software reference source sync pulse."]
+    AUTOTRIM:
+      Disabled: [0, "Hardware automatic trim disabled"]
+      Enabled: [1, "Hardware automatic trim enabled"]
+    CNTEN:
+      Disabled: [0, "CTC trim counter disabled"]
+      Enabled: [1, "CTC trim counter enabled"]
+    EREFIE:
+      Disabled: [0, "EREFIF interrupt disabled"]
+      Enabled: [1, "EREFIF interrupt enabled"]
+    ERRIE:
+      Disabled: [0, "ERRIF interrupt disabled"]
+      Enabled: [1, "ERRIF interrupt enabled"]
+    CKWARNIE:
+      Disabled: [0, "CKWARNIF interrupt disabled"]
+      Enabled: [1, "CKWARNIF interrupt enabled"]
+    CKOKIE:
+      Disabled: [0, "CKOKIF interrupt disabled"]
+      Enabled: [1, "CKOKIF interrupt enabled"]
