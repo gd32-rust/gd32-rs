@@ -8,6 +8,6 @@ _modify:
   name: "GD32F425"
 _include:
   - common_patches/gd32f425.yaml
-  - ../peripherals/adc/pmu_f4.yaml
+  - ../peripherals/pmu/pmu_f4.yaml
   - ../peripherals/rcu/rcu_f4.yaml
   - ../peripherals/gpio/gpio_f4.yaml
