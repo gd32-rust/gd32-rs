@@ -20,3 +20,21 @@ CTC:
     CKOKIE:
       Disabled: [0, "CKOKIF interrupt disabled"]
       Enabled: [1, "CKOKIF interrupt enabled"]
+  CTL1:
+    REFPOL:
+      RisingEdge: [0, "Rising edge selected"]
+      FallingEdge: [1, "Falling edge selected"]
+    REFSEL:
+      GPIO: [0, "GPIO (CTC_SYNC) selected"]
+      LXTAL: [1, "LXTAL clock selected"]
+      Reserved1: [2, "Reserved"]
+      Reserved2: [3, "Reserved"]
+    REFPSC:
+      DIV1: [0, "Reference signal not divided"]
+      DIV2: [1, "Reference signal divided by 2"]
+      DIV4: [2, "Reference signal divided by 4"]
+      DIV8: [3, "Reference signal divided by 8"]
+      DIV16: [4, "Reference signal divided by 16"]
+      DIV32: [5, "Reference signal divided by 32"]
+      DIV64: [6, "Reference signal divided by 64"]
+      DIV128: [7, "Reference signal divided by 128"]
