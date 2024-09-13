@@ -15,3 +15,4 @@ _include:
   - ../peripherals/exti/exti.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/trng/trng.yaml
+  - ../peripherals/dma/dma.yaml
