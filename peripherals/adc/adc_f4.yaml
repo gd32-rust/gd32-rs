@@ -1,0 +1,56 @@
+ADC*:
+  STAT:
+    ROVF:
+      _read:
+        NoOverrun: [0, "No overrun occurred in routine data register"]
+        Overrun: [1, "Overrun overrun occurred in routine data register"]
+      _write:
+        Clear: [0, "Clear the routine data register overrun flag"]
+    STRC:
+      _read:
+        NotStarted: [0, "No regular channel conversion started"]
+        Started: [1, "Regular channel conversion has started"]
+      _write:
+        Clear: [0, "Clear the regular channel start flag"]
+    EOC:
+      _read:
+        NotComplete: [0, "Conversion is not complete"]
+        Complete: [1, "Conversion complete"]
+      _write:
+        Clear: [0, "Clear end of group conversion flag"]
+    WDE:
+      _read:
+        NoEvent: [0, "No analog watchdog event occurred"]
+        Event: [1, "Analog watchdog event occurred"]
+      _write:
+        Clear: [0, "Clear the analog watchdog event flag"]
+  CTL0:
+    ROVFIE:
+      Disabled: [0, "ROVF interrupt disabled"]
+      Enabled: [1, "ROVF interrupt enabled."]
+    DRES:
+      Bits12: [0, "12-bit resolution"]
+      Bits10: [1, "10-bit resolution"]
+      Bits8: [2, "8-bit resolution"]
+      Bits6: [3, "6-bit resolution"]
+    RWDEN:
+      Disabled: [0, "Analog watchdog disabled"]
+      Enabled: [1, "Analog watchdog enabled"]
+    DISNUM: [0, 7]
+    DISRC:
+      Disabled: [0, "Discontinuous mode on regular channels disabled"]
+      Enabled: [1, "Discontinuous mode on regular channels enabled"]
+    WDSC:
+      All: [0, "Analog watchdog enabled on all channels"]
+      Single: [1, "Analog watchdog enabled on a single channel"]
+    SM:
+      Disabled: [0, "Scan mode disabled"]
+      Enabled: [1, "Scan mode enabled"]
+    WDEIE:
+      Disabled: [0, "WDE interrupt disabled"]
+      Enabled: [1, "WDE interrupt enabled"]
+    EOCIE:
+      Disabled: [0, "EOC interrupt disabled"]
+      Enabled: [1, "EOC interrupt enabled"]
+    WDCHSEL:
+      Channel: [0, 18]
