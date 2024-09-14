@@ -1,4 +1,4 @@
-ADC*:
+"ADC?":
   STAT:
     ROVF:
       _read:
@@ -52,10 +52,10 @@ ADC*:
     EOCIE:
       Disabled: [0, "EOC interrupt disabled"]
       Enabled: [1, "EOC interrupt enabled"]
-    WDCHSEL:
-      Channel: [0, 18]
+    # WDCHSEL:
+    #   Channel: [0, 18]
   CTL1:
-    SWCRST:
+    SWRCST:
       NoEffect: [0, "No effect"]
       Reset: [1, "Start the conversion of a regular channel"]
     ETMRC:
@@ -120,31 +120,29 @@ ADC*:
       Cycles112: [5, "Channel sample time is 112 cycles"]
       Cycles144: [6, "Channel sample time is 144 cycles"]
       Cycles480: [7, "Channel sample time is 480 cycles"]
-  WDHT:
-    WDHT: [0, 0xFFF]
-  WDLT:
-    WDLT: [0, 0xFFF]
-  RSQ0:
-    RL: [0, 7]
-  "RSQ?":
-    "RSQ*": [0, 18]
-  RDATA:
-    RDATA: [0, 0xFFFF]
+  # WDHT:
+  #   WDHT: [0, 0xFFF]
+  # WDLT:
+  #   WDLT: [0, 0xFFF]
+  # RSQ0:
+  #   RL: [0, 7]
+  # "RSQ?":
+  #   "RSQ*": [0, 18]
   OVSAMPCTL:
     TOVS:
       Consecutive: [0, "All oversampled conversaions for a channel are done consecutively"]
       Separate: [1, "Oversampled conversions for a channel done wit a separate trigger."]
-    OVSS:
-      Shift: [0, 0b1000]
+    # OVSS:
+    #   Shift: [0, 0b1000]
     OVSR:
-      Times2: [0, 0b0000]
-      Times4: [1, 0b0001]
-      Times8: [2, 0b0010]
-      Times16: [3, 0b0011]
-      Times32: [4, 0b0100]
-      Times64: [5, 0b0101]
-      Times128: [6, 0b0110]
-      Times256: [7, 0b0111]
+      Times2: [0b0000, "Oversampling ratio is 2"]
+      Times4: [0b0001, "Oversampling ratio is 4"]
+      Times8: [0b0010, "Oversampling ratio is 8"]
+      Times16: [0b0011, "Oversampling ratio is 16"]
+      Times32: [0b0100, "Oversampling ratio is 32"]
+      Times64: [0b0101, "Oversampling ratio is 64"]
+      Times128: [0b0110, "Oversampling ratio is 128"]
+      Times256: [0b0111, "Oversampling ratio is 256"]
     OVSEN:
       Disabled: [0, "Oversampling disabled"]
       Enabled: [1, "Oversampling enabled"]

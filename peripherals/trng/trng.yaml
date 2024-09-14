@@ -1,6 +1,6 @@
 TRNG:
   CTL:
-    TRNGIE:
+    IE:
       Disable: [0, "Disable TRNG interrupt"]
       Enable: [1, "Enable TRNG interrupt"]
     TRNGEN:

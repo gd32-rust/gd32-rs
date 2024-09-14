@@ -15,6 +15,7 @@ _include:
   - ../peripherals/exti/exti.yaml
   - ../peripherals/crc/crc.yaml
   - ../peripherals/trng/trng.yaml
-  - ../peripherals/dma/dma.yaml
+  - ../peripherals/dma/dma_f4.yaml
   - ../peripherals/dbg/dbg_f4.yaml
   - ../peripherals/iref/iref_f4.yaml
+  - ../peripherals/adc/adc_f4.yaml

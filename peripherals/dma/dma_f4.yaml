@@ -1,6 +1,6 @@
-DMA*:
+DMA[1-7]:
   INTF*:
-    FTFIFx:
+    FTFIF*:
       _read:
         NotComplete: [0, "No transfer complete event"]
         Complete: [1, "A transfer complete event has occured"]
