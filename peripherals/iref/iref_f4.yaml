@@ -1,0 +1,14 @@
+CTL:
+  CREN:
+    Disabled: [0, "Current reference disabled"]
+    Enabled: [1, "Current reference enabled"]
+  SSEL:
+    UA1: [0, "Low power, 1uA step."]
+    UA8: [1, "High current, 8uA step."]
+  CPT:
+    PRECISION: [0, 0x1F]
+  SCMOD:
+    Source: [0, "Source current mode"]
+    Sink: [1, "Sink current mode"]
+  CSDT:
+    CurrentStep: [0, 0x3F]
