@@ -1,0 +1,78 @@
+CTC:
+  CTL0:
+    SWREFPUL:
+      "Generate": [1, "Generates a software reference source sync pulse."]
+    AUTOTRIM:
+      Disabled: [0, "Hardware automatic trim disabled"]
+      Enabled: [1, "Hardware automatic trim enabled"]
+    CNTEN:
+      Disabled: [0, "CTC trim counter disabled"]
+      Enabled: [1, "CTC trim counter enabled"]
+    EREFIE:
+      Disabled: [0, "EREFIF interrupt disabled"]
+      Enabled: [1, "EREFIF interrupt enabled"]
+    ERRIE:
+      Disabled: [0, "ERRIF interrupt disabled"]
+      Enabled: [1, "ERRIF interrupt enabled"]
+    CKWARNIE:
+      Disabled: [0, "CKWARNIF interrupt disabled"]
+      Enabled: [1, "CKWARNIF interrupt enabled"]
+    CKOKIE:
+      Disabled: [0, "CKOKIF interrupt disabled"]
+      Enabled: [1, "CKOKIF interrupt enabled"]
+  CTL1:
+    REFPOL:
+      RisingEdge: [0, "Rising edge selected"]
+      FallingEdge: [1, "Falling edge selected"]
+    REFSEL:
+      GPIO: [0, "GPIO (CTC_SYNC) selected"]
+      LXTAL: [1, "LXTAL clock selected"]
+      Reserved1: [2, "Reserved"]
+      Reserved2: [3, "Reserved"]
+    REFPSC:
+      DIV1: [0, "Reference signal not divided"]
+      DIV2: [1, "Reference signal divided by 2"]
+      DIV4: [2, "Reference signal divided by 4"]
+      DIV8: [3, "Reference signal divided by 8"]
+      DIV16: [4, "Reference signal divided by 16"]
+      DIV32: [5, "Reference signal divided by 32"]
+      DIV64: [6, "Reference signal divided by 64"]
+      DIV128: [7, "Reference signal divided by 128"]
+  STAT:
+    REFDIR:
+      Up: [0, "CTC trim counter up-counting"]
+      Down: [1, "CTC trim counter down-counting"]
+    TRIMERR:
+      NoError: [0, "No trim value error occurs"]
+      ErrorOccurred: [1, "Trim value error occurs"]
+    REFMISS:
+      NoMiss: [0, "No reference sync pulse miss occurs"]
+      MissOccurred: [1, "Reference sync pulse miss occurs"]
+    CKERR:
+      NoError: [0, "No clock trim error occurs"]
+      ErrorOccurred: [1, "Clock trim error occurs"]
+    EREFIF:
+      NoReference: [0, "No expected reference occurs"]
+      ReferenceOccurred: [1, "Expected reference occurs"]
+    ERRIF:
+      NoError: [0, "No error occurs"]
+      ErrorOccurred: [1, "An error occurs"]
+    CKWARNIF:
+      NoWarning: [0, "No clock trim warning occurs"]
+      WarningOccurred: [1, "Clock trim warning occurs"]
+    CKOKIF:
+      NotOK: [0, "No clock trim OK occurs"]
+      OK: [1, "Clock trim OK occurs"]
+  INTC:
+    EREFIC:
+      _write:
+        Clear: [1, "Clear the EREFIF bit in CTC_STAT register"]
+    ERRIC:
+      _write:
+        Clear: [1, "Clear ERRIF, TRIMERR, REFMISS, and CKERR bits in CTC_STAT register"]
+    CKWARNIC:
+      _write:
+        Clear: [1, "Clear CKWARNIF bit in CTC_STAT register"]
+    CKOKIC:
+      _write:
+        Clear: [1, "Clear CKOKIF bit in CTC_STAT register"]
