@@ -54,3 +54,97 @@ ADC*:
       Enabled: [1, "EOC interrupt enabled"]
     WDCHSEL:
       Channel: [0, 18]
+  CTL1:
+    SWCRST:
+      NoEffect: [0, "No effect"]
+      Reset: [1, "Start the conversion of a regular channel"]
+    ETMRC:
+      Disable: [0, "Disable external trigger conversion of regular channels"]
+      RisingEdge: [1, "Enable external trigger conversion of regular channels on rising edge"]
+      FallingEdge: [2, "Enable external trigger conversion of regular channels on falling edge"]
+      BothEdges: [3, "Enable external trigger conversion of regular channels on both edges"]
+    ETSRC:
+      Timer0Ch0: [0, "Timer 0 channel 0 event"]
+      Timer0Ch1: [1, "Timer 0 channel 1 event"]
+      Timer0Ch2: [2, "Timer 0 channel 2 event"]
+      Timer1Ch1: [3, "Timer 1 channel 1 event"]
+      Timer1Ch2: [4, "Timer 1 channel 2 event"]
+      Timer1Ch3: [5, "Timer 1 channel 3 event"]
+      Timer1Trgo: [6, "Timer 1 TRGO event"]
+      Timer2Ch0: [7, "Timer 2 channel 0 event"]
+      Timer2Trgo: [8, "Timer 2 TRGO event"]
+      Timer3Ch3: [9, "Timer 3 channel 3 event"]
+      Timer4Ch0: [10, "Timer 4 channel 0 event"]
+      Timer4Ch1: [11, "Timer 4 channel 1 event"]
+      Timer4Ch2: [12, "Timer 4 channel 2 event"]
+      Timer7Ch0: [13, "Timer 7 channel 0 event"]
+      Timer7Trgo: [14, "Timer 7 TRGO event"]
+      Exti11: [15, "EXTI line 11 event"]
+    DAL:
+      Right: [0, "Right alignment"]
+      Left: [1, "Left alignment"]
+    EOCM:
+      EndOfSequence: [0, "EOC bit is set at the end of a sequence of conversions"]
+      EndOfEach: [1, "EOC bit is set at the end of each conversion"]
+    DDM:
+      Disabled: [0, "DMA mode disabled"]
+      Enabled: [1, "DMA mode enabled"]
+    DMA:
+      Disabled: [0, "DMA request disabled"]
+      Enabled: [1, "DMA request enabled"]
+    RSTCLB:
+      _write:
+        Reset: [1, "Initialize calibration register start."]
+      _read:
+        Done: [0, "Calibration register initialized."]
+        Busy: [1, "Calibration register initializing."]
+    CLB:
+      _write:
+        Start: [1, "Start calibration"]
+      _read:
+        Done: [0, "Calibration complete"]
+        Busy: [1, "Calibration in progress"]
+    CTN:
+      Disabled: [0, "Continuous conversion disabled"]
+      Enabled: [1, "Continuous conversion enabled"]
+    ADCON:
+      Disabled: [0, "ADC disabled"]
+      Enabled: [1, "ADC enabled"]
+  "SAMPT?":
+    "SPT*":
+      Cycles3: [0, "Channel sample time is 3 cycles"]
+      Cycles15: [1, "Channel sample time is 15 cycles"]
+      Cycles28: [2, "Channel sample time is 28 cycles"]
+      Cycles56: [3, "Channel sample time is 56 cycles"]
+      Cycles84: [4, "Channel sample time is 84 cycles"]
+      Cycles112: [5, "Channel sample time is 112 cycles"]
+      Cycles144: [6, "Channel sample time is 144 cycles"]
+      Cycles480: [7, "Channel sample time is 480 cycles"]
+  WDHT:
+    WDHT: [0, 0xFFF]
+  WDLT:
+    WDLT: [0, 0xFFF]
+  RSQ0:
+    RL: [0, 7]
+  "RSQ?":
+    "RSQ*": [0, 18]
+  RDATA:
+    RDATA: [0, 0xFFFF]
+  OVSAMPCTL:
+    TOVS:
+      Consecutive: [0, "All oversampled conversaions for a channel are done consecutively"]
+      Separate: [1, "Oversampled conversions for a channel done wit a separate trigger."]
+    OVSS:
+      Shift: [0, 0b1000]
+    OVSR:
+      Times2: [0, 0b0000]
+      Times4: [1, 0b0001]
+      Times8: [2, 0b0010]
+      Times16: [3, 0b0011]
+      Times32: [4, 0b0100]
+      Times64: [5, 0b0101]
+      Times128: [6, 0b0110]
+      Times256: [7, 0b0111]
+    OVSEN:
+      Disabled: [0, "Oversampling disabled"]
+      Enabled: [1, "Oversampling enabled"]
