@@ -16,3 +16,4 @@ _include:
   - ../peripherals/crc/crc.yaml
   - ../peripherals/trng/trng.yaml
   - ../peripherals/dma/dma.yaml
+  - ../peripherals/dbg/dbg_f4.yaml
