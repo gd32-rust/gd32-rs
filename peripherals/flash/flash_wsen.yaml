@@ -5,6 +5,9 @@
 # Flash memory controller for GD32F devices
 
 FMC:
+  _modify:
+    WSEN:
+      access: read-write
   WSEN:
     WSEN:
       NoWaitState: [0, "No wait state added"]
