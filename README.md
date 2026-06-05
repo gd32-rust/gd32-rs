@@ -39,7 +39,7 @@ In your own project's `Cargo.toml`:
 
 ```toml
 [dependencies.gd32f1]
-version = "0.9.1"
+version = "0.9.2"
 features = ["gd32f130", "rt"]
 ```
 

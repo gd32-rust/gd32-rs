@@ -1,7 +1,9 @@
 # Changelog
 
-## [unreleased]
+## [0.9.2]
 
+- GD32F1x0
+  - Fixed `FMC.WSEN` to be read-write rather than readonly.
 - GD32F4xx
   - Added support for GD32F425 in new `gd32f4` crate.
 
@@ -106,7 +108,7 @@
 
 First release.
 
-[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.9.1...HEAD
+[unreleased]: https://github.com/gd32-rust/gd32-rs/compare/0.9.2...HEAD
 [0.2.0]: https://github.com/gd32-rust/gd32-rs/compare/0.1.0...0.2.0
 [0.2.1]: https://github.com/gd32-rust/gd32-rs/compare/0.2.0...0.2.1
 [0.3.0]: https://github.com/gd32-rust/gd32-rs/compare/0.2.1...0.3.0
@@ -117,3 +119,4 @@ First release.
 [0.8.0]: https://github.com/gd32-rust/gd32-rs/compare/0.7.0...0.8.0
 [0.9.0]: https://github.com/gd32-rust/gd32-rs/compare/0.8.0...0.9.0
 [0.9.1]: https://github.com/gd32-rust/gd32-rs/compare/0.9.0...0.9.1
+[0.9.1]: https://github.com/gd32-rust/gd32-rs/compare/0.9.1...0.9.2
