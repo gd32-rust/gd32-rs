@@ -1,0 +1,41 @@
+TRNG:
+  CTL:
+    IE:
+      Disable: [0, "Disable TRNG interrupt"]
+      Enable: [1, "Enable TRNG interrupt"]
+    TRNGEN:
+      Disable: [0, "Disable TRNG"]
+      Enable: [1, "Enable TRNG"]
+  STAT:
+    SEIF:
+      _read:
+        NoFault: [0, "No fault detected"]
+        Fault: [1, "Seed error has been detected. The bit is cleared by writing 0."]
+      _write:
+        Clear: [0, "Clear the SEIF flag"]
+    CEIF:
+      _read:
+        NoFault: [0, "No fault detected"]
+        Fault: [1, "Clock error has been detected. The bit is cleared by writing 0."]
+      _write:
+        Clear: [0, "Clear the CEIF flag"]
+    SECS:
+      _read:
+        NotReady: [0, "The seed is not ready"]
+        Ready: [1, "The seed is ready"]
+    CECS:
+      _read:
+        NotReady:
+          [
+            0,
+            "Clock error is not detected at current time. In case of CEIF=1 and CECS=0, it means clock error has been detected before but now is recovered.",
+          ]
+        Ready:
+          [
+            1,
+            "Clock error is detected at current time. TRNG_CLK frequency is lower than 1/HCLK frequency",
+          ]
+    DRDY:
+      _read:
+        NotReady: [0, "Data is not ready"]
+        Ready: [1, "Data is ready"]

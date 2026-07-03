@@ -1,11 +1,12 @@
-# Copyright 2024 The gd32-rs authors.
+# Copyright 2026 The gd32-rs authors.
 #
 # SPDX-License-Identifier: MIT OR Apache-2.0
 
-_svd: ../svd/gd32f425.svd
+_svd: ../svd/gd32f407.svd
 
 _modify:
-  name: "GD32F425"
+  name: "GD32F407"
+
 _include:
   - common_patches/gd32f425.yaml
   - ../peripherals/pmu/pmu_f4.yaml
@@ -21,3 +22,4 @@ _include:
   - ../peripherals/adc/adc_f4.yaml
   - ../peripherals/timer/timer_f4.yaml
   - ../peripherals/can/can_f4.yaml
+  - ../peripherals/syscfg/syscfg_f4_enet.yaml

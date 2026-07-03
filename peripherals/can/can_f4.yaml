@@ -1,0 +1,6 @@
+# Copyright 2024 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+_include:
+  - "can_common.yaml"

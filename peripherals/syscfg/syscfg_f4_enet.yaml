@@ -1,0 +1,9 @@
+# Copyright 2026 The gd32-rs authors.
+#
+# SPDX-License-Identifier: MIT OR Apache-2.0
+
+SYSCFG:
+  CFG1:
+    ENET_PHY_SEL:
+      MII: [0, "MII is selected"]
+      RMII: [1, "RMII is selected"]

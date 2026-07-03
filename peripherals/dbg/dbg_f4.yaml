@@ -1,0 +1,44 @@
+DBG:
+  ID:
+    ID_CODE: [0, 0xFFFFFFFF]
+  CTL0:
+    TRACE_IOEN:
+      Disabled: [0, "Trace pin allocation disabled"]
+      Enabled: [1, "Trace pin allocation enabled"]
+    STB_HOLD:
+      Disabled: [0, "No effect"]
+      Enabled:
+        [
+          1,
+          "In standby mode the AHB clock and system clock are provided by IRC16M, a system reset generated when exiting standby mode.",
+        ]
+    DSLP_HOLD:
+      Disabled: [0, "No effect"]
+      Enabled:
+        [
+          1,
+          "In deep-sleep mode the AHB clock and system clock are provided by IRC16M, a system reset generated when exiting deep-sleep mode.",
+        ]
+    SLP_HOLD:
+      Disabled: [0, "No effect"]
+      Enabled: [1, "In sleep mode the AHB clock is on"]
+  CTL1:
+    "CAN*_HOLD":
+      Continue: [0, "Continue running the CAN as usual"]
+      Stop: [1, "Hold the CAN for debug when the core is halted"]
+    "I2C*_HOLD":
+      Continue: [0, "Continue running I2C as usual"]
+      Stop: [1, "Hold the I2C timeout for debug when the core is halted"]
+    "TIMER*_HOLD":
+      Continue: [0, "Continue running the timer as usual"]
+      Stop: [1, "Hold the timer counter for debug when the core is halted"]
+    FWDGT_HOLD:
+      Continue: [0, "Continue running the free watchdog timer as usual"]
+      Stop: [1, "Hold the free watchdog timer for debug when the core is halted"]
+    RTC_HOLD:
+      Continue: [0, "Continue running the RTC as usual"]
+      Stop: [1, "Hold the RTC for debug when the core is halted"]
+  CTL2:
+    "TIMER*_HOLD":
+      Continue: [0, "Continue running the timer as usual"]
+      Stop: [1, "Hold the timer counter for debug when the core is halted"]

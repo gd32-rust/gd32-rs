@@ -1,0 +1,148 @@
+"ADC?":
+  STAT:
+    ROVF:
+      _read:
+        NoOverrun: [0, "No overrun occurred in routine data register"]
+        Overrun: [1, "Overrun overrun occurred in routine data register"]
+      _write:
+        Clear: [0, "Clear the routine data register overrun flag"]
+    STRC:
+      _read:
+        NotStarted: [0, "No regular channel conversion started"]
+        Started: [1, "Regular channel conversion has started"]
+      _write:
+        Clear: [0, "Clear the regular channel start flag"]
+    EOC:
+      _read:
+        NotComplete: [0, "Conversion is not complete"]
+        Complete: [1, "Conversion complete"]
+      _write:
+        Clear: [0, "Clear end of group conversion flag"]
+    WDE:
+      _read:
+        NoEvent: [0, "No analog watchdog event occurred"]
+        Event: [1, "Analog watchdog event occurred"]
+      _write:
+        Clear: [0, "Clear the analog watchdog event flag"]
+  CTL0:
+    ROVFIE:
+      Disabled: [0, "ROVF interrupt disabled"]
+      Enabled: [1, "ROVF interrupt enabled."]
+    DRES:
+      Bits12: [0, "12-bit resolution"]
+      Bits10: [1, "10-bit resolution"]
+      Bits8: [2, "8-bit resolution"]
+      Bits6: [3, "6-bit resolution"]
+    RWDEN:
+      Disabled: [0, "Analog watchdog disabled"]
+      Enabled: [1, "Analog watchdog enabled"]
+    DISNUM: [0, 7]
+    DISRC:
+      Disabled: [0, "Discontinuous mode on regular channels disabled"]
+      Enabled: [1, "Discontinuous mode on regular channels enabled"]
+    WDSC:
+      All: [0, "Analog watchdog enabled on all channels"]
+      Single: [1, "Analog watchdog enabled on a single channel"]
+    SM:
+      Disabled: [0, "Scan mode disabled"]
+      Enabled: [1, "Scan mode enabled"]
+    WDEIE:
+      Disabled: [0, "WDE interrupt disabled"]
+      Enabled: [1, "WDE interrupt enabled"]
+    EOCIE:
+      Disabled: [0, "EOC interrupt disabled"]
+      Enabled: [1, "EOC interrupt enabled"]
+    # WDCHSEL:
+    #   Channel: [0, 18]
+  CTL1:
+    SWRCST:
+      NoEffect: [0, "No effect"]
+      Reset: [1, "Start the conversion of a regular channel"]
+    ETMRC:
+      Disable: [0, "Disable external trigger conversion of regular channels"]
+      RisingEdge: [1, "Enable external trigger conversion of regular channels on rising edge"]
+      FallingEdge: [2, "Enable external trigger conversion of regular channels on falling edge"]
+      BothEdges: [3, "Enable external trigger conversion of regular channels on both edges"]
+    ETSRC:
+      Timer0Ch0: [0, "Timer 0 channel 0 event"]
+      Timer0Ch1: [1, "Timer 0 channel 1 event"]
+      Timer0Ch2: [2, "Timer 0 channel 2 event"]
+      Timer1Ch1: [3, "Timer 1 channel 1 event"]
+      Timer1Ch2: [4, "Timer 1 channel 2 event"]
+      Timer1Ch3: [5, "Timer 1 channel 3 event"]
+      Timer1Trgo: [6, "Timer 1 TRGO event"]
+      Timer2Ch0: [7, "Timer 2 channel 0 event"]
+      Timer2Trgo: [8, "Timer 2 TRGO event"]
+      Timer3Ch3: [9, "Timer 3 channel 3 event"]
+      Timer4Ch0: [10, "Timer 4 channel 0 event"]
+      Timer4Ch1: [11, "Timer 4 channel 1 event"]
+      Timer4Ch2: [12, "Timer 4 channel 2 event"]
+      Timer7Ch0: [13, "Timer 7 channel 0 event"]
+      Timer7Trgo: [14, "Timer 7 TRGO event"]
+      Exti11: [15, "EXTI line 11 event"]
+    DAL:
+      Right: [0, "Right alignment"]
+      Left: [1, "Left alignment"]
+    EOCM:
+      EndOfSequence: [0, "EOC bit is set at the end of a sequence of conversions"]
+      EndOfEach: [1, "EOC bit is set at the end of each conversion"]
+    DDM:
+      Disabled: [0, "DMA mode disabled"]
+      Enabled: [1, "DMA mode enabled"]
+    DMA:
+      Disabled: [0, "DMA request disabled"]
+      Enabled: [1, "DMA request enabled"]
+    RSTCLB:
+      _write:
+        Reset: [1, "Initialize calibration register start."]
+      _read:
+        Done: [0, "Calibration register initialized."]
+        Busy: [1, "Calibration register initializing."]
+    CLB:
+      _write:
+        Start: [1, "Start calibration"]
+      _read:
+        Done: [0, "Calibration complete"]
+        Busy: [1, "Calibration in progress"]
+    CTN:
+      Disabled: [0, "Continuous conversion disabled"]
+      Enabled: [1, "Continuous conversion enabled"]
+    ADCON:
+      Disabled: [0, "ADC disabled"]
+      Enabled: [1, "ADC enabled"]
+  "SAMPT?":
+    "SPT*":
+      Cycles3: [0, "Channel sample time is 3 cycles"]
+      Cycles15: [1, "Channel sample time is 15 cycles"]
+      Cycles28: [2, "Channel sample time is 28 cycles"]
+      Cycles56: [3, "Channel sample time is 56 cycles"]
+      Cycles84: [4, "Channel sample time is 84 cycles"]
+      Cycles112: [5, "Channel sample time is 112 cycles"]
+      Cycles144: [6, "Channel sample time is 144 cycles"]
+      Cycles480: [7, "Channel sample time is 480 cycles"]
+  # WDHT:
+  #   WDHT: [0, 0xFFF]
+  # WDLT:
+  #   WDLT: [0, 0xFFF]
+  # RSQ0:
+  #   RL: [0, 7]
+  # "RSQ?":
+  #   "RSQ*": [0, 18]
+  OVSAMPCTL:
+    TOVS:
+      Consecutive: [0, "All oversampled conversaions for a channel are done consecutively"]
+      Separate: [1, "Oversampled conversions for a channel done wit a separate trigger."]
+    # OVSS:
+    #   Shift: [0, 0b1000]
+    OVSR:
+      Times2: [0b0000, "Oversampling ratio is 2"]
+      Times4: [0b0001, "Oversampling ratio is 4"]
+      Times8: [0b0010, "Oversampling ratio is 8"]
+      Times16: [0b0011, "Oversampling ratio is 16"]
+      Times32: [0b0100, "Oversampling ratio is 32"]
+      Times64: [0b0101, "Oversampling ratio is 64"]
+      Times128: [0b0110, "Oversampling ratio is 128"]
+      Times256: [0b0111, "Oversampling ratio is 256"]
+    OVSEN:
+      Disabled: [0, "Oversampling disabled"]
+      Enabled: [1, "Oversampling enabled"]

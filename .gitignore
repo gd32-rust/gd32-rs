@@ -8,6 +8,7 @@
 html/
 mmaps/
 /venv
+.venv
 
 # automatically generated crates
 /gd32*/

@@ -1,0 +1,142 @@
+DMA[1-7]:
+  INTF*:
+    FTFIF*:
+      _read:
+        NotComplete: [0, "No transfer complete event"]
+        Complete: [1, "A transfer complete event has occured"]
+      _write:
+        Clear: [0, "Clears flag."]
+    HTFIF*:
+      _read:
+        NotHalf: [0, "No half transfer event"]
+        Half: [1, "A half transfer event has occured"]
+      _write:
+        Clear: [0, "Clears the flag."]
+    TAEIF*:
+      _read:
+        NoError: [0, "No transfer error"]
+        Error: [1, "A transfer error has occured"]
+      _write:
+        Clear: [0, "Clears the flag."]
+    SDEIF*:
+      _read:
+        NoError: [0, "No transfer error"]
+        Error: [1, "A transfer error has occured"]
+      _write:
+        Clear: [0, "Clears the flag."]
+    FEEIF*:
+      _read:
+        NoError: [0, "No FIFO error"]
+        Error: [1, "A FIFO error has occured"]
+      _write:
+        Clear: [0, "Clears the flag."]
+  INTC*:
+    FTFIFC*:
+      _write:
+        Clear: [1, "Clears the FTFIFx flag in INTF."]
+    HTFIFC*:
+      _write:
+        Clear: [1, "Clears the HTFIFx flag in INTF."]
+    TAEIFC*:
+      _write:
+        Clear: [1, "Clears the TAEIFx flag in INTF."]
+    SDEIFC*:
+      _write:
+        Clear: [1, "Clears the SDEIFx flag in INTF."]
+    FEEIFC*:
+      _write:
+        Clear: [1, "Clears the FEEIFx flag in INTF."]
+  CH*CTL:
+    PERIEN:
+      P0: [0, "Enable Peripheral 0"]
+      P1: [1, "Enable Peripheral 1"]
+      P2: [2, "Enable Peripheral 2"]
+      P3: [3, "Enable Peripheral 3"]
+      P4: [4, "Enable Peripheral 4"]
+      P5: [5, "Enable Peripheral 5"]
+      P6: [6, "Enable Peripheral 6"]
+      P7: [7, "Enable Peripheral 7"]
+    MBURST:
+      Single: [0, "Single transfer"]
+      INCR4: [1, "Incremental burst of 4 beats"]
+      INCR8: [2, "Incremental burst of 8 beats"]
+      INCR16: [3, "Incremental burst of 16 beats"]
+    PBURST:
+      Single: [0, "Single transfer"]
+      INCR4: [1, "Incremental burst of 4 beats"]
+      INCR8: [2, "Incremental burst of 8 beats"]
+      INCR16: [3, "Incremental burst of 16 beats"]
+    MBS:
+      Zero: [0, "Memory 0 is selected as the memory transfer area"]
+      One: [1, "Memory 1 is selected as the memory transfer area"]
+    SBMEN:
+      Disabled: [0, "Switch buffer mode disabled"]
+      Enabled: [1, "Switch buffer mode enabled"]
+    PRIO:
+      Low: [0, "Low priority"]
+      Medium: [1, "Medium priority"]
+      High: [2, "High priority"]
+      VeryHigh: [3, "Ultra high priority"]
+    PAIF:
+      PWIDTH: [0, "THe peripheral address increment is determined by the PWIDTH field"]
+      Fixed: [1, "The peripheral address increment is fixed to 4"]
+    MWIDTH:
+      Width8: [0, "8-bit width"]
+      Width16: [1, "16-bit width"]
+      Width32: [2, "32-bit width"]
+    PWIDTH:
+      Width8: [0, "8-bit width"]
+      Width16: [1, "16-bit width"]
+      Width32: [2, "32-bit width"]
+    PNAGA:
+      Fixed: [0, "Fixed Address generation mode."]
+      Increment: [1, "Increment Address generation mode."]
+    CMEN:
+      Disabled: [0, "Circular mode disabled"]
+      Enabled: [1, "Circular mode enabled"]
+    TM:
+      Periph2Mem: [0, "Peripheral to memory"]
+      Mem2Periph: [1, "Memory to peripheral"]
+      Mem2Mem: [2, "Memory to memory"]
+    TFCS:
+      DMA: [0, "DMA is selected as the transfer flow controller"]
+      Peripheral: [1, "Peripheral is selected as the transfer flow controller"]
+    FTFIE:
+      Disabled: [0, "Transfer complete interrupt disabled"]
+      Enabled: [1, "Transfer complete interrupt enabled"]
+    HTFIE:
+      Disabled: [0, "Half transfer interrupt disabled"]
+      Enabled: [1, "Half transfer interrupt enabled"]
+    SDEIE:
+      Disabled: [0, "Single data mode exception interrupt disabled"]
+      Enabled: [1, "Single data mode exception interrupt enabled"]
+    CHEN:
+      Disabled: [0, "Channel disabled"]
+      Enabled: [1, "Channel enabled"]
+  "CH*CNT":
+    CNT: [0, 0xFFFF]
+  "CH*PADDR":
+    PADDR: [0, 0xFFFFFFFF]
+  "CH*M0ADDR":
+    M0ADDR: [0, 0xFFFFFFFF]
+  "CH*M1ADDR":
+    M1ADDR: [0, 0xFFFFFFFF]
+  "CH*FCTL":
+    FEEIE:
+      Disabled: [0, "FIFO error interrupt disabled"]
+      Enabled: [1, "FIFO error interrupt enabled"]
+    FCNT:
+      NoData: [0, "No data in FIFO"]
+      Words1: [1, "1 word of data in FIFO"]
+      Words2: [2, "2 words of data in FIFO"]
+      Words3: [3, "3 words of data in FIFO"]
+      Empty: [4, "FIFO is empty"]
+      Full: [5, "FIFO is full"]
+    MDMEN:
+      Disabled: [0, "Multi-data mode disabled"]
+      Enabled: [1, "Multi-data mode enabled"]
+    FCCV:
+      Words1: [0, "1 word of data is critical value"]
+      Words2: [1, "2 words of data is critical value"]
+      Words3: [2, "3 words of data is critical value"]
+      Words4: [3, "4 words of data is critical value"]

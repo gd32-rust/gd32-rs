@@ -148,6 +148,20 @@ gd32f3:
     members:
       - GD32F307
 gd32f4:
+  gd32f403:
+    url: https://www.gigadevice.com/products/microcontrollers/gd32/arm-cortex-m4/mainstream-line/gd32f403-series/
+    rm: GD32F403
+    rm_title: GD32F403
+    rm_url: https://www.gigadevice.com/manual/gd32f403xxxx-user-manual/
+    members:
+      - GD32F403
+  gd32f407:
+    url: https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32f4xx-series/gd32f407
+    rm: GD32F4xx
+    rm_title: GD32F4xx
+    rm_url: https://www.gigadevice.com/manual/gd32f4xx-user-manual/
+    members:
+      - GD32F407
   gd32f425:
     url: https://www.gigadevice.com/product/mcu/high-performance-mcus/gd32f4xx-series/gd32f425
     rm: GD32F425
