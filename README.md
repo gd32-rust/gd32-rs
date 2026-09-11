@@ -111,7 +111,7 @@ This project is still young and there's a lot to do!
 
 | Crate                                                                                                    | Supported devices                      | Notes                              |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------- |
-| `gd32c1`                                                                                                 | GD32C103, GD32C113                     | Not yet published                  |
+| [![crates.io](https://img.shields.io/crates/v/gd32c1.svg?label=gd32c1)](https://crates.io/crates/gd32c1) | GD32C103, GD32C113                     |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e1.svg?label=gd32e1)](https://crates.io/crates/gd32e1) | GD32E103                               |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2) | GD32E230, GD32E231                     |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e5.svg?label=gd32e5)](https://crates.io/crates/gd32e5) | GD32E503, GD32E505, GD32E507, GD32E508 |                                    |
