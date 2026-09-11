@@ -111,7 +111,7 @@ This project is still young and there's a lot to do!
 
 | Crate                                                                                                    | Supported devices                      | Notes                              |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------- |
-| `gd32c1`                                                                                                 | GD32C103, GD32C113                     | Not yet published                  |
+| [![crates.io](https://img.shields.io/crates/v/gd32c1.svg?label=gd32c1)](https://crates.io/crates/gd32c1) | GD32C103, GD32C113                     |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e1.svg?label=gd32e1)](https://crates.io/crates/gd32e1) | GD32E103                               |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e2.svg?label=gd32e2)](https://crates.io/crates/gd32e2) | GD32E230, GD32E231                     |                                    |
 | [![crates.io](https://img.shields.io/crates/v/gd32e5.svg?label=gd32e5)](https://crates.io/crates/gd32e5) | GD32E503, GD32E505, GD32E507, GD32E508 |                                    |
@@ -126,6 +126,17 @@ Many peripherals are not yet patched to provide the type-safe friendly-name
 interface (enumerated values); please consider helping out with this!
 
 Check out the full list of supported devices [here](https://gd32-rust.github.io/gd32-rs/).
+
+## HAL Crates
+
+These crates provide a higher-level API on top of the device crates above.
+
+| Crate                                                                                                                      | Supported devices                      | Notes                                |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
+| [![crates.io](https://img.shields.io/crates/v/gd32c1x3-hal.svg?label=gd32c1x3-hal)](https://crates.io/crates/gd32c1x3-hal) | GD32C103, GD32C113                     | Maintained outside this organization |
+| [`gd32e103-hal`](https://github.com/gd32-rust/gd32e103-hal)                                                                | GD32E103                               | Work in progress, not yet published  |
+| [![crates.io](https://img.shields.io/crates/v/gd32e2-hal.svg?label=gd32e2-hal)](https://crates.io/crates/gd32e2-hal)       | GD32E230                               | Maintained outside this organization |
+| [![crates.io](https://img.shields.io/crates/v/gd32f1x0-hal.svg?label=gd32f1x0-hal)](https://crates.io/crates/gd32f1x0-hal) | GD32F130, GD32F150, GD32F170, GD32F190 |                                      |
 
 ## Adding New Devices
 
