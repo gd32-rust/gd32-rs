@@ -127,6 +127,17 @@ interface (enumerated values); please consider helping out with this!
 
 Check out the full list of supported devices [here](https://gd32-rust.github.io/gd32-rs/).
 
+## HAL Crates
+
+These crates provide a higher-level API on top of the device crates above.
+
+| Crate                                                                                                                      | Supported devices                      | Notes                                |
+| -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- | ------------------------------------ |
+| [![crates.io](https://img.shields.io/crates/v/gd32c1x3-hal.svg?label=gd32c1x3-hal)](https://crates.io/crates/gd32c1x3-hal) | GD32C103, GD32C113                     | Maintained outside this organization |
+| [`gd32e103-hal`](https://github.com/gd32-rust/gd32e103-hal)                                                                | GD32E103                               | Work in progress, not yet published  |
+| [![crates.io](https://img.shields.io/crates/v/gd32e2-hal.svg?label=gd32e2-hal)](https://crates.io/crates/gd32e2-hal)       | GD32E230                               | Maintained outside this organization |
+| [![crates.io](https://img.shields.io/crates/v/gd32f1x0-hal.svg?label=gd32f1x0-hal)](https://crates.io/crates/gd32f1x0-hal) | GD32F130, GD32F150, GD32F170, GD32F190 |                                      |
+
 ## Adding New Devices
 
 - Update SVD files in `svd/vendor` to include new SVD.
